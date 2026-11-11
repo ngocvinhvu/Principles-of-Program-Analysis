@@ -1,0 +1,9 @@
+@article{261011889v1,
+  author  = { Chen, Xiaohong and Bucur, David and Ma, Chenglong and Zhang, Yi and Zhang, Lingming and Vishwanath, Sriram and Rosu, Grigore },
+  title   = {{Evaluating Exact Output and Checkpoint-State Prediction in Real Programs}},
+  journal = {arXiv preprint},
+  year    = {2026},
+  doi     = {2610.11889v1},
+  url     = {https://arxiv.org/abs/2610.11889v1},
+  abstract = {We present a benchmark for predicting final output and checkpoint state from source and input alone. It extends CRUXEval-style output prediction with paired shorter- and longer-trace inputs and checkpoints inside and after a loop. The benchmark contains 400 cases from 371 Python and C++ programs, evaluated under seven settings from four model families without tools or code execution. Of 11,200 planned predictions, 11,151 produced gradable responses. Reasoning-enabled settings outperform their off counterparts by 33.1 to 55.2 percentage points on completed responses. The strongest setting scores 93.0% on shorter-trace final output, 77.0% on longer-trace final output, and 65.5% and 63.5% on the two state tasks; these scores also hold when missing responses count as wrong. Across 2,397 matched Python comparisons with identical source, changing to the longer-trace input yields 528 correct-to-wrong changes and 147 reversals. Source-clustered analyses preserve this accuracy gap, while adjusted Python models give no evidence of a positive incremental association between cumulative state load and error. Changed inputs and checkpoint tasks alter several factors together, so the gaps do not isolate trace length or an internal state-tracking mechanism. The benchmark exposes errors hidden by short-output scores alone.},
+}

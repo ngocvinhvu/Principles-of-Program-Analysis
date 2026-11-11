@@ -1,0 +1,9 @@
+@article{260325770v1,
+  author  = { Hong, Jiseung and Ascoli, Benjamin G. and Choi, Jinho D. },
+  title   = {{ReCUBE: Evaluating Repository-Level Context Utilization in Code Generation}},
+  journal = {arXiv preprint},
+  year    = {2026},
+  doi     = {2603.25770v1},
+  url     = {https://arxiv.org/abs/2603.25770v1},
+  abstract = {Large Language Models (LLMs) have recently emerged as capable coding assistants that operate over large codebases through either agentic exploration or full-context generation. Existing benchmarks capture a broad range of coding capabilities, such as resolving GitHub issues, but none of them directly isolate and measure how effectively LLMs leverage repository-level context during code generation. To address this, we introduce ReCUBE, a benchmark in which LLMs reconstruct a masked file within a real-world repository, using all remaining source files, dependency specifications, and documentation as their only source of context. ReCUBE evaluates reconstructed code with usage-aware test cases that simulate both internal module logic and external cross-file integration, reflecting real-world software usage patterns. We further propose the Caller-Centric Exploration (CCE) toolkit, a set of dependency graph-based tools that can be integrated into agentic frameworks to guide agents toward the most relevant caller files during repository exploration. Experiments across eight models in four settings show that repository-level context utilization remains highly challenging even for state-of-the-art models, with GPT-5 achieving only 37.57% strict pass rate in the full-context setting. Agents augmented with our CCE toolkit consistently outperform all baselines across all evaluated models, with improvements of up to 7.56% in strict pass rate. We release our benchmark, code, and evaluation framework as open source for the NLP research community.},
+}

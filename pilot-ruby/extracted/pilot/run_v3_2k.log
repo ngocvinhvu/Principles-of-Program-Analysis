@@ -1,0 +1,63 @@
+item 1/50 done (359s)
+item 2/50 done (670s)
+item 3/50 done (890s)
+item 4/50 done (1118s)
+item 5/50 done (1400s)
+item 6/50 done (1609s)
+item 7/50 done (1818s)
+item 8/50 done (1998s)
+item 9/50 done (2203s)
+item 10/50 done (2385s)
+item 11/50 done (2632s)
+item 12/50 done (2820s)
+item 13/50 done (3016s)
+item 14/50 done (3275s)
+item 15/50 done (3518s)
+item 16/50 done (3692s)
+item 17/50 done (3956s)
+item 18/50 done (4201s)
+item 19/50 done (4442s)
+item 20/50 done (4652s)
+item 21/50 done (4853s)
+item 22/50 done (5040s)
+item 23/50 done (5279s)
+item 24/50 done (5569s)
+item 25/50 done (5809s)
+item 26/50 done (6018s)
+item 27/50 done (6228s)
+item 28/50 done (6420s)
+item 29/50 done (6601s)
+item 30/50 done (6779s)
+item 31/50 done (6998s)
+item 32/50 done (7233s)
+item 33/50 done (7462s)
+item 34/50 done (7646s)
+item 35/50 done (7897s)
+item 36/50 done (8221s)
+item 37/50 done (8486s)
+item 38/50 done (8701s)
+item 39/50 done (8924s)
+item 40/50 done (9111s)
+item 41/50 done (9409s)
+item 42/50 done (9645s)
+item 43/50 done (9847s)
+item 44/50 done (10087s)
+item 45/50 done (10256s)
+item 46/50 done (10443s)
+item 47/50 done (10680s)
+item 48/50 done (11012s)
+item 49/50 done (11275s)
+item 50/50 done (11470s)
+
+C3 closure exact on 149/150 contexts
+
+Model qwen2.5-coder:7b, ~2000 tokens, n=50
+condition        acc     n
+C0            68.00%    50
+C1@p=0.0      30.00%    50
+C1@p=0.5      32.00%    50
+C1@p=1.0      12.00%    50
+C2            26.00%    50
+C3            74.00%    50
+
+log: results/qwen2.5-coder_7b_20261111_071717.jsonl

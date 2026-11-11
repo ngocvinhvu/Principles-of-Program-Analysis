@@ -1,0 +1,5903 @@
+{
+ "Sense&Sensitivity": [
+  {
+   "paperId": "9261a58b9b7854443ae232e0277b11e7c44c9085",
+   "externalIds": {
+    "ArXiv": "2609.00579",
+    "DOI": "10.1145/3843750.3843842",
+    "CorpusId": 291544519
+   },
+   "title": "Predicting Program Exit Code with LLMs and Programming Language Semantics",
+   "venue": "Proceedings of the 2nd ACM SIGPLAN International Workshop on Language Models and Programming Languages",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "47a4a6300841bdf1087beafaed4e521798ef62b1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-09179",
+    "ArXiv": "2607.09179",
+    "DOI": "10.48550/arXiv.2607.09179",
+    "CorpusId": 290119121
+   },
+   "title": "Malaika: Understanding Malware through Tri-Grounded Agentic Reasoning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "257fdccfd7c84746d186f935a22bbb5fa96c758b",
+   "externalIds": {
+    "ArXiv": "2602.06325",
+    "DBLP": "journals/corr/abs-2602-06325",
+    "DOI": "10.48550/arXiv.2602.06325",
+    "CorpusId": 285401676
+   },
+   "title": "Identifying Adversary Tactics and Techniques in Malware Binaries with an LLM Agent",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "4f068dc1d98ed2580e1d8040cce4d233cc25d033",
+   "externalIds": {
+    "DBLP": "conf/softcom/PavelicKKG25",
+    "DOI": "10.23919/softcom66362.2025.11197359",
+    "CorpusId": 282149653
+   },
+   "title": "Towards Agent-Based Generation of Multi-Step Vulnerability Scenarios for Cyber Ranges",
+   "venue": "International Conference on Software, Telecommunications and Computer Networks",
+   "year": 2025,
+   "citationCount": 4
+  }
+ ],
+ "CRUXEval": [
+  {
+   "paperId": "c08842c0592102887bac3ace2f99d27cc51af411",
+   "externalIds": {
+    "ArXiv": "2611.03094",
+    "CorpusId": 295503687
+   },
+   "title": "A Fine-Grained Hierarchy and Benchmark for State Tracking in Language Models",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "71206b03a3e57ef88b018814f010783486bb87bb",
+   "externalIds": {
+    "ArXiv": "2611.01165",
+    "CorpusId": 295501258
+   },
+   "title": "Composable CAD: Sketch-to-CAD Program Synthesis in Parts",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c02364ae1409b47435b8477b0eac0e1ab94e6928",
+   "externalIds": {
+    "ArXiv": "2610.41562",
+    "CorpusId": 295402760
+   },
+   "title": "SCRBench: Beyond Equivalence Checking for Semantic Change Reasoning in Code",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "37ede19ca25ede96fd9637d8f0475438c342f53b",
+   "externalIds": {
+    "ArXiv": "2610.39489",
+    "CorpusId": 295373820
+   },
+   "title": "Program Bindings Inside Code Models",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "f71ac9f17d18289f30066e643458154e03e53c50",
+   "externalIds": {
+    "ArXiv": "2610.38120",
+    "CorpusId": 295372794
+   },
+   "title": "Post-Training Large Language Models with LLMON",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "90be333f2663653cc984141fe44b43118adca5d0",
+   "externalIds": {
+    "ArXiv": "2610.36015",
+    "CorpusId": 294523805
+   },
+   "title": "Do Coding Agents Still Need a Debugger? Frontier-Model-Based Fault Localization at the Accuracy Ceiling",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "91736b1515d4695bb6d7ab812470b063fe3c3368",
+   "externalIds": {
+    "ArXiv": "2610.33389",
+    "CorpusId": 294228196
+   },
+   "title": "OneCodeReviewBench: Typed Decisions for Code Review and Search",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2b9e5c10cd14cbebfa52fc111e064f2f51547cdd",
+   "externalIds": {
+    "ArXiv": "2610.32876",
+    "CorpusId": 293940763
+   },
+   "title": "Trusting the Tool: Asymmetric Deference of LLM Vulnerability Auditors to Static-Analysis Evidence",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "f1494c2b2a6e28c26d22f31251f8c171e76c741e",
+   "externalIds": {
+    "ArXiv": "2610.32492",
+    "CorpusId": 293940794
+   },
+   "title": "Accordion: Elastic-Depth Inference via Fixed-Prefix Layer Looping",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "9aa6f833ea015a38ba5ab098405bcd1961422da9",
+   "externalIds": {
+    "ArXiv": "2610.30970",
+    "CorpusId": 293894789
+   },
+   "title": "Joint or Per-Option? Compact Encoders for Closed-Set Decisions from 17 Million to 1 Billion Parameters",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "f02b7149e67f2d5b025a63081bc1c7b710791cdd",
+   "externalIds": {
+    "ArXiv": "2610.29332",
+    "CorpusId": 293844606
+   },
+   "title": "Do Coding Agents Understand Why Systems Crash---and Why They Don't?",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "d038547de730245d0c609210e7759932ca70336e",
+   "externalIds": {
+    "ArXiv": "2610.25004",
+    "CorpusId": 293799655
+   },
+   "title": "UpLoop: Upcycling Large Language Models with Gated Loop",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "a2c2b43adb27cca3b4ba18287ce7305c03e12ec0",
+   "externalIds": {
+    "ArXiv": "2610.25212",
+    "DOI": "10.18653/2026.findings-emnlp.1677",
+    "CorpusId": 293807226
+   },
+   "title": "Calibration-Free Early Stopping for Chain-of-Thought Reasoning via E-processes",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "9792a98a8d259701ad553a5f6ba227f1b1a196b3",
+   "externalIds": {
+    "ArXiv": "2610.23782",
+    "CorpusId": 293546363
+   },
+   "title": "Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "dbac59a23fdb9c76a81f83ea22cf7c1423861a8e",
+   "externalIds": {
+    "ArXiv": "2610.21195",
+    "CorpusId": 292982437
+   },
+   "title": "Condition-Contrastive Extrapolation for On-Policy Distillation of Language Models",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "aea8484a95b23917be59eae4b731728af13fb133",
+   "externalIds": {
+    "ArXiv": "2610.21082",
+    "CorpusId": 292982729
+   },
+   "title": "Sci$\\Pi$vot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "502911ae6188df03ed35d4e28283c1ecb91067a0",
+   "externalIds": {
+    "ArXiv": "2610.21244",
+    "CorpusId": 292981786
+   },
+   "title": "System1-Arena: Which Decisions Can Be Left to System 1?",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "ea196eea29aa005af29cf8363eaf388bf6ad0aac",
+   "externalIds": {
+    "ArXiv": "2610.23996",
+    "CorpusId": 293686294
+   },
+   "title": "Agentic Interpretation: Harness-Governed Evidence Construction for Software Agents",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "df0e70baec49555ccf84111f8874b0e2dea39fab",
+   "externalIds": {
+    "ArXiv": "2610.18755",
+    "CorpusId": 292896407
+   },
+   "title": "PreciseCoder: Faithful and Generalizable Debugging Beyond Unit-Test Rewards",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "74bd74acc08cee12c089f357287524c49bdebe5a",
+   "externalIds": {
+    "ArXiv": "2610.15368",
+    "CorpusId": 292894136
+   },
+   "title": "ANTE: Anticipate, Then Execute -- Learning Internal World Models for Coding Agents from Verified Beliefs",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "b557641cd0cb381e08136f7bd3759cb00942cb81",
+   "externalIds": {
+    "ArXiv": "2610.11889",
+    "CorpusId": 292738415
+   },
+   "title": "Evaluating Exact Output and Checkpoint-State Prediction in Real Programs",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "8807edd284498c52ce7d6911626e5af0a9608868",
+   "externalIds": {
+    "ArXiv": "2610.10478",
+    "CorpusId": 292700738
+   },
+   "title": "Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "6e81be5f1cc145aaf97a7a0b1944d5430d4ce68a",
+   "externalIds": {
+    "DOI": "10.1007/s44163-026-02342-5",
+    "CorpusId": 292592360
+   },
+   "title": "A critical assessment of the rise of agentic AI, its capabilities, task domains and open challenges",
+   "venue": "Discover Artificial Intelligence",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "76fce826acfea628a01fd176e6f2ab0bfbb436e8",
+   "externalIds": {
+    "ArXiv": "2610.05472",
+    "CorpusId": 292655526
+   },
+   "title": "Hallucination Across the Reasoning Lifecycle: Interface Visibility, Causal Evidence, and Release Control in Large Reasoning Models",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2963206ab57873fb620c88cf1e0a0fc592134aae",
+   "externalIds": {
+    "ArXiv": "2610.04371",
+    "CorpusId": 292638999
+   },
+   "title": "Functionally Equivalent or Not? Graph-Grounded Differential Surrogate Execution for Code Equivalence",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "0520e1a4d6ee171f1545f5779d3969cb3c5d52df",
+   "externalIds": {
+    "ArXiv": "2610.02793",
+    "CorpusId": 292587158
+   },
+   "title": "PAPER2LLM++: Continual Self-Evolution of LLMs from Research Papers",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "8e724fb09759f254d172e26e0e11930fcd1b85b4",
+   "externalIds": {
+    "ArXiv": "2610.00928",
+    "CorpusId": 292521330
+   },
+   "title": "Efficient Task Adaptation in Large Language Models: A Survey of Weight-Based, Prompt-Based, and Embedding-Based Adaptations",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "e9690cc8219bdeee088b90b1d976209cfdf4e3e7",
+   "externalIds": {
+    "DOI": "10.1145/3839452",
+    "CorpusId": 292524130
+   },
+   "title": "T-REX: Teaching Large Language Models to Reason with Verbalized Execution Semantics",
+   "venue": "Proceedings of the ACM on Programming Languages",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "23301eae0292a15e70c8f6da08eb9cfb44d72a92",
+   "externalIds": {
+    "DOI": "10.1145/3832195",
+    "CorpusId": 292524151
+   },
+   "title": "BCaLLM: Call Graph-Guided Python Breaking Change Detection with Large Language Models",
+   "venue": "Proceedings of the ACM on Software Engineering",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "e10e81ee34e53ba570bc68fdc96a5c7e8b66af8e",
+   "externalIds": {
+    "ArXiv": "2609.40097",
+    "CorpusId": 292487278
+   },
+   "title": "AutoDataBench: A Data-centric Testbed for Accelerating Auto Research",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "271fd25fa3680dac215448f57d378f43da7ff0d6",
+   "externalIds": {
+    "ArXiv": "2609.38829",
+    "CorpusId": 292476933
+   },
+   "title": "Diversity Combining for Multi-Path LLM Reasoning",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "765d165c330776806e1614512474a21c7718968e",
+   "externalIds": {
+    "ArXiv": "2609.37169",
+    "CorpusId": 292474796
+   },
+   "title": "Trajectory Soup: Pushing the Compute-Scaling Frontier of LLM Mid-training via Diverse Trajectories",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "478f75a556b420b533cf206aed2862cda486ad47",
+   "externalIds": {
+    "ArXiv": "2609.37405",
+    "CorpusId": 292473474
+   },
+   "title": "Complexity-Aware Evaluation of LLM Comprehension",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "1627a796a47ee1795fae9d4e6cf91edfa045b2a7",
+   "externalIds": {
+    "ArXiv": "2609.36647",
+    "CorpusId": 292441346
+   },
+   "title": "CTE-Bench: Counterfactual Trace Evaluation for Stateful Software Simulators",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "9f896b998660b0962d4f14b671dbe3959fff4911",
+   "externalIds": {
+    "ArXiv": "2609.38137",
+    "CorpusId": 292474849
+   },
+   "title": "LongHarness Bench: Stress-Testing Language Model Harnesses for Long-Context Reasoning",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "9bd981695bb3d5a94aff06064a299d59f1ef8ae4",
+   "externalIds": {
+    "ArXiv": "2609.34661",
+    "CorpusId": 292434839
+   },
+   "title": "Codoku: Renewable Program-Reasoning Challenges for Frontier Coding Agents",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c78fc1c5354e2882ca7d19ed9526fde8d06f916e",
+   "externalIds": {
+    "ArXiv": "2609.35074",
+    "CorpusId": 292435916
+   },
+   "title": "When Confidence Rises Too Early: Detecting Shortcut Reasoning via Premature Answer Commitment",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "3f6e9502320d3526e9da1f1964611062a6ccffa2",
+   "externalIds": {
+    "ArXiv": "2609.33149",
+    "CorpusId": 292433653
+   },
+   "title": "Not Too Hard, Not Too Easy: Learning from Intermediate States for LLM Structured Reasoning",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "1547f5dd305b22288fa1d0a3aa423c0b1080abad",
+   "externalIds": {
+    "ArXiv": "2609.33243",
+    "CorpusId": 292434425
+   },
+   "title": "CodeSkill: Latent Skill Abstraction for Long-Horizon Code Agents",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "e9f8d4606abcdb810529452ca5c904f8eee89aaf",
+   "externalIds": {
+    "ArXiv": "2609.33678",
+    "CorpusId": 292436768
+   },
+   "title": "SWE-Game: Can Coding Agents Build the Games We Want?",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "380f6d364f97067211c38b618e1cf949db5a57ee",
+   "externalIds": {
+    "ArXiv": "2609.32228",
+    "CorpusId": 292434125
+   },
+   "title": "CompassPlay: Rewarding the Proposer for Where It Moves the Solver",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "012884e0680be4a784e1a0e87364d9825d3fcc19",
+   "externalIds": {
+    "ArXiv": "2609.32081",
+    "CorpusId": 292408902
+   },
+   "title": "Toward Interactive Understanding of Code APIs",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "61276306f33732c7cef0a372f4d77f16b0284217",
+   "externalIds": {
+    "ArXiv": "2609.28449",
+    "CorpusId": 292267370
+   },
+   "title": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "8976efa2e3c3751fb7ffcf637a47e8994bdb50d5",
+   "externalIds": {
+    "ArXiv": "2609.26388",
+    "CorpusId": 292227018
+   },
+   "title": "On the Lexical Superstition of Large Language Models for Code Comprehension: Re-evaluation on Code of Low Lexical Quality",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "b21726e4823ceaf5955714b1553cf66528a12ed9",
+   "externalIds": {
+    "ArXiv": "2609.19589",
+    "CorpusId": 292058805
+   },
+   "title": "Form Over Content In Gradient-Based Data Attribution Methods",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "50adfff9ab3068a2a5279716a06eb4bf8da57718",
+   "externalIds": {
+    "ArXiv": "2609.16076",
+    "DOI": "10.18653/2026.emnlp-main.1561",
+    "CorpusId": 292029152
+   },
+   "title": "The Imitation Game: When LLMs Learn to Reason Like Programs via Code-Centric Reasoning Data Synthesis",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "65af9fa67affec9d526ae143c9d2237e234b3237",
+   "externalIds": {
+    "ArXiv": "2609.14168",
+    "CorpusId": 292026623
+   },
+   "title": "Towards Evolving Context Parameterization for Large Language Models",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "cf0beecc23e425e7d7875901ec10d3bbfafa2729",
+   "externalIds": {
+    "ArXiv": "2609.13141",
+    "CorpusId": 291960183
+   },
+   "title": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "ef8ff0c1118e0c0adf05ef9d63095028d0d12aab",
+   "externalIds": {
+    "ArXiv": "2609.02672",
+    "CorpusId": 291615714
+   },
+   "title": "oHC: Orthogonal Hyper-Connections on SO(4) via Quaternions",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "d955ea301fb8b0a4426bbcf98ab66b1a92be825b",
+   "externalIds": {
+    "ArXiv": "2609.01865",
+    "DOI": "10.18653/2026.emnlp-main.2448",
+    "CorpusId": 291611416
+   },
+   "title": "ExecRetrieval: Measuring the Functional-Correctness Gap in Code-Embedding Retrieval",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "e38ce26007a0ec060e08617ffe6645d93fa8774b",
+   "externalIds": {
+    "ArXiv": "2609.18052",
+    "DOI": "10.1109/ICACT70625.2026.11748838",
+    "CorpusId": 292041736
+   },
+   "title": "An Empirical Evaluation of Cost-Efficient Large Language Models on Algorithmic Programming Tasks",
+   "venue": "International Conference on Advanced Communication Technology",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "ff6349a50a8d78e8d4ef7199b5a836436506f7d9",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-28980",
+    "ArXiv": "2608.28980",
+    "DOI": "10.48550/arXiv.2608.28980",
+    "CorpusId": 291531185
+   },
+   "title": "The Illusion of Replacement: Rethinking Specialized Machine Learning Models in the Foundation Model Era",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "7a025a4ed9f7d5444e5b117bc2e76bc76a54cf4c",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-25643",
+    "ArXiv": "2608.25643",
+    "DOI": "10.48550/arXiv.2608.25643",
+    "CorpusId": 291367805
+   },
+   "title": "A Token-Level Analysis of Sampled-Token Reverse-KL On-Policy Distillation",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 9
+  },
+  {
+   "paperId": "86e9f5c49f74bf0364fb6703f68e151b2cb0b68a",
+   "externalIds": {
+    "DOI": "10.67231/6s96yv20",
+    "CorpusId": 291428873
+   },
+   "title": "LLM Copilot for Privacy-Respecting Cyber Incident Response",
+   "venue": "International Journal of Intelligent Systems and Data Science",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2e92552a6f7a310bacaec9083f1c79fd1b57a481",
+   "externalIds": {
+    "ArXiv": "2608.21107",
+    "DBLP": "journals/corr/abs-2608-21107",
+    "DOI": "10.48550/arXiv.2608.21107",
+    "CorpusId": 291319991
+   },
+   "title": "Large Language Models at the Intersection of Software Engineering and Software Security:An Evidence-Centered Structured Survey and Research Agenda",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2fee2e9e86800cee1c7ad91690bdd72ccfab2b6e",
+   "externalIds": {
+    "ArXiv": "2609.26102",
+    "DOI": "10.1145/3832783.3837556",
+    "CorpusId": 292227593
+   },
+   "title": "Post-hoc Attention Steering of Large Language Models for Robust Code Understanding under Obfuscation",
+   "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "5755c055ac9c0af72de0985ac1e586a5162e95e1",
+   "externalIds": {
+    "ArXiv": "2608.17177",
+    "DBLP": "journals/corr/abs-2608-17177",
+    "DOI": "10.1145/3842652.3843195",
+    "CorpusId": 291185096
+   },
+   "title": "Grounding AI Agents in Contracts: An Empirical Evaluation of Spec-Driven Test Generation",
+   "venue": "Proceedings of the 1st International Workshop on Specification-Driven Development Life Cycle",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "8326bd62e452fd2ec340f18ea6798046d662df9e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-15592",
+    "ArXiv": "2608.15592",
+    "DOI": "10.48550/arXiv.2608.15592",
+    "CorpusId": 291184192
+   },
+   "title": "When Entropy Is Not Enough: Reclaiming Lost Semantics in LLM Output Length Prediction",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "19a8dfb54ee73abb042f36b519c333a579c7ea34",
+   "externalIds": {
+    "ArXiv": "2608.07968",
+    "DBLP": "journals/corr/abs-2608-07968",
+    "DOI": "10.48550/arXiv.2608.07968",
+    "CorpusId": 290984540
+   },
+   "title": "Thinking Hard, Not Smart: Reasoning Models Fail to Ration Test-Time Compute Across Questions",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "2e0e35d19ce4f87a71134dfc144d26dff1deb67e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-04783",
+    "ArXiv": "2608.04783",
+    "DOI": "10.1145/3832783.3837452",
+    "CorpusId": 290844503
+   },
+   "title": "RepoProbe: Benchmarking Architecture-Aware Repository Comprehension with Checklists",
+   "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "11cdae3be1a2b016123c0c33d1b97d29e94f518c",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-03119",
+    "ArXiv": "2608.03119",
+    "DOI": "10.48550/arXiv.2608.03119",
+    "CorpusId": 290832857
+   },
+   "title": "Don't Peek at the Answer: Outcome-Masked Group Relative Policy Optimization for Label-Free RLVR",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "199281d6694f728690bb97c885736799bcb0d99d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-03388",
+    "ArXiv": "2608.03388",
+    "DOI": "10.48550/arXiv.2608.03388",
+    "CorpusId": 290833626
+   },
+   "title": "Don't Let Me Ask for It: LLMs Show Deficiencies in Active Multi-Turn Information Acquisition for Abductive Inference",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c8c7316e9f966bc6cdebf42890e43ce3dea42759",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-03457",
+    "ArXiv": "2608.03457",
+    "DOI": "10.48550/arXiv.2608.03457",
+    "CorpusId": 290836655
+   },
+   "title": "LLaDA MoE v2: Scaling Mixture-of-Experts Diffusion Language Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "1579c6d474b6b246eb9ff0c222c69c7a2f44aeac",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-00437",
+    "ArXiv": "2608.00437",
+    "DOI": "10.48550/arXiv.2608.00437",
+    "CorpusId": 290788509
+   },
+   "title": "Distilling Reasoning Traces into Advisory Prompts for Software Engineering Tasks",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "0f87632e1cef9fa88ce72a798760305f0f0ec0e8",
+   "externalIds": {
+    "ArXiv": "2607.26987",
+    "DBLP": "journals/corr/abs-2607-26987",
+    "DOI": "10.48550/arXiv.2607.26987",
+    "CorpusId": 290648316
+   },
+   "title": "How Developers Experience Debugging Unfamiliar Codebases with Code Tours Generated and Evaluated by Local LLMs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "af96e461e702d1d5161c16561dd4680c2eb7e948",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-21981",
+    "ArXiv": "2607.21981",
+    "DOI": "10.48550/arXiv.2607.21981",
+    "CorpusId": 290583468
+   },
+   "title": "J-CoT: Chain-of-Thought in J-Space",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "b8efa245ee5617a0742c098cb86bc06b83f57174",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-20852",
+    "ArXiv": "2607.20852",
+    "DOI": "10.48550/arXiv.2607.20852",
+    "CorpusId": 290467120
+   },
+   "title": "Code Monitor Red Teaming for Public-Test-Passing Code",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "927100e20fca0c334d7979bf1369a1d857d2c5ec",
+   "externalIds": {
+    "ArXiv": "2607.20764",
+    "DBLP": "journals/corr/abs-2607-20764",
+    "DOI": "10.48550/arXiv.2607.20764",
+    "CorpusId": 290466731
+   },
+   "title": "ArbiGraph: Arbitrarily Scalable Verifiable Task Graphs for Evaluating Context Management",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "024507aa853577e75d7f8612a66d93d06757195a",
+   "externalIds": {
+    "ArXiv": "2607.18642",
+    "DBLP": "journals/corr/abs-2607-18642",
+    "DOI": "10.48550/arXiv.2607.18642",
+    "CorpusId": 290394731
+   },
+   "title": "Spaghetti Architect: A Contamination-Resistant, By-Construction-Labelled, Multi-Language Code Dataset Generator",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "fb3a4c81fba17b1515f6e4ee0d951ed8f153f155",
+   "externalIds": {
+    "DOI": "10.1145/3820002.3828584",
+    "CorpusId": 292268491
+   },
+   "title": "Measuring Reproducibility in LLM Research: A Rubric and Cross-Topic Corpus Study",
+   "venue": "Proceedings of the 4th ACM Conference on Reproducibility and Replicability",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c7ddfe26eda7f5e5cc99a75e225d45737fbc0e6b",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-12490",
+    "ArXiv": "2607.12490",
+    "DOI": "10.48550/arXiv.2607.12490",
+    "CorpusId": 290148317
+   },
+   "title": "When is LLM-Based Program Reasoning Correct? A Completion Semantics for LLM-Based Code Inference",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "40eed0245235e6637f951a82618d33ef8c26424b",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-08186",
+    "ArXiv": "2607.08186",
+    "DOI": "10.48550/arXiv.2607.08186",
+    "CorpusId": 290009670
+   },
+   "title": "Hidden Decoding at Scale: Latent Computation Scaling for Large Language Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "a92a9e320ee0c4617d803360e235442666bbdacc",
+   "externalIds": {
+    "DBLP": "conf/aiware/BeckerMZ26",
+    "DOI": "10.1145/3805760.3814888",
+    "CorpusId": 289927860
+   },
+   "title": "Can LLMs Really Reason about Code? Studying How Well LLMs Understand the Relation between Input, Code, and Output",
+   "venue": "AIware",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "c6ddbf7570e64e2efe1ae436a7282b00ad28f5ab",
+   "externalIds": {
+    "DBLP": "conf/sigsoft/LiuJW26",
+    "DOI": "10.1145/3803437.3805590",
+    "CorpusId": 290254919
+   },
+   "title": "The Stylistic Blind Spot: Uncovering the Hidden Implicit Bias of Coding Style on LLM Code Evaluation",
+   "venue": "SIGSOFT FSE Companion",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "558e4e43c0d3806d811342ed9f005fde3820bde4",
+   "externalIds": {
+    "DBLP": "journals/tse/LiuCJ26",
+    "DOI": "10.1109/TSE.2026.3691250",
+    "CorpusId": 290282482
+   },
+   "title": "CodeMind: Evaluating Large Language Models for Implicit and Explicit Code Execution Reasoning",
+   "venue": "IEEE Transactions on Software Engineering",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "985a124e14cb2074ae6125a088e1323afe547e87",
+   "externalIds": {
+    "DOI": "10.1016/j.jss.2026.113033",
+    "CorpusId": 290558699
+   },
+   "title": "Java academic benchmark: Exam-based evaluation of LLMs on object-oriented programming",
+   "venue": "Journal of Systems and Software",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "af20dcd31d2c5f076a683e0e9eeef0c6a14e007a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-25996",
+    "ArXiv": "2607.25996",
+    "DOI": "10.1145/3808131",
+    "CorpusId": 289816448
+   },
+   "title": "RepoReasoner: Evaluating Repository-Level Code Reasoning Ability of Long-Context Language Models",
+   "venue": "Proc. ACM Softw. Eng.",
+   "year": 2026,
+   "citationCount": 7
+  },
+  {
+   "paperId": "5c0f2d5e19811c20af42b26f4ee0e650b908d24a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-31689",
+    "ArXiv": "2606.31689",
+    "DOI": "10.48550/arXiv.2606.31689",
+    "CorpusId": 289691055
+   },
+   "title": "ScratchWorld: Evaluating If World Models Compute Executable Consequences",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "6f38769739fffa96d533ddee6ac5fc2965b6c582",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-27406",
+    "ArXiv": "2606.27406",
+    "DOI": "10.48550/arXiv.2606.27406",
+    "CorpusId": 289669264
+   },
+   "title": "Towards Evaluation of Implicit Software World Models in Coding LLMs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "f7e69cfd0794b3c79441954339a87b3b5839f4db",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-24437",
+    "ArXiv": "2606.24437",
+    "DOI": "10.48550/arXiv.2606.24437",
+    "CorpusId": 289623663
+   },
+   "title": "ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "b42ef5fd25895c87bb0dc3e3ab129b813abd5244",
+   "externalIds": {
+    "ArXiv": "2606.25178",
+    "DBLP": "journals/corr/abs-2606-25178",
+    "DOI": "10.48550/arXiv.2606.25178",
+    "CorpusId": 289630529
+   },
+   "title": "Transferability for General Reasoning: An Automated Curriculum for Multi-Domain RLVR",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "6b98c79a18c433ed2e025a5a36fe6eab67015c28",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-22902",
+    "ArXiv": "2606.22902",
+    "DOI": "10.48550/arXiv.2606.22902",
+    "CorpusId": 289624235
+   },
+   "title": "Agent-as-a-Router: Agentic Model Routing for Coding Tasks",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 14
+  },
+  {
+   "paperId": "93d9bacfdb20c61ebc55fd8898d14412717a65cc",
+   "externalIds": {
+    "ArXiv": "2606.17648",
+    "DBLP": "journals/corr/abs-2606-17648",
+    "DOI": "10.48550/arXiv.2606.17648",
+    "CorpusId": 289623444
+   },
+   "title": "From Brewing to Resolution: Tracing the Internal Lifecycle of Code Reasoning in LLMs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "26f66db7df4b0be12aae85b47331d797b1156dcb",
+   "externalIds": {
+    "DBLP": "conf/mir/TanLL26",
+    "DOI": "10.1145/3805622.3810701",
+    "CorpusId": 289345824
+   },
+   "title": "Evo-CuRL: Curriculum-Aware Reinforcement Learning over Code Lineage Graphs for Software Engineering Reasoning",
+   "venue": "International Conference on Multimedia Retrieval",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "344f95ab7d877d5d604e95b521ad4008fe7fc70f",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-08840",
+    "ArXiv": "2606.08840",
+    "DOI": "10.48550/arXiv.2606.08840",
+    "CorpusId": 289098092
+   },
+   "title": "Beyond Pass Rate: A Multilingual, Execution-Grounded Evaluation of Open Code LLMs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "e1b2e9d1a4656fa79cac1fb0f5fb505bf3d1d881",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-05145",
+    "ArXiv": "2606.05145",
+    "DOI": "10.48550/arXiv.2606.05145",
+    "CorpusId": 288977452
+   },
+   "title": "Failed Reasoning Traces Tell You What Is Fixable (But Not by Reading Them)",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "599dc179dcc88dfb425fd46a8bc9518d53e05859",
+   "externalIds": {
+    "DBLP": "journals/ipm/YangZZCLCZC26",
+    "DOI": "10.1016/j.ipm.2025.104580",
+    "CorpusId": 295298509
+   },
+   "title": "Less is more: Towards green code large language models via unified structural pruning",
+   "venue": "Information Processing & Management",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "6d5a8d4f3f75a3359c86bd570c99c4ea9a41c345",
+   "externalIds": {
+    "ArXiv": "2605.31464",
+    "DBLP": "journals/corr/abs-2605-31464",
+    "DOI": "10.48550/arXiv.2605.31464",
+    "CorpusId": 288814541
+   },
+   "title": "GPU Forecasters: Language Models as Selective Surrogates for Kernel Runtime Optimization",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "c4765edabbde39902c3de41a9fb0e37e815257fa",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-31268",
+    "ArXiv": "2605.31268",
+    "DOI": "10.48550/arXiv.2605.31268",
+    "CorpusId": 288814664
+   },
+   "title": "Mellum2 Technical Report",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "eb70018926f87ea802807126ff1498a6c36722c3",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-29277",
+    "ArXiv": "2605.29277",
+    "DOI": "10.48550/arXiv.2605.29277",
+    "CorpusId": 288741890
+   },
+   "title": "Code-QA-Bench: Separating Code Reasoning from Documentation Memorization in Repository-Level QA",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "ac9c7a38082f3687d7305bd89934f27feb8722a1",
+   "externalIds": {
+    "ArXiv": "2605.26842",
+    "DBLP": "journals/corr/abs-2605-26842",
+    "DOI": "10.48550/arXiv.2605.26842",
+    "CorpusId": 288672412
+   },
+   "title": "MONA: Muon Optimizer with Nesterov Acceleration for Scalable Language Model Training",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c1c92ae04a39645cd8f807957f52ccad05a1ca7f",
+   "externalIds": {
+    "ArXiv": "2605.27605",
+    "CorpusId": 288701549
+   },
+   "title": "Laguna M.1/XS.2 Technical Report",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "dde3b8d482193040040ac40db004efb36eb5c4e1",
+   "externalIds": {
+    "ArXiv": "2605.25698",
+    "DBLP": "journals/corr/abs-2605-25698",
+    "DOI": "10.48550/arXiv.2605.25698",
+    "CorpusId": 288670502
+   },
+   "title": "How Should LLMs Consume High-Quality Data? Optimal Data Scheduling via Quality-Aware Functional Scaling Laws",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "10ea2571b0950a1af3a3ff33a91dde7cb8ad716f",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-26177",
+    "ArXiv": "2605.26177",
+    "DOI": "10.48550/arXiv.2605.26177",
+    "CorpusId": 288672764
+   },
+   "title": "RepoMirage: Probing Repository Context Reasoning in Code Agents with Perturbations",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "34a9af5f76f8d060cfb265033a1506e76fdeb79a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-24414",
+    "ArXiv": "2605.24414",
+    "DOI": "10.48550/arXiv.2605.24414",
+    "CorpusId": 288670119
+   },
+   "title": "JT-SAFE-V2: Safety-by-Design Foundation Model with World-Context Data",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "b69faf9361115e8a13340b2523ed4f37a06fd93a",
+   "externalIds": {
+    "ArXiv": "2605.22620",
+    "DBLP": "journals/corr/abs-2605-22620",
+    "DOI": "10.48550/arXiv.2605.22620",
+    "CorpusId": 288650394
+   },
+   "title": "Two is better than one: A Collapse-free Multi-Reward RLIF Training Framework",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "232dc57b3ca80d3292afdcc4078e8f19af2c6620",
+   "externalIds": {
+    "ArXiv": "2605.22217",
+    "DBLP": "journals/corr/abs-2605-22217",
+    "DOI": "10.48550/arXiv.2605.22217",
+    "CorpusId": 288651856
+   },
+   "title": "Survive or Collapse: The Asymmetric Roles of Data Gating and Reward Grounding in Self-Play RL",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "97ae2ef1f6ce3fc225bee091264564735ef07cac",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-20548",
+    "ArXiv": "2605.20548",
+    "DOI": "10.48550/arXiv.2605.20548",
+    "CorpusId": 288654422
+   },
+   "title": "What Do Agents Communicate? Characterizing Information Exchange in Multi-Agent Systems",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "ca86a88d6b892685584082110d89cdfa997b0f72",
+   "externalIds": {
+    "ArXiv": "2605.19645",
+    "DBLP": "journals/corr/abs-2605-19645",
+    "DOI": "10.48550/arXiv.2605.19645",
+    "CorpusId": 288655378
+   },
+   "title": "K-Quantization and its Impact on Output Performance",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "41d615ca423a7931fc9b2925abde1f3cd8ab9e67",
+   "externalIds": {
+    "ArXiv": "2605.18073",
+    "DBLP": "journals/corr/abs-2605-18073",
+    "DOI": "10.1145/3820891",
+    "CorpusId": 288656784
+   },
+   "title": "A-ProS: Towards Reliable Autonomous Programming Through Multi-Model Feedback",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "9542678ba8b0a438c4987c99fdbc5a0fd960425a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-14415",
+    "ArXiv": "2605.14415",
+    "DOI": "10.48550/arXiv.2605.14415",
+    "CorpusId": 288253544
+   },
+   "title": "SWE-Chain: Benchmarking Coding Agents on Chained Release-Level Package Upgrades",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 15
+  },
+  {
+   "paperId": "552af6d84661602f44499a22a216396a9e12b31d",
+   "externalIds": {
+    "ArXiv": "2605.18851",
+    "DBLP": "journals/corr/abs-2605-18851",
+    "DOI": "10.48550/arXiv.2605.18851",
+    "CorpusId": 288654439
+   },
+   "title": "STRIDE: Learnable Stepwise Language Feedback for LLM Reasoning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "4bc028b8913da6949e57d78e1e0835679f70671f",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-11922",
+    "ArXiv": "2605.11922",
+    "DOI": "10.48550/arXiv.2605.11922",
+    "CorpusId": 288259647
+   },
+   "title": "StepCodeReasoner: Aligning Code Reasoning with Stepwise Execution Traces via Reinforcement Learning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "6afb3d99a02f1de30cd8f209c1f67d598f5c65e9",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-11775",
+    "ArXiv": "2605.11775",
+    "DOI": "10.48550/arXiv.2605.11775",
+    "CorpusId": 288254335
+   },
+   "title": "Entropy Polarity in Reinforcement Fine-Tuning: Direction, Asymmetry, and Control",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "c5cd87f4059bf18f0c560e72a5e28f06cb3448ce",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-09920",
+    "ArXiv": "2605.09920",
+    "DOI": "10.18653/v1/2026.findings-acl.1606",
+    "CorpusId": 288255270
+   },
+   "title": "Verifier-Free RL for LLMs via Intrinsic Gradient-Norm Reward",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "f965788121beb498d2d4f949e7647f1577d38c3e",
+   "externalIds": {
+    "ArXiv": "2605.11006",
+    "DBLP": "journals/corr/abs-2605-11006",
+    "DOI": "10.48550/arXiv.2605.11006",
+    "CorpusId": 288257129
+   },
+   "title": "An Execution-Verified Multi-Language Benchmark for Code Semantic Reasoning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "0f8414d3e49d09d768accd2604d6cd8c6a9ec6dd",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-07353",
+    "ArXiv": "2605.07353",
+    "DOI": "10.48550/arXiv.2605.07353",
+    "CorpusId": 288111062
+   },
+   "title": "Confidence-Aware Alignment Makes Reasoning LLMs More Reliable",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "ab2fb14089539a488e5ac431086a4d6b9d8838eb",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-07122",
+    "ArXiv": "2605.07122",
+    "DOI": "10.48550/arXiv.2605.07122",
+    "CorpusId": 288111037
+   },
+   "title": "RepoZero: Can LLMs Generate a Code Repository from Scratch?",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 15
+  },
+  {
+   "paperId": "a377efbc097cf28dfd2f5d01b4bf1a210a9fd86a",
+   "externalIds": {
+    "ArXiv": "2605.07579",
+    "DBLP": "journals/corr/abs-2605-07579",
+    "DOI": "10.48550/arXiv.2605.07579",
+    "CorpusId": 288147611
+   },
+   "title": "Your Language Model is Its Own Critic: Reinforcement Learning with Value Estimation from Actor's Internal States",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "422c660c628d6e04b8e4e29bbeb832df2a9e0fd7",
+   "externalIds": {
+    "ArXiv": "2605.06219",
+    "DBLP": "journals/corr/abs-2605-06219",
+    "DOI": "10.48550/arXiv.2605.06219",
+    "CorpusId": 288014442
+   },
+   "title": "Joint Consistency: A Unified Test-Time Aggregation Framework via Energy Minimization",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "3c04597b6fa5f23eee3c6669da034bde31826d2d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-06184",
+    "ArXiv": "2605.06184",
+    "DOI": "10.48550/arXiv.2605.06184",
+    "CorpusId": 288014794
+   },
+   "title": "Teaching LLMs Program Semantics via Symbolic Execution Traces",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "2ea60fb088e669574f1cc9f0764aa1997c17408d",
+   "externalIds": {
+    "ArXiv": "2605.06111",
+    "CorpusId": 288014474
+   },
+   "title": "ASTOR: Multi-Task Code Reinforcement Learning via Utility-Driven Coordination",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "488f39fe41221ff8c695713e997697b48eaa89b2",
+   "externalIds": {
+    "ArXiv": "2604.28139",
+    "DBLP": "journals/corr/abs-2604-28139",
+    "DOI": "10.48550/arXiv.2604.28139",
+    "CorpusId": 287915622
+   },
+   "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 17
+  },
+  {
+   "paperId": "d3a73ece80828869429d749fcf066f14cbce6e4e",
+   "externalIds": {
+    "DBLP": "conf/aiware/ChenXSZWZG26",
+    "ArXiv": "2604.26923",
+    "DOI": "10.1145/3805760.3814925",
+    "CorpusId": 287902109
+   },
+   "title": "ClassEval-Pro: A Cross-Domain Benchmark for Class-Level Code Generation",
+   "venue": "AIware",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "a1aff9022443e3e2e2ac24c5dc9e6c6d12cd5ae4",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-25419",
+    "ArXiv": "2604.25419",
+    "DOI": "10.48550/arXiv.2604.25419",
+    "CorpusId": 287831343
+   },
+   "title": "JURY-RL: Votes Propose, Proofs Dispose for Label-Free RLVR",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "b3b370b548dc432973e666bcf3ac52b2237b5939",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-25399",
+    "ArXiv": "2604.25399",
+    "DOI": "10.48550/arXiv.2604.25399",
+    "CorpusId": 287831494
+   },
+   "title": "CoRE: A Fine-Grained Code Reasoning Benchmark Beyond Output Prediction",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "a914ad9b2e53a5e02601e6d9b344299f0f829215",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-25297",
+    "ArXiv": "2604.25297",
+    "DOI": "10.48550/arXiv.2604.25297",
+    "CorpusId": 287831607
+   },
+   "title": "LegalMidm: Use-Case-Driven Legal Domain Specialization for Korean Large Language Model",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "dfef1ec051c5757a3b59aff029ee95a705e6ba0a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-22750",
+    "ArXiv": "2604.22750",
+    "DOI": "10.48550/arXiv.2604.22750",
+    "CorpusId": 287774265
+   },
+   "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 48
+  },
+  {
+   "paperId": "af04d6df56972591c734b04d5554e1018944e0fb",
+   "externalIds": {
+    "ArXiv": "2604.21505",
+    "DOI": "10.1145/3832783.3834403",
+    "CorpusId": 287702126
+   },
+   "title": "Clarity Is Not Assumed: Understanding LLM-Based Code Generation under Ambiguous Requirements",
+   "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "fd3203af18c3fffb7ec8d08cf4ff6702dd608071",
+   "externalIds": {
+    "ArXiv": "2604.19086",
+    "DBLP": "journals/corr/abs-2604-19086",
+    "DOI": "10.48550/arXiv.2604.19086",
+    "CorpusId": 287636518
+   },
+   "title": "MUCOCO: Automated Consistency Testing of Code LLMs",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "9e9c948f583869061727e931f09b80a5c62e8f6b",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-17290",
+    "ArXiv": "2604.17290",
+    "DOI": "10.48550/arXiv.2604.17290",
+    "CorpusId": 287635349
+   },
+   "title": "Probabilistic Programs of Thought",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "f4abd21e1a2364cd5835e37283b484e8e0b64c74",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-16931",
+    "ArXiv": "2604.16931",
+    "DOI": "10.48550/arXiv.2604.16931",
+    "CorpusId": 287617849
+   },
+   "title": "Playing Psychic: Using Thought Trees to Predict Reasoning Models Accuracy on Coding Tasks",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "f6df9842dad828b610a568e01a4e464ce79f1865",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-16027",
+    "ArXiv": "2604.16027",
+    "DOI": "10.48550/arXiv.2604.16027",
+    "CorpusId": 287607829
+   },
+   "title": "Where does output diversity collapse in post-training?",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 20
+  },
+  {
+   "paperId": "c2ac4bada3174e3c5377fb984a4f12d65ffc94d1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-12379",
+    "ArXiv": "2604.12379",
+    "DOI": "10.48550/arXiv.2604.12379",
+    "CorpusId": 287435677
+   },
+   "title": "Beyond Output Correctness: Benchmarking and Evaluating Large Language Model Reasoning in Coding Tasks",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "d1b544ec8139a6af7bace60e003d11555c629bcc",
+   "externalIds": {
+    "DBLP": "conf/acl/HanKHKL26",
+    "ArXiv": "2604.11514",
+    "DOI": "10.48550/arXiv.2604.11514",
+    "CorpusId": 287432031
+   },
+   "title": "DuET: Dual Execution for Test Output Prediction with Generated Code and Pseudocode",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "aaaccc3f3ddabf448f90d32cc3e07561b0e7c232",
+   "externalIds": {
+    "ArXiv": "2604.12881",
+    "DBLP": "journals/corr/abs-2604-12881",
+    "DOI": "10.1145/3774748.3787747",
+    "CorpusId": 287470352
+   },
+   "title": "Evaluating LLMs Code Reasoning Under Real-World Context",
+   "venue": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "50830b01038cc512254184038fa5344eecaae544",
+   "externalIds": {
+    "DOI": "10.1145/3774748.3787667",
+    "CorpusId": 291877307
+   },
+   "title": "Comprehensive and Realistic Evaluation on the Code Reasoning Capability of LLMs",
+   "venue": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2365c7632af704c79bc489c2861cd2ff2da38702",
+   "externalIds": {
+    "DOI": "10.1145/3774748.3787617",
+    "CorpusId": 291877272
+   },
+   "title": "ArtifactSync: Automated Repository Synchronization through Hierarchical Change Impact Analysis",
+   "venue": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "5dc2d9d2be600942cb26293230899535ee35d70f",
+   "externalIds": {
+    "DBLP": "journals/pacmpl/WangZLZLHLD26",
+    "DOI": "10.1145/3798238",
+    "CorpusId": 287380325
+   },
+   "title": "InspectCoder: Dynamic Analysis-Driven Self Repair through Interactive LLM-Debugger Collaboration",
+   "venue": "Proc. ACM Program. Lang.",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "695c31b44f975b5621ceafbccb747853c1fee7fd",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2606-15673",
+    "ArXiv": "2606.15673",
+    "DOI": "10.48550/arXiv.2606.15673",
+    "CorpusId": 289300953
+   },
+   "title": "Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "0eb7a879355d8aef01f1357c2c145ce4fc0ff58d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-05560",
+    "ArXiv": "2604.05560",
+    "DOI": "10.48550/arXiv.2604.05560",
+    "CorpusId": 287208184
+   },
+   "title": "An Iterative Test-and-Repair Framework for Competitive Code Generation",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "2548cacb810629682598d64dd64455b38d4d480e",
+   "externalIds": {
+    "DBLP": "conf/icsa/AdamKTLYSA26",
+    "ArXiv": "2604.05755",
+    "DOI": "10.1109/ICSA-C68850.2026.00073",
+    "CorpusId": 287209639
+   },
+   "title": "CAKE: Cloud Architecture Knowledge Evaluation of Large Language Models",
+   "venue": "2026 IEEE 23rd International Conference on Software Architecture Companion (ICSA-C)",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "7b0ad8ec044774e7dde7019a789a02b9c398586f",
+   "externalIds": {
+    "ArXiv": "2604.03144",
+    "DBLP": "journals/corr/abs-2604-03144",
+    "DOI": "10.48550/arXiv.2604.03144",
+    "CorpusId": 287122046
+   },
+   "title": "InCoder-32B-Thinking: Industrial Code World Model for Thinking",
+   "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "a5a8e45bed4e7f1df8205fba40a3b6208b5779a2",
+   "externalIds": {
+    "ArXiv": "2603.29378",
+    "DOI": "10.1145/3832783.3834337",
+    "CorpusId": 286977441
+   },
+   "title": "LLM-Based Agents for Identifying Bug-Introducing Commits",
+   "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "c7c06d106dce720830a83f8e8a761d3452ef9f78",
+   "externalIds": {
+    "ArXiv": "2604.00280",
+    "CorpusId": 292859582
+   },
+   "title": "Spec-Harness: Assessing and Guiding LLM-Synthesized Formal Specifications Beyond Verifiability",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "3132c1af51e94ee11b26e9d4d80e0f3b78f04deb",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2603-19558",
+    "ArXiv": "2603.19558",
+    "DOI": "10.48550/arXiv.2603.19558",
+    "CorpusId": 286751130
+   },
+   "title": "TextReasoningBench: Does Reasoning Really Improve Text Classification in Large Language Models?",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "9dbb5a5b9534c6b6d31ace9467201105b883eea0",
+   "externalIds": {
+    "ArXiv": "2603.16733",
+    "CorpusId": 286583795
+   },
+   "title": "IQuest-Coder-V1 Technical Report",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "f089eee707ae82e1486159f1c5628ce07ace629b",
+   "externalIds": {
+    "ArXiv": "2603.16475",
+    "DBLP": "journals/corr/abs-2603-16475",
+    "DOI": "10.48550/arXiv.2603.16475",
+    "CorpusId": 286584291
+   },
+   "title": "Breaking the Chain: A Causal Analysis of LLM Faithfulness to Intermediate Structures",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "5f4c2b5785a0a469fc6ed2e0c4a1b4e541bc9cd8",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2603-14628",
+    "ArXiv": "2603.14628",
+    "DOI": "10.48550/arXiv.2603.14628",
+    "CorpusId": 286571992
+   },
+   "title": "s2n-bignum-bench: A practical benchmark for evaluating low-level code reasoning of LLMs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "2533baa46636ca12de825bd87cb301b5a7e1903d",
+   "externalIds": {
+    "ArXiv": "2603.11226",
+    "DBLP": "conf/acl/TangYCYLRB26",
+    "DOI": "10.48550/arXiv.2603.11226",
+    "CorpusId": 286489297
+   },
+   "title": "ExecVerify: White-Box RL with Verifiable Stepwise Rewards for Code Execution Reasoning",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "1b7cfde20de0d198943f06077d65ea4e646ae305",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-03253",
+    "ArXiv": "2604.03253",
+    "DOI": "10.48550/arXiv.2604.03253",
+    "CorpusId": 287200037
+   },
+   "title": "Self-Execution Simulation Improves Coding Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "ffd55676552cb44cc2d972ac20d2f387ac8fea4b",
+   "externalIds": {
+    "ArXiv": "2603.09951",
+    "DBLP": "journals/corr/abs-2603-09951",
+    "DOI": "10.48550/arXiv.2603.09951",
+    "CorpusId": 286429001
+   },
+   "title": "Towards a Neural Debugger for Python",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "f8d6c67a825d43790df36d8f93f728772e3d8420",
+   "externalIds": {
+    "ArXiv": "2603.23527",
+    "DBLP": "journals/corr/abs-2603-23527",
+    "DOI": "10.48550/arXiv.2603.23527",
+    "CorpusId": 286775961
+   },
+   "title": "Compression Method Matters: Benchmark-Dependent Output Dynamics in LLM Prompt Compression",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "630f18308e963f0c667a0bc7c698191ddf1f5e73",
+   "externalIds": {
+    "ArXiv": "2603.00729",
+    "DBLP": "journals/corr/abs-2603-00729",
+    "DOI": "10.48550/arXiv.2603.00729",
+    "CorpusId": 286224178
+   },
+   "title": "Qwen3-Coder-Next Technical Report",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 94
+  },
+  {
+   "paperId": "eb4427ec9fac968ee7028295742c34d08ced6ba3",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-16320",
+    "ArXiv": "2604.16320",
+    "DOI": "10.1145/3805760.3814919",
+    "CorpusId": 287618360
+   },
+   "title": "How Robustly Do LLMs Understand Execution Semantics?",
+   "venue": "AIware",
+   "year": 2026,
+   "citationCount": 3
+  },
+  {
+   "paperId": "8edf50874d45bd5bcd1b1eb65771c3a69220dc14",
+   "externalIds": {
+    "ArXiv": "2602.18806",
+    "DBLP": "journals/corr/abs-2602-18806",
+    "DOI": "10.48550/arXiv.2602.18806",
+    "CorpusId": 285972941
+   },
+   "title": "Think2: Grounded Metacognitive Reasoning in Large Language Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "0f282a624937fbc1925a07d76a4b599d54ec0a50",
+   "externalIds": {
+    "ArXiv": "2602.18928",
+    "DBLP": "journals/corr/abs-2602-18928",
+    "DOI": "10.48550/arXiv.2602.18928",
+    "CorpusId": 285973348
+   },
+   "title": "Narrowing the Complexity Gap in the Evaluation of Large Language Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "075a9a286e71bc847036bd689ad0b8f22772b72c",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-18905",
+    "ArXiv": "2602.18905",
+    "DOI": "10.48550/arXiv.2602.18905",
+    "CorpusId": 285973155
+   },
+   "title": "TRUE: A Trustworthy Unified Explanation Framework for Large Language Model Reasoning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "06569ed9484c518633ea4dd07a6db916b77aa791",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-16787",
+    "ArXiv": "2602.16787",
+    "DOI": "10.48550/arXiv.2602.16787",
+    "CorpusId": 285787827
+   },
+   "title": "Better Think Thrice: Learning to Reason Causally with Double Counterfactual Consistency",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "51e39783dc46eb2a0b7f4a390e909fb878ae5492",
+   "externalIds": {
+    "ArXiv": "2602.15449",
+    "DBLP": "journals/corr/abs-2602-15449",
+    "DOI": "10.48550/arXiv.2602.15449",
+    "CorpusId": 285659462
+   },
+   "title": "TAROT: Test-driven and Capability-adaptive Curriculum Reinforcement Fine-tuning for Code Generation with Large Language Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "c4d100f485ef94ec370188513730355de0877f22",
+   "externalIds": {
+    "ArXiv": "2602.14814",
+    "DBLP": "journals/corr/abs-2602-14814",
+    "DOI": "10.48550/arXiv.2602.14814",
+    "CorpusId": 285616800
+   },
+   "title": "Learning State-Tracking from Code Using Linear RNNs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "7aeb93f3ab39caf1f814f6c75822238609b29aa5",
+   "externalIds": {
+    "ArXiv": "2602.13962",
+    "DBLP": "conf/iwpc/WangZHZD26",
+    "DOI": "10.1145/3794763.3794815",
+    "CorpusId": 285615234
+   },
+   "title": "CodeGlance: Understanding Code Reasoning Challenges in LLMs through Multi-Dimensional Feature Analysis",
+   "venue": "IEEE International Conference on Program Comprehension",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "e4358766d8488d37553a4263575ff80b09968119",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-11674",
+    "ArXiv": "2602.11674",
+    "DOI": "10.48550/arXiv.2602.11674",
+    "CorpusId": 285540258
+   },
+   "title": "Benchmark Health Index: A Systematic Framework for Benchmarking the Benchmarks of LLMs",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "74afdc67bc16cb30a54bc3cee5d47578e4be9c8d",
+   "externalIds": {
+    "DBLP": "conf/iclr/XieCWHW26",
+    "ArXiv": "2602.11812",
+    "DOI": "10.48550/arXiv.2602.11812",
+    "CorpusId": 285540500
+   },
+   "title": "Predicting LLM Output Length via Entropy-Guided Representations",
+   "venue": "International Conference on Learning Representations",
+   "year": 2026,
+   "citationCount": 14
+  },
+  {
+   "paperId": "d769c9a9d6fbb010c7ccf95588e0bf337b1dd9f1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-08676",
+    "ArXiv": "2602.08676",
+    "DOI": "10.48550/arXiv.2602.08676",
+    "CorpusId": 285452162
+   },
+   "title": "LLaDA2.1: Speeding Up Text Diffusion via Token Editing",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 64
+  },
+  {
+   "paperId": "db12da7693233505379955145d21ce125b0d97a1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-07882",
+    "ArXiv": "2602.07882",
+    "DOI": "10.48550/arXiv.2602.07882",
+    "CorpusId": 285452781
+   },
+   "title": "Rethinking Code Complexity Through the Lens of Large Language Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "7e2de92742f8fe210114f3797ac9a11efe22e307",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-07672",
+    "ArXiv": "2602.07672",
+    "DOI": "10.48550/arXiv.2602.07672",
+    "CorpusId": 285451997
+   },
+   "title": "Debugging code world models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "c894cc8b2bb1e5b3b29b3b2dbded227e26c221ae",
+   "externalIds": {
+    "ArXiv": "2602.06221",
+    "DBLP": "conf/acl/BalepurROXDGMCR26",
+    "DOI": "10.48550/arXiv.2602.06221",
+    "CorpusId": 285401561
+   },
+   "title": "BenchMarker: An Education-Inspired Toolkit for Highlighting Flaws in Multiple-Choice Benchmarks",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 8
+  },
+  {
+   "paperId": "64ecf3193d962cb4b072a7866dc695d29795c5cc",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-04288",
+    "ArXiv": "2602.04288",
+    "DOI": "10.48550/arXiv.2602.04288",
+    "CorpusId": 285286212
+   },
+   "title": "Contextual Drag: How Errors in the Context Affect LLM Reasoning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "a00eb9e6df862f35675927ab4e5c14eee3078d07",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-04705",
+    "ArXiv": "2602.04705",
+    "DOI": "10.48550/arXiv.2602.04705",
+    "CorpusId": 285285905
+   },
+   "title": "ERNIE 5.0 Technical Report",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 17
+  },
+  {
+   "paperId": "5882fcfe225ce86142a8694e64bd8c3b318aac8c",
+   "externalIds": {
+    "ArXiv": "2603.00031",
+    "DBLP": "journals/corr/abs-2603-00031",
+    "DOI": "10.48550/arXiv.2603.00031",
+    "CorpusId": 286224278
+   },
+   "title": "GRIP: Geometric Refinement and Adaptive Information Potential for Data Efficiency",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "181bdd632a71a711b307c5b735cf08d73f4d7023",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-03772",
+    "ArXiv": "2602.03772",
+    "DOI": "10.48550/arXiv.2602.03772",
+    "CorpusId": 285275925
+   },
+   "title": "UniGeM: Unifying Data Mixing and Selection via Geometric Exploration and Mining",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2a69bfc9d7b3e1feba58670723706e8655b3be78",
+   "externalIds": {
+    "ArXiv": "2603.09978",
+    "DBLP": "journals/corr/abs-2603-09978",
+    "DOI": "10.48550/arXiv.2603.09978",
+    "CorpusId": 286457504
+   },
+   "title": "One Model, Many Skills: Parameter-Efficient Fine-Tuning for Multitask Code Analysis",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "f00f4b87ecac58c9827bc03a0ee374e36df702f5",
+   "externalIds": {
+    "ArXiv": "2602.01785",
+    "DOI": "10.1145/3832167",
+    "CorpusId": 285270079
+   },
+   "title": "Seeing Is Coding: On the Effectiveness of Vision Language Models in Code Understanding",
+   "venue": "Proceedings of the ACM on Software Engineering",
+   "year": 2026,
+   "citationCount": 17
+  },
+  {
+   "paperId": "fa35ca3519cfdf5ce0085f4aa8b379e06ef23148",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-22966",
+    "ArXiv": "2601.22966",
+    "DOI": "10.48550/arXiv.2601.22966",
+    "CorpusId": 285241485
+   },
+   "title": "A Unified View of Attention and Residual Sinks: Outlier-Driven Rescaling is Essential for Transformer Training",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 22
+  },
+  {
+   "paperId": "a0ae2954928fb7ca350aeb1cfe2e99a2f948e428",
+   "externalIds": {
+    "ArXiv": "2601.18987",
+    "DOI": "10.18653/2026.findings-emnlp.304",
+    "CorpusId": 288671725
+   },
+   "title": "LLMs versus the Halting Problem: Characterizing Program Termination Reasoning",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "695f8dd36b9fe8d19ea22460f9ff8f161449d159",
+   "externalIds": {
+    "ArXiv": "2601.17858",
+    "DBLP": "journals/corr/abs-2601-17858",
+    "DOI": "10.48550/arXiv.2601.17858",
+    "CorpusId": 285051398
+   },
+   "title": "MergeMix: Optimizing Mid-Training Data Mixtures via Learnable Model Merging",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 9
+  },
+  {
+   "paperId": "6bc5a725511f2ca0f14f27a15f2caaa6f82aa9cc",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-13218",
+    "ArXiv": "2602.13218",
+    "DOI": "10.48550/arXiv.2602.13218",
+    "CorpusId": 285615393
+   },
+   "title": "Scaling the Scaling Logic: Agentic Meta-Synthesis of Logic Reasoning",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "5986b075b635fa4d9101225714a65047ce0f6fab",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-15593",
+    "ArXiv": "2601.15593",
+    "DOI": "10.48550/arXiv.2601.15593",
+    "CorpusId": 284935620
+   },
+   "title": "Parallelism and Generation Order in Masked Diffusion Language Models: Limits Today, Potential Tomorrow",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 16
+  },
+  {
+   "paperId": "c253d4b1ae4f9257c514869831f3e487266cc11a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-12951",
+    "ArXiv": "2601.12951",
+    "DOI": "10.1145/3786154.3788586",
+    "CorpusId": 284912378
+   },
+   "title": "Beyond Accuracy: Characterizing Code Comprehension Capabilities in (Large) Language Models",
+   "venue": "Proceedings of the 7th IEEE/ACM International Workshop on Deep Learning for Testing and Testing for Deep Learning",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c16f3fee41025d454c8e3f5df403a3748803e0ee",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-13398",
+    "ArXiv": "2601.13398",
+    "DOI": "10.48550/arXiv.2601.13398",
+    "CorpusId": 284910853
+   },
+   "title": "Can LLMs Compress (and Decompress)? Evaluating Code Understanding and Execution via Invertibility",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "d41a3709b97046a2e0a4d364137b4c6782efe340",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-10274",
+    "ArXiv": "2601.10274",
+    "DOI": "10.1109/ISIT62367.2026.11653787",
+    "CorpusId": 284738302
+   },
+   "title": "Queueing-Aware Optimization of Reasoning Tokens for Accuracy-Latency Trade-offs in LLM Servers",
+   "venue": "International Symposium on Information Theory",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "9307cfcd57b07eb96e97cccfa291d5ef0e8da182",
+   "externalIds": {
+    "DBLP": "conf/msr/Al-KaswanSDDI26",
+    "ArXiv": "2601.10496",
+    "DOI": "10.1145/3793302.3793341",
+    "CorpusId": 284737930
+   },
+   "title": "Model See, Model Do? Exposure-Aware Evaluation of Bug-vs-Fix Preference in Code LLMs",
+   "venue": "IEEE Working Conference on Mining Software Repositories",
+   "year": 2026,
+   "citationCount": 4
+  },
+  {
+   "paperId": "c283116f911bb7457e595656a28d3b500744a495",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-07372",
+    "ArXiv": "2601.07372",
+    "DOI": "10.48550/arXiv.2601.07372",
+    "CorpusId": 284648257
+   },
+   "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 98
+  },
+  {
+   "paperId": "1b665b3c2b3eedfc760e1b4648e7f5d1b6af79ea",
+   "externalIds": {
+    "DBLP": "conf/acl/ZhengZLMGDCZ26",
+    "ArXiv": "2601.05930",
+    "DOI": "10.48550/arXiv.2601.05930",
+    "CorpusId": 284597066
+   },
+   "title": "Can We Predict Before Executing Machine Learning Agents?",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 17
+  },
+  {
+   "paperId": "2930d678a2c3769670798fd56b904d6af7c16452",
+   "externalIds": {
+    "ArXiv": "2601.03731",
+    "DBLP": "journals/corr/abs-2601-03731",
+    "DOI": "10.48550/arXiv.2601.03731",
+    "CorpusId": 284532617
+   },
+   "title": "From Laboratory to Real-World Applications: Benchmarking Agentic Code Reasoning at the Repository Level",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 8
+  },
+  {
+   "paperId": "b60f5f61c8c5bc37af08b341c50400c53e59e447",
+   "externalIds": {
+    "DOI": "10.1117/12.3096262",
+    "CorpusId": 284584681
+   },
+   "title": "Compression rate as reward for unsupervised policy optimization: eliciting reasoning in LLMs",
+   "venue": "International Conference on Optoelectronics, Computer Science and Algorithms",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "38bfb955426702f1bfc9888e52c9cd48b2f8757b",
+   "externalIds": {
+    "ArXiv": "2601.02780",
+    "DBLP": "journals/corr/abs-2601-02780",
+    "DOI": "10.48550/arXiv.2601.02780",
+    "CorpusId": 284513060
+   },
+   "title": "MiMo-V2-Flash Technical Report",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 179
+  },
+  {
+   "paperId": "9c3a139fba3ed1eae2d25e63a0271fca972654cc",
+   "externalIds": {
+    "ArXiv": "2512.22827",
+    "DBLP": "journals/corr/abs-2512-22827",
+    "DOI": "10.48550/arXiv.2512.22827",
+    "CorpusId": 284311866
+   },
+   "title": "FasterPy: An LLM-based Code Execution Efficiency Optimization Framework",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "737e7f1b1e64dc942c1ffdbb72e5e65a9eab6ce4",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2512-21326",
+    "ArXiv": "2512.21326",
+    "DOI": "10.48550/arXiv.2512.21326",
+    "CorpusId": 284153933
+   },
+   "title": "Measuring all the noises of LLM Evals",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "7483db60e737f8e0a2125d336515d57aa89c8bdd",
+   "externalIds": {
+    "ArXiv": "2512.17838",
+    "DBLP": "journals/corr/abs-2512-17838",
+    "DOI": "10.48550/arXiv.2512.17838",
+    "CorpusId": 284057712
+   },
+   "title": "ReX-MLE: The Autonomous Agent Benchmark for Medical Imaging Challenges",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "118f3968a66f9e3ec1d013d46a0b30beb1ace810",
+   "externalIds": {
+    "ArXiv": "2512.16676",
+    "DBLP": "journals/corr/abs-2512-16676",
+    "DOI": "10.48550/arXiv.2512.16676",
+    "CorpusId": 283933939
+   },
+   "title": "DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 24
+  },
+  {
+   "paperId": "60a998b87ab15620efeaddcb05a7568d4dea8d40",
+   "externalIds": {
+    "ArXiv": "2512.14917",
+    "DBLP": "journals/corr/abs-2512-14917",
+    "DOI": "10.48550/arXiv.2512.14917",
+    "CorpusId": 283920955
+   },
+   "title": "Evaluating Code Reasoning Abilities of Large Language Models Under Real-World Settings",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "ad3749ad9347822d0cc6eb3edab1d94922edd671",
+   "externalIds": {
+    "ArXiv": "2512.10713",
+    "DBLP": "journals/corr/abs-2512-10713",
+    "DOI": "10.1145/3786175.3788346",
+    "CorpusId": 283737023
+   },
+   "title": "PACIFIC: a framework for generating benchmarks to check Precise Automatically Checked Instruction Following In Code",
+   "venue": "Proceedings of the 1st International Workshop on AI for Software Quality Evaluation - Judgment, Metrics, Benchmarks, and Beyond",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "f5ad1d0d91c0df58637b0d7bc3b5ecd3ab915fa1",
+   "externalIds": {
+    "ArXiv": "2512.10398",
+    "DBLP": "journals/corr/abs-2512-10398",
+    "DOI": "10.48550/arXiv.2512.10398",
+    "CorpusId": 283909275
+   },
+   "title": "Confucius Code Agent: Scalable Agent Scaffolding for Real-World Codebases",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "6bb21f7ceb85ae29ed5b24a736694730abd5d82f",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2512-15745",
+    "ArXiv": "2512.15745",
+    "DOI": "10.48550/arXiv.2512.15745",
+    "CorpusId": 283933580
+   },
+   "title": "LLaDA2.0: Scaling Up Diffusion Language Models to 100B",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 180
+  },
+  {
+   "paperId": "4d7052571be823b6c8ee5258d90ba85935f3d4aa",
+   "externalIds": {
+    "DBLP": "conf/nips/HeQSS25",
+    "ArXiv": "2512.02914",
+    "DOI": "10.48550/arXiv.2512.02914",
+    "CorpusId": 283458176
+   },
+   "title": "Martingale Score: An Unsupervised Metric for Bayesian Rationality in LLM Reasoning",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "f1bf76cf44578df1487fb4eff2424c3754d0a547",
+   "externalIds": {
+    "ArXiv": "2511.23319",
+    "DBLP": "journals/corr/abs-2511-23319",
+    "DOI": "10.48550/arXiv.2511.23319",
+    "CorpusId": 283438743
+   },
+   "title": "Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "f6c396713a9aad0f29ec0567c5e6b3829811c2c2",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2512-00215",
+    "ArXiv": "2512.00215",
+    "DOI": "10.1145/3819239",
+    "CorpusId": 283449832
+   },
+   "title": "Demystifying Errors in LLM Reasoning Traces: An Empirical Study of Code Execution Simulation",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "daa684a2d1ec545a35236f1f251001471627b939",
+   "externalIds": {
+    "ArXiv": "2512.00127",
+    "CorpusId": 283448920
+   },
+   "title": "Generating Verifiable Chain of Thoughts from Exection-Traces",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "fbaa6293b6c40f7486093187414dc4de1e9f02c8",
+   "externalIds": {
+    "ArXiv": "2511.18288",
+    "DOI": "10.1145/3822511",
+    "CorpusId": 283244384
+   },
+   "title": "Can Large Language Models Reason About Complex Execution Paths? An Empirical Study on Python",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "adf9a7a5357ab1dbac49a8d011b9c7e32049d2aa",
+   "externalIds": {
+    "DBLP": "journals/tosem/FeischlK26",
+    "DOI": "10.1145/3777383",
+    "CorpusId": 283212974
+   },
+   "title": "Large Language Models for Code Translation: An In-Depth Analysis of Code Smells and Functional Correctness",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "50f5356b6f213638da1e226d6c6b0ba32d8767a3",
+   "externalIds": {
+    "DBLP": "conf/kbse/LinCZCTW25",
+    "DOI": "10.1109/ASE63991.2025.00076",
+    "CorpusId": 285111349
+   },
+   "title": "DLBench: A Comprehensive Benchmark for SQL Translation with Large Language Models",
+   "venue": "International Conference on Automated Software Engineering",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2ab568158307106d6e35dcc0f793dfc803fdca2e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2511-09373",
+    "ArXiv": "2511.09373",
+    "DOI": "10.48550/arXiv.2511.09373",
+    "CorpusId": 282939837
+   },
+   "title": "Routesplain: Towards Faithful and Intervenable Routing for Software-related Tasks",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "9b1d4bf1440ce984086902fe83215fc1eca588dd",
+   "externalIds": {
+    "ArXiv": "2511.07464",
+    "DBLP": "journals/corr/abs-2511-07464",
+    "DOI": "10.48550/arXiv.2511.07464",
+    "CorpusId": 282922197
+   },
+   "title": "Motif 2 12.7B technical report",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "54b1f28358e057fb3b3ea957b6ab96223ce2c9cf",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2511-02197",
+    "ArXiv": "2511.02197",
+    "DOI": "10.48550/arXiv.2511.02197",
+    "CorpusId": 282749319
+   },
+   "title": "Open the Oyster: Empirical Evaluation and Improvement of Code Reasoning Confidence in LLMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "6825c807ff38d3cfc9c3533ecad5ef6ad642dca2",
+   "externalIds": {
+    "ArXiv": "2511.00488",
+    "DBLP": "journals/corr/abs-2511-00488",
+    "DOI": "10.48550/arXiv.2511.00488",
+    "CorpusId": 282738796
+   },
+   "title": "\\texttt{ReMind}: Understanding Deductive Code Reasoning in LLMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "056f3c93b65d55a8d87a33f65305dd202cc8ca06",
+   "externalIds": {
+    "ArXiv": "2511.00279",
+    "DBLP": "journals/corr/abs-2511-00279",
+    "DOI": "10.48550/arXiv.2511.00279",
+    "CorpusId": 282740018
+   },
+   "title": "LongCat-Flash-Omni Technical Report",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 33
+  },
+  {
+   "paperId": "db20b23e9e551a8fd8e48598ac8899d516933fe3",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-26790",
+    "ArXiv": "2510.26790",
+    "DOI": "10.48550/arXiv.2510.26790",
+    "CorpusId": 282592011
+   },
+   "title": "Gistify! Codebase-Level Understanding via Runtime Execution",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "9e8fe57e148dcec6170ae1b6c6e9a4cc35913f52",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-26143",
+    "ArXiv": "2510.26143",
+    "DOI": "10.48550/arXiv.2510.26143",
+    "CorpusId": 282592310
+   },
+   "title": "Reasoning Curriculum: Bootstrapping Broad LLM Reasoning from Math",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "010dcf3082daf00d28b2a41f5408e489f20ca357",
+   "externalIds": {
+    "ArXiv": "2510.24397",
+    "DBLP": "journals/corr/abs-2510-24397",
+    "DOI": "10.48550/arXiv.2510.24397",
+    "CorpusId": 282400977
+   },
+   "title": "APTBench: Benchmarking Agentic Potential of Base LLMs During Pre-Training",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 11
+  },
+  {
+   "paperId": "5bee0cceb762c77219d59033cd0a486c5c56dce1",
+   "externalIds": {
+    "DBLP": "conf/nips/ChenLBLL25",
+    "ArXiv": "2510.23629",
+    "DOI": "10.48550/arXiv.2510.23629",
+    "CorpusId": 282400824
+   },
+   "title": "Chain of Execution Supervision Promotes General Reasoning in Large Language Models",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "5d247ee243cd95b336e57989bca3762fce1c046d",
+   "externalIds": {
+    "ArXiv": "2510.18327",
+    "DBLP": "journals/corr/abs-2510-18327",
+    "DOI": "10.48550/arXiv.2510.18327",
+    "CorpusId": 282246183
+   },
+   "title": "InspectCoder: Dynamic Analysis-Enabled Self Repair through interactive LLM-Debugger Collaboration",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 11
+  },
+  {
+   "paperId": "df0b858bfca3f8e8e4ad09a2ecbc485c45ca667e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-17163",
+    "ArXiv": "2510.17163",
+    "DOI": "10.48550/arXiv.2510.17163",
+    "CorpusId": 282210398
+   },
+   "title": "TREAT: A Code LLMs Trustworthiness / Reliability Evaluation and Testing Framework",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "0c8ff0f7d52677400954e617c96fea9f076a7fee",
+   "externalIds": {
+    "ArXiv": "2510.15494",
+    "CorpusId": 282203090
+   },
+   "title": "Do AI Models Dream of Faster Code? An Empirical Study on LLM-Proposed Performance Improvements in Real-World Software",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "637f356a949f8af5e953c677f8687a37f3689746",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-15079",
+    "ArXiv": "2510.15079",
+    "DOI": "10.1145/3744916.3773272",
+    "CorpusId": 282203253
+   },
+   "title": "Assessing Coherency and Consistency of Code Execution Reasoning by Large Language Models",
+   "venue": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+   "year": 2025,
+   "citationCount": 8
+  },
+  {
+   "paperId": "18b770a0ab161dd1193e0ff6dcee86446e27e21b",
+   "externalIds": {
+    "ArXiv": "2510.17868",
+    "CorpusId": 282246814
+   },
+   "title": "UniCode: Augmenting Evaluation for Code Reasoning",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "e96fb657b5036c446f177ade217f8711407ccf13",
+   "externalIds": {
+    "ArXiv": "2510.11457",
+    "DBLP": "journals/corr/abs-2510-11457",
+    "DOI": "10.48550/arXiv.2510.11457",
+    "CorpusId": 282056648
+   },
+   "title": "From to : Multidimensional Supervision of Reasoning Process for LLM Optimization",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "06b93766d88b1ce3c289298b6db9a999702efb0f",
+   "externalIds": {
+    "ArXiv": "2510.09721",
+    "DBLP": "journals/corr/abs-2510-09721",
+    "DOI": "10.48550/arXiv.2510.09721",
+    "CorpusId": 282057402
+   },
+   "title": "A Comprehensive Survey on Benchmarks and Solutions in Software Engineering of LLM-Empowered Agentic System",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 23
+  },
+  {
+   "paperId": "4a2eb9f55ea86393cf343b6d22b2add2490e6ffa",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-08720",
+    "ArXiv": "2510.08720",
+    "DOI": "10.48550/arXiv.2510.08720",
+    "CorpusId": 282055559
+   },
+   "title": "How Many Code and Test Cases Are Enough? Evaluating Test Cases Generation from a Binary-Matrix Perspective",
+   "venue": "International Conference on Learning Representations",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "8dacc381548d0909fa37c5196dc8a99ea45ffcac",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-08666",
+    "ArXiv": "2510.08666",
+    "DOI": "10.48550/arXiv.2510.08666",
+    "CorpusId": 282056061
+   },
+   "title": "dInfer: An Efficient Inference Framework for Diffusion Language Models",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 38
+  },
+  {
+   "paperId": "542c2948037ba8548dd336133ecb62137ebb8a4d",
+   "externalIds": {
+    "DOI": "10.1145/3759534.3762682",
+    "CorpusId": 281984907
+   },
+   "title": "Toward Bridging the Tool Gap: Equipping Large Language Models with Tools to Answer Programmers’ Questions",
+   "venue": "Proceedings of the 4th ACM SIGPLAN International Workshop on Programming Abstractions and Interactive Notations, Tools, and Environments",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "45321654247119b752985b19e25fcf3b7dfe6585",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-06410",
+    "ArXiv": "2510.06410",
+    "DOI": "10.48550/arXiv.2510.06410",
+    "CorpusId": 281892062
+   },
+   "title": "Off-Trajectory Reasoning: Can LLMs Collaborate on Reasoning Trajectory?",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 8
+  },
+  {
+   "paperId": "ad59a59e87bea970c7893f0d3095783b9fee2b3c",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2510-03178",
+    "ArXiv": "2510.03178",
+    "DOI": "10.48550/arXiv.2510.03178",
+    "CorpusId": 281829688
+   },
+   "title": "When Names Disappear: Revealing What LLMs Actually Understand About Code",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "f50e105bc7e373d60cce40456c22770289159efe",
+   "externalIds": {
+    "ArXiv": "2510.03415",
+    "CorpusId": 281843257
+   },
+   "title": "LLMs Lean on Priors, Not Programming Language Semantics",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 7
+  },
+  {
+   "paperId": "f93d90094c273bddd86adbead1eaf89ccf9ddd27",
+   "externalIds": {
+    "ArXiv": "2509.26546",
+    "DBLP": "journals/corr/abs-2509-26546",
+    "DOI": "10.1145/3819802.3820578",
+    "CorpusId": 281682037
+   },
+   "title": "Towards Verified Code Reasoning by LLMs",
+   "venue": "Proceedings of the 2026 ACM SIGPLAN International Workshop on Principles of Agentic Engineering",
+   "year": 2025,
+   "citationCount": 7
+  },
+  {
+   "paperId": "ffe85ca84d5f069ec54870cafd0f13cb6c4930ae",
+   "externalIds": {
+    "ArXiv": "2509.26553",
+    "DBLP": "journals/corr/abs-2509-26553",
+    "DOI": "10.48550/arXiv.2509.26553",
+    "CorpusId": 281681509
+   },
+   "title": "Towards Reliable Benchmarking: A Contamination Free, Controllable Evaluation Framework for Multi-step LLM Function Calling",
+   "venue": "International Conference on Learning Representations",
+   "year": 2025,
+   "citationCount": 16
+  },
+  {
+   "paperId": "c530198c6b45d0881476ab83999d656cd7156b63",
+   "externalIds": {
+    "ArXiv": "2509.25873",
+    "DBLP": "journals/corr/abs-2509-25873",
+    "DOI": "10.48550/arXiv.2509.25873",
+    "CorpusId": 281681165
+   },
+   "title": "Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "4294a39801a1365a7d97d0aca7adb75e83aea048",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2509-24239",
+    "ArXiv": "2509.24239",
+    "DOI": "10.48550/arXiv.2509.24239",
+    "CorpusId": 281674824
+   },
+   "title": "ChessArena: A Chess Testbed for Evaluating Strategic Reasoning Capabilities of Large Language Models",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "fa3ce3cb53cae5a2c989066b87bc4e58b5c0442f",
+   "externalIds": {
+    "ArXiv": "2509.24147",
+    "DBLP": "journals/corr/abs-2509-24147",
+    "DOI": "10.48550/arXiv.2509.24147",
+    "CorpusId": 281674254
+   },
+   "title": "Your thoughts tell who you are: Characterize the reasoning patterns of LRMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "47bcd99521b23e6a9749f64913edf6fa213347dc",
+   "externalIds": {
+    "ArXiv": "2509.24389",
+    "DBLP": "journals/corr/abs-2509-24389",
+    "DOI": "10.48550/arXiv.2509.24389",
+    "CorpusId": 281676141
+   },
+   "title": "LLaDA-MoE: A Sparse MoE Diffusion Language Model",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 62
+  },
+  {
+   "paperId": "29af45527c4f2793cf6db0c96d61510406eca115",
+   "externalIds": {
+    "ArXiv": "2509.23686",
+    "DBLP": "journals/corr/abs-2509-23686",
+    "DOI": "10.48550/arXiv.2509.23686",
+    "CorpusId": 281676192
+   },
+   "title": "TF-Bench: Evaluating Program Semantics Reasoning with Type Inference in System F",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "7e96ff5170e2fe497f55c1f0515e2c8aba981628",
+   "externalIds": {
+    "ArXiv": "2510.03259",
+    "CorpusId": 281843570
+   },
+   "title": "Verifying Meta-Awareness via Predictive Rewards in Reasoning Models",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "687e43361b1f86a3607e8e4a947d4c9d6c6e8da0",
+   "externalIds": {
+    "DBLP": "conf/emnlp/WangXHLL25",
+    "ArXiv": "2509.11686",
+    "DOI": "10.48550/arXiv.2509.11686",
+    "CorpusId": 281315163
+   },
+   "title": "Do Code Semantics Help? A Comprehensive Study on Execution Trace-Based Information for Code Large Language Models",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "4fa7eb4fc2df99e000ab973c9ab6459c82fb852c",
+   "externalIds": {
+    "DBLP": "conf/aaai/WuYLYDLZ26",
+    "ArXiv": "2509.06524",
+    "DOI": "10.48550/arXiv.2509.06524",
+    "CorpusId": 281203593
+   },
+   "title": "LAMDAS: LLM as an Implicit Classifier for Domain-specific Data Selection",
+   "venue": "AAAI Conference on Artificial Intelligence",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "4f4ea46df25835ab8a4cdd37802efbce82d256c2",
+   "externalIds": {
+    "ArXiv": "2509.05209",
+    "DBLP": "journals/corr/abs-2509-05209",
+    "DOI": "10.48550/arXiv.2509.05209",
+    "CorpusId": 281195007
+   },
+   "title": "Hunyuan-MT Technical Report",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "4f947224264117cc32b1c2cb3dc719ba7f6af3da",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2509-01322",
+    "ArXiv": "2509.01322",
+    "DOI": "10.48550/arXiv.2509.01322",
+    "CorpusId": 281079713
+   },
+   "title": "LongCat-Flash Technical Report",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 56
+  },
+  {
+   "paperId": "4b37680b828ea09aab51a3fa829d7ec166dcfb48",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2509-01142",
+    "ArXiv": "2509.01142",
+    "DOI": "10.48550/arXiv.2509.01142",
+    "CorpusId": 281080906
+   },
+   "title": "Dream-Coder 7B: An Open Diffusion Language Model for Code",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 91
+  },
+  {
+   "paperId": "1ea85ffff5bc84a288f30b95c2f2d44f2df5e633",
+   "externalIds": {
+    "ArXiv": "2508.21302",
+    "DBLP": "journals/corr/abs-2508-21302",
+    "DOI": "10.1145/3744916.3773102",
+    "CorpusId": 280984894
+   },
+   "title": "Locus: Agentic Predicate Synthesis for Directed Fuzzing",
+   "venue": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+   "year": 2025,
+   "citationCount": 20
+  },
+  {
+   "paperId": "a9649ce067c54e2cdfde7fedb609eb38085e62bb",
+   "externalIds": {
+    "ArXiv": "2508.20373",
+    "CorpusId": 280950405
+   },
+   "title": "NPG-Muse: Scaling Long Chain-of-Thought Reasoning with NP-Hard Graph Problems",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "c7b8d5f73f1b7a49e83e30c7215c247956cdae2f",
+   "externalIds": {
+    "ArXiv": "2508.15884",
+    "DBLP": "conf/nips/GuHXCYHC25",
+    "DOI": "10.48550/arXiv.2508.15884",
+    "CorpusId": 280708785
+   },
+   "title": "Jet-Nemotron: Efficient Language Model with Post Neural Architecture Search",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 40
+  },
+  {
+   "paperId": "12ba1d7be099cb0d72ba560c978ad05db4029ea8",
+   "externalIds": {
+    "ArXiv": "2508.09125",
+    "CorpusId": 280635294
+   },
+   "title": "LogicIF: Towards Complex Logic Instruction Following",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "6bf5b8c42d913ba65d0398871d66a223e79f428d",
+   "externalIds": {
+    "ArXiv": "2508.07785",
+    "DBLP": "journals/corr/abs-2508-07785",
+    "DOI": "10.48550/arXiv.2508.07785",
+    "CorpusId": 280566356
+   },
+   "title": "Grove MoE: Towards Efficient and Superior MoE LLMs with Adjugate Experts",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 8
+  },
+  {
+   "paperId": "c550e89d41d8c926607c54c9c40ba8a3f497b942",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2508-08446",
+    "ArXiv": "2508.08446",
+    "DOI": "10.48550/arXiv.2508.08446",
+    "CorpusId": 280635663
+   },
+   "title": "OverFill: Two-Stage Models for Efficient Language Model Decoding",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "84ad77e42cec3ee0983bec8f4428021b3229c62b",
+   "externalIds": {
+    "ArXiv": "2508.05193",
+    "DBLP": "journals/corr/abs-2508-05193",
+    "DOI": "10.48550/arXiv.2508.05193",
+    "CorpusId": 280545997
+   },
+   "title": "STEPWISE-CODEX-Bench: Evaluating Complex Multi-Function Comprehension and Fine-Grained Execution Reasoning",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "c1647173db395136f3c2be0d1dafcadca91a41ef",
+   "externalIds": {
+    "ArXiv": "2508.05242",
+    "DBLP": "journals/corr/abs-2508-05242",
+    "DOI": "10.48550/arXiv.2508.05242",
+    "CorpusId": 280546309
+   },
+   "title": "CodeBoost: Boosting Code LLMs by Squeezing Knowledge from Code Snippets with RL",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "0477104d1dafc56537b8dd0348f76db8d026f570",
+   "externalIds": {
+    "ArXiv": "2508.00410",
+    "DBLP": "conf/iclr/ZhangZGZZLFYH26",
+    "CorpusId": 280417531
+   },
+   "title": "Co-rewarding: Stable Self-supervised RL for Eliciting Reasoning in Large Language Models",
+   "venue": "International Conference on Learning Representations",
+   "year": 2025,
+   "citationCount": 20
+  },
+  {
+   "paperId": "afdb8720f6e7ba840dd5592b7218e2cc66c7fbbc",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2507-22462",
+    "ArXiv": "2507.22462",
+    "DOI": "10.48550/arXiv.2507.22462",
+    "CorpusId": 280391766
+   },
+   "title": "IFEvalCode: Controlled Code Generation",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "0307bd5ec17c146a0cb8f8592f3027196bdb3f44",
+   "externalIds": {
+    "ArXiv": "2507.20534",
+    "CorpusId": 280323540
+   },
+   "title": "Kimi K2: Open Agentic Intelligence",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 451
+  },
+  {
+   "paperId": "fe100060a35c19a6c538e0453cdf3662ec015199",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2507-17702",
+    "ArXiv": "2507.17702",
+    "DOI": "10.48550/arXiv.2507.17702",
+    "CorpusId": 280017468
+   },
+   "title": "Towards Greater Leverage: Scaling Laws for Efficient Mixture-of-Experts Language Models",
+   "venue": "International Conference on Learning Representations",
+   "year": 2025,
+   "citationCount": 47
+  },
+  {
+   "paperId": "ca31807d39af3f491940f62053bde0b976566fc6",
+   "externalIds": {
+    "ArXiv": "2507.17634",
+    "DBLP": "journals/corr/abs-2507-17634",
+    "DOI": "10.48550/arXiv.2507.17634",
+    "CorpusId": 280228484
+   },
+   "title": "WSM: Decay-Free Learning Rate Schedule via Checkpoint Merging for LLM Pre-training",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 23
+  },
+  {
+   "paperId": "7590f4ccd65aef8822cf1cbbcfbac90bd895e27b",
+   "externalIds": {
+    "ArXiv": "2507.17307",
+    "DBLP": "journals/corr/abs-2507-17307",
+    "DOI": "10.48550/arXiv.2507.17307",
+    "CorpusId": 280046238
+   },
+   "title": "R-Stitch: Dynamic Trajectory Stitching for Efficient Reasoning",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 12
+  },
+  {
+   "paperId": "ac8783bde002c71c4040888af1d5a1c70d5ed735",
+   "externalIds": {
+    "ArXiv": "2507.16518",
+    "DBLP": "conf/eccv/ChenHLWZCCZZYHXL26",
+    "DOI": "10.1007/978-3-032-37132-4_3",
+    "CorpusId": 280337368
+   },
+   "title": "SyncLoop: A Multimodal Dual-Loop Framework for Self-improving Mathematical Reasoning",
+   "venue": "European Conference on Computer Vision",
+   "year": 2025,
+   "citationCount": 7
+  },
+  {
+   "paperId": "a215528ffd47bf915f628525e423f97c8be8735f",
+   "externalIds": {
+    "DBLP": "conf/ijcai/LiM26",
+    "ArXiv": "2507.15378",
+    "DOI": "10.48550/arXiv.2507.15378",
+    "CorpusId": 280280812
+   },
+   "title": "AlgoSimBench: Identifying Algorithmically Similar Problems for Competitive Programming",
+   "venue": "IJCAI/ECAI",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "6370e50ac7db59aea2c4528ea9ad24df8c7be3b2",
+   "externalIds": {
+    "DBLP": "conf/emnlp/HabbaDLS25",
+    "ArXiv": "2507.14913",
+    "DOI": "10.48550/arXiv.2507.14913",
+    "CorpusId": 280279087
+   },
+   "title": "PromptSuite: A Task-Agnostic Framework for Multi-Prompt Generation",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "6db07ef930925c4d0392ff67080b98965f8f459b",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2507-14849",
+    "ArXiv": "2507.14849",
+    "DOI": "10.48550/arXiv.2507.14849",
+    "CorpusId": 280280032
+   },
+   "title": "Beyond Isolated Capabilities: Bridging Long CoT Reasoning and Long-Context Understanding",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "9cd27c2c71141771c721487cef71cffe0b8bde81",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2507-07498",
+    "ArXiv": "2507.07498",
+    "DOI": "10.48550/arXiv.2507.07498",
+    "CorpusId": 280233236
+   },
+   "title": "Teaching LLM to Reason: Reinforcement Learning from Algorithmic Problems without Code",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "1ee6b456908813ded9e7aa521528ff465d61d6f3",
+   "externalIds": {
+    "DBLP": "journals/ase/DakhamaELMP25",
+    "DOI": "10.1007/s10515-025-00531-7",
+    "CorpusId": 280147360
+   },
+   "title": "Enhancing search-based testing with LLMs for finding bugs in system simulators",
+   "venue": "International Conference on Automated Software Engineering",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "1a2c7dd2c04fdf2396dc47c3fb5ade903e82e219",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2507-04214",
+    "ArXiv": "2507.04214",
+    "DOI": "10.48550/arXiv.2507.04214",
+    "CorpusId": 280149762
+   },
+   "title": "Can Large Language Models Automate the Refinement of Cellular Network Specifications?",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "7bf11953bca5f45df5ba1d065a3f70fb858612de",
+   "externalIds": {
+    "DBLP": "journals/pacmse/LiWHX25",
+    "DOI": "10.1145/3728890",
+    "CorpusId": 279544972
+   },
+   "title": "Safe4U: Identifying Unsound Safe Encapsulations of Unsafe Calls in Rust using LLMs",
+   "venue": "Proc. ACM Softw. Eng.",
+   "year": 2025,
+   "citationCount": 7
+  },
+  {
+   "paperId": "7308e03d1e024cd028f6a0010cbf4708ecb1bd4a",
+   "externalIds": {
+    "ArXiv": "2506.17369",
+    "DBLP": "journals/corr/abs-2506-17369",
+    "DOI": "10.48550/arXiv.2506.17369",
+    "CorpusId": 279999645
+   },
+   "title": "Re-Evaluating Code LLM Benchmarks Under Semantic Mutation",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "3fc248638c83201702b1f8b31dd84ed2c95dad60",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2506-15455",
+    "ArXiv": "2506.15455",
+    "DOI": "10.48550/arXiv.2506.15455",
+    "CorpusId": 279118234
+   },
+   "title": "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+   "venue": "International Conference on Machine Learning",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "83ff50c729be0191aa766fe214bec3d852283fec",
+   "externalIds": {
+    "ArXiv": "2506.14755",
+    "DBLP": "conf/acl/ChengCFZ26",
+    "DOI": "10.48550/arXiv.2506.14755",
+    "CorpusId": 279410978
+   },
+   "title": "Optimizing Length Compression in Large Reasoning Models",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 33
+  },
+  {
+   "paperId": "2bdccbeffa0bae760f416a72ebe7a3951e230659",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2506-14965",
+    "ArXiv": "2506.14965",
+    "DOI": "10.48550/arXiv.2506.14965",
+    "CorpusId": 279447674
+   },
+   "title": "Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 81
+  },
+  {
+   "paperId": "dd2bdc20787bd96fee73983215b350b1625e7508",
+   "externalIds": {
+    "ArXiv": "2506.11480",
+    "DBLP": "conf/acl/LiYLXLZCFTP26",
+    "DOI": "10.18653/v1/2026.findings-acl.2009",
+    "CorpusId": 287777459
+   },
+   "title": "LearnAlign: Data Selection for LLM Reinforcement Learning with Improved Gradient Alignment",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "adf4e6e5d2f15c00079bec4e3c5273b3cc99c303",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2506-10481",
+    "ArXiv": "2506.10481",
+    "DOI": "10.48550/arXiv.2506.10481",
+    "CorpusId": 279318558
+   },
+   "title": "OIBench: Benchmarking Strong Reasoning Models with Olympiad in Informatics",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "1ad9d18a0ea4addea188e8f6b7b6c97834550c01",
+   "externalIds": {
+    "ArXiv": "2506.09003",
+    "DBLP": "journals/corr/abs-2506-09003",
+    "DOI": "10.48550/arXiv.2506.09003",
+    "CorpusId": 279261352
+   },
+   "title": "SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner",
+   "venue": "International Conference on Machine Learning",
+   "year": 2025,
+   "citationCount": 22
+  },
+  {
+   "paperId": "a8ceb439a55db621874f1953b91b5db3aa8c6c19",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2506-06251",
+    "ArXiv": "2506.06251",
+    "DOI": "10.48550/arXiv.2506.06251",
+    "CorpusId": 279244894
+   },
+   "title": "DesignBench: A Comprehensive Benchmark for MLLM-based Front-end Code Generation",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 72
+  },
+  {
+   "paperId": "d75d25f0752e65272c6c64870b9e27a4607b2586",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2506-11102",
+    "ArXiv": "2506.11102",
+    "DOI": "10.48550/arXiv.2506.11102",
+    "CorpusId": 279391674
+   },
+   "title": "Evolutionary Perspectives on the Evaluation of LLM-Based AI Agents: A Comprehensive Survey",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 19
+  },
+  {
+   "paperId": "348fd33b84dd2420a2aba5b06efddeaabf9dcf7a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2506-03535",
+    "ArXiv": "2506.03535",
+    "DOI": "10.48550/arXiv.2506.03535",
+    "CorpusId": 279154858
+   },
+   "title": "Across Programming Language Silos: A Study on Cross-Lingual Retrieval-augmented Code Generation",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "18432c7bcc8ac6eeadb9e2f4ab4490257af2aae5",
+   "externalIds": {
+    "ArXiv": "2506.03524",
+    "DBLP": "journals/corr/abs-2506-03524",
+    "DOI": "10.48550/arXiv.2506.03524",
+    "CorpusId": 279154785
+   },
+   "title": "Seed-Coder: Let the Code Model Curate Data for Itself",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 74
+  },
+  {
+   "paperId": "6fdc192ed7b3ca502c0d0f3deae8e2dbbe43f234",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-24442",
+    "ArXiv": "2505.24442",
+    "DOI": "10.48550/arXiv.2505.24442",
+    "CorpusId": 279070967
+   },
+   "title": "RMoA: Optimizing Mixture-of-Agents through Diversity Maximization and Residual Compensation",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "9da4220ee36ae94ca9a36c9b52b41b5028bb5f22",
+   "externalIds": {
+    "ArXiv": "2506.00204",
+    "DBLP": "journals/corr/abs-2506-00204",
+    "DOI": "10.48550/arXiv.2506.00204",
+    "CorpusId": 279075597
+   },
+   "title": "Structure-Aware Fill-in-the-Middle Pretraining for Code",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "6ba67b508d6c0d16c05dcb356497cdc6b45415f8",
+   "externalIds": {
+    "ArXiv": "2505.22135",
+    "DBLP": "journals/corr/abs-2505-22135",
+    "DOI": "10.48550/arXiv.2505.22135",
+    "CorpusId": 278960187
+   },
+   "title": "RAD: Redundancy-Aware Distillation for Hybrid Models via Self-Speculative Decoding",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "f483be63eba6d495ef498287c24aeb2a727784d8",
+   "externalIds": {
+    "DBLP": "conf/emnlp/LiorHLCS25",
+    "ArXiv": "2505.22169",
+    "DOI": "10.18653/v1/2025.findings-emnlp.594",
+    "CorpusId": 278960199
+   },
+   "title": "ReliableEval: A Recipe for Stochastic LLM Evaluation via Method of Moments",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 18
+  },
+  {
+   "paperId": "89e3017e1ffdf5f7cedd3b5bb08fcc0ab48200ba",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-19590",
+    "ArXiv": "2505.19590",
+    "DOI": "10.48550/arXiv.2505.19590",
+    "CorpusId": 278905339
+   },
+   "title": "Learning to Reason without External Rewards",
+   "venue": "International Conference on Learning Representations",
+   "year": 2025,
+   "citationCount": 236
+  },
+  {
+   "paperId": "3ea509f602062e8181dc0b0879fb6d9caf43605c",
+   "externalIds": {
+    "ArXiv": "2505.19271",
+    "DBLP": "journals/corr/abs-2505-19271",
+    "DOI": "10.48550/arXiv.2505.19271",
+    "CorpusId": 278904513
+   },
+   "title": "VerifyThisBench: Generating Code, Specifications, and Proofs All at Once",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "2d528a445d3b15dc350da4d5ae9c620840cbe0d6",
+   "externalIds": {
+    "DBLP": "conf/acl/WuZLEMAL26",
+    "ArXiv": "2505.18319",
+    "DOI": "10.48550/arXiv.2505.18319",
+    "CorpusId": 278904776
+   },
+   "title": "Seeing Beyond Words: MatVQA for Challenging Visual-Scientific Reasoning in Materials Science",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "d74bb35aeac36ee99b9b22444b8a03b9e183d973",
+   "externalIds": {
+    "DBLP": "conf/emnlp/JangJLOA25",
+    "ArXiv": "2505.17454",
+    "DOI": "10.48550/arXiv.2505.17454",
+    "CorpusId": 278886740
+   },
+   "title": "Self-Training Large Language Models with Confident Reasoning",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "ac45476906ecb83556f143c3f17f1dd53aa6ab91",
+   "externalIds": {
+    "ArXiv": "2505.17481",
+    "DBLP": "journals/corr/abs-2505-17481",
+    "DOI": "10.48550/arXiv.2505.17481",
+    "CorpusId": 278886426
+   },
+   "title": "MARCO: Meta-Reflection with Cross-Referencing for Code Reasoning",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "5becc8d0a5066c58d2785798519f2cddad7f4482",
+   "externalIds": {
+    "ArXiv": "2505.15034",
+    "DBLP": "conf/nips/ZhaGSHBK25",
+    "DOI": "10.48550/arXiv.2505.15034",
+    "CorpusId": 278782937
+   },
+   "title": "RL Tango: Reinforcing Generator and Verifier Together for Language Reasoning",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 48
+  },
+  {
+   "paperId": "e5f56092cbe315ef0177c3e24332f3d2a07fac18",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-15431",
+    "ArXiv": "2505.15431",
+    "DOI": "10.48550/arXiv.2505.15431",
+    "CorpusId": 278783111
+   },
+   "title": "Hunyuan-TurboS: Advancing Large Language Models through Mamba-Transformer Synergy and Adaptive Chain-of-Thought",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 29
+  },
+  {
+   "paperId": "57fc6d44578d072f997ceff69d7b0d003b91fded",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-15179",
+    "ArXiv": "2505.15179",
+    "DOI": "10.1145/3696630.3728535",
+    "CorpusId": 278782961
+   },
+   "title": "RAG or Fine-tuning? A Comparative Study on LCMs-based Code Completion in Industry",
+   "venue": "SIGSOFT FSE Companion",
+   "year": 2025,
+   "citationCount": 26
+  },
+  {
+   "paperId": "e25bebbe3b512c33f8f16659b2bccf10a8e5b15f",
+   "externalIds": {
+    "DBLP": "conf/acl/StorekGHSJ26",
+    "ArXiv": "2505.13353",
+    "DOI": "10.18653/v1/2026.acl-long.19",
+    "CorpusId": 278768966
+   },
+   "title": "Sense and Sensitivity: Examining the Influence of Semantic Recall on Long Context Code Understanding",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "4ce8ee4c376cca910c497519abc31de48f36194d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-11441",
+    "ArXiv": "2505.11441",
+    "DOI": "10.48550/arXiv.2505.11441",
+    "CorpusId": 278715594
+   },
+   "title": "Is Compression Really Linear with Code Intelligence?",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "a13f02204d1364d63f681cfb76afb078842b9378",
+   "externalIds": {
+    "ArXiv": "2505.10443",
+    "DBLP": "journals/corr/abs-2505-10443",
+    "DOI": "10.48550/arXiv.2505.10443",
+    "CorpusId": 278636174
+   },
+   "title": "Are Large Language Models Robust in Understanding Code Against Semantics-Preserving Mutations?",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 18
+  },
+  {
+   "paperId": "d2d84d56f730f81d276a02b48d5d44db5bde0b4a",
+   "externalIds": {
+    "ArXiv": "2505.09388",
+    "CorpusId": 278602855
+   },
+   "title": "Qwen3 Technical Report",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 9985
+  },
+  {
+   "paperId": "97e0a3548a6f0818262b4f86e4180f256e2f0128",
+   "externalIds": {
+    "ArXiv": "2505.07608",
+    "DBLP": "journals/corr/abs-2505-07608",
+    "DOI": "10.48550/arXiv.2505.07608",
+    "CorpusId": 278535411
+   },
+   "title": "MiMo: Unlocking the Reasoning Potential of Language Model - From Pretraining to Posttraining",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 123
+  },
+  {
+   "paperId": "09b2a0f0d7c1164ab334e13e70eb0d65b5b96393",
+   "externalIds": {
+    "DBLP": "conf/nips/ZhaoWWXYLWWZH25",
+    "ArXiv": "2505.03335",
+    "DOI": "10.48550/arXiv.2505.03335",
+    "CorpusId": 278339737
+   },
+   "title": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 413
+  },
+  {
+   "paperId": "ee82d07c4e8127d9b25e5c221e6bcc09a483b6d0",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-21751",
+    "ArXiv": "2504.21751",
+    "DOI": "10.48550/arXiv.2504.21751",
+    "CorpusId": 278207697
+   },
+   "title": "CodeFlowBench: A Multi-turn, Iterative Benchmark for Complex Code Generation",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 25
+  },
+  {
+   "paperId": "a679f26772560c6330276dfb0436ae3f818fc306",
+   "externalIds": {
+    "DBLP": "conf/llm4code/ShenDCGDC26",
+    "ArXiv": "2504.21205",
+    "DOI": "10.1145/3786181.3788703",
+    "CorpusId": 282758628
+   },
+   "title": "SecRepoBench: Benchmarking Code Agents for Secure Code Completion in Real-World Repositories",
+   "venue": "LLM4CODE@ICSE",
+   "year": 2025,
+   "citationCount": 20
+  },
+  {
+   "paperId": "e9f08e5bd3adf3f5d4edde36a6bc2e4843816dbc",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-21061",
+    "ArXiv": "2504.21061",
+    "DOI": "10.1145/3785411",
+    "CorpusId": 278207733
+   },
+   "title": "Seeking Specifications: The Case for Neuro-Symbolic Specification Synthesis",
+   "venue": "Formal Aspects Comput.",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "fec9e093490721edfb7be9a154dcc4adaf7b2688",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-20673",
+    "ArXiv": "2504.20673",
+    "DOI": "10.48550/arXiv.2504.20673",
+    "CorpusId": 278171511
+   },
+   "title": "CoCo-Bench: A Comprehensive Code Benchmark For Multi-task Large Language Model Evaluation",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "e7923d133bb3d426ae50ed32d4eb12627892c8a6",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-18838",
+    "ArXiv": "2504.18838",
+    "DOI": "10.48550/arXiv.2504.18838",
+    "CorpusId": 278165987
+   },
+   "title": "Toward Generalizable Evaluation in the LLM Era: A Survey Beyond Benchmarks",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 42
+  },
+  {
+   "paperId": "c9b8f9ed6cda7339341d34d0de9dc4b2a0e6c674",
+   "externalIds": {
+    "ArXiv": "2504.14119",
+    "DBLP": "conf/nips/LamWHL25",
+    "DOI": "10.52202/085713-4029",
+    "CorpusId": 282058573
+   },
+   "title": "CodeCrash: Exposing LLM Fragility to Misleading Natural Language in Code Reasoning",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 19
+  },
+  {
+   "paperId": "005956326ee3cbe11deff1fdb1068bd7a4feb2e0",
+   "externalIds": {
+    "DBLP": "conf/asiaccs/MachtleLSSSME26",
+    "ArXiv": "2504.13676",
+    "DOI": "10.1145/3779208.3785375",
+    "CorpusId": 277940413
+   },
+   "title": "Trace Gadgets: Minimizing Code Context for Machine Learning-Based Vulnerability Prediction",
+   "venue": "ACM Asia Conference on Computer and Communications Security",
+   "year": 2025,
+   "citationCount": 8
+  },
+  {
+   "paperId": "08ca9b6b1a903035c090155ce9414de99ca3279b",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-12365",
+    "ArXiv": "2504.12365",
+    "DOI": "10.48550/arXiv.2504.12365",
+    "CorpusId": 277857069
+   },
+   "title": "Themisto: Jupyter-Based Runtime Benchmark",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "9150eccda4ba7518d9a5ac670568cc207a5e0e88",
+   "externalIds": {
+    "ArXiv": "2504.07866",
+    "DBLP": "journals/corr/abs-2504-07866",
+    "DOI": "10.48550/arXiv.2504.07866",
+    "CorpusId": 277667268
+   },
+   "title": "Pangu Ultra: Pushing the Limits of Dense Large Language Models on Ascend NPUs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 18
+  },
+  {
+   "paperId": "76b9260b6998ae59f591f701d517b7f6a2e162cb",
+   "externalIds": {
+    "ArXiv": "2504.05518",
+    "DBLP": "journals/corr/abs-2504-05518",
+    "DOI": "10.48550/arXiv.2504.05518",
+    "CorpusId": 277628286
+   },
+   "title": "Evaluating the Generalization Capabilities of Large Language Models on Code Reasoning",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "3df69159464cd98cf36663af3be40fe9f449e67d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-05408",
+    "ArXiv": "2504.05408",
+    "DOI": "10.48550/arXiv.2504.05408",
+    "CorpusId": 277626675
+   },
+   "title": "Frontier AI's Impact on the Cybersecurity Landscape",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 37
+  },
+  {
+   "paperId": "80d9be5c1728aa0cc6e2e0c3a98fc7bc56837315",
+   "externalIds": {
+    "ArXiv": "2504.04372",
+    "DBLP": "conf/icst/HaroonKHGABKG26",
+    "DOI": "10.1109/ICST69053.2026.00045",
+    "CorpusId": 277622191
+   },
+   "title": "Assessing the Impact of Code Changes on the Fault Localizability of Large Language Models",
+   "venue": "International Conference on Information Control Systems & Technologies",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "0eb0484d19b8cbfeae73163fe9bff41089a985fa",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-04022",
+    "ArXiv": "2504.04022",
+    "DOI": "10.48550/arXiv.2504.04022",
+    "CorpusId": 277621380
+   },
+   "title": "Rethinking Reflection in Pre-Training",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 48
+  },
+  {
+   "paperId": "3216d21a4fcf2bf88a288a156af858fca3b66da9",
+   "externalIds": {
+    "ArXiv": "2504.01935",
+    "CorpusId": 294999379
+   },
+   "title": "Critical Thinking: Which Kinds of Complexity Govern Optimal Reasoning Length?",
+   "venue": "",
+   "year": 2025,
+   "citationCount": 11
+  },
+  {
+   "paperId": "89cff9492b2fea767eadffd297baafdb61b8ca2a",
+   "externalIds": {
+    "ArXiv": "2503.23145",
+    "DBLP": "journals/corr/abs-2503-23145",
+    "DOI": "10.48550/arXiv.2503.23145",
+    "CorpusId": 277452555
+   },
+   "title": "CodeARC: Benchmarking Reasoning Capabilities of LLM Agents for Inductive Program Synthesis",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 21
+  },
+  {
+   "paperId": "248cdfd7c0e46c1cf5532026579069dc6d8ea451",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-22388",
+    "ArXiv": "2503.22388",
+    "DOI": "10.48550/arXiv.2503.22388",
+    "CorpusId": 277435273
+   },
+   "title": "Why Stop at One Error? Benchmarking LLMs as Data Science Code Debuggers for Multi-Hop and Multi-Bug Errors",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "8f011c69a0eedfd2fa9a8eb0366be5795878b65a",
+   "externalIds": {
+    "ArXiv": "2503.22832",
+    "DBLP": "journals/corr/abs-2503-22832",
+    "DOI": "10.48550/arXiv.2503.22832",
+    "CorpusId": 277452415
+   },
+   "title": "L0-Reasoning Bench: Evaluating Procedural Correctness in Language Models via Simple Program Execution",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "3997d41786918a150e15af8f22a4dec57f538fe6",
+   "externalIds": {
+    "ArXiv": "2503.17793",
+    "DBLP": "journals/corr/abs-2503-17793",
+    "DOI": "10.48550/arXiv.2503.17793",
+    "CorpusId": 277272463
+   },
+   "title": "Every Sample Matters: Leveraging Mixture-of-Experts and High-Quality Data for Efficient and Accurate Code LLM",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "25e8f017d558da4ba658b221398e10d5f7904758",
+   "externalIds": {
+    "DBLP": "conf/lrec/PolitzM26",
+    "ArXiv": "2503.14167",
+    "DOI": "10.63317/2qropbkccqtp",
+    "CorpusId": 277103667
+   },
+   "title": "A Teacher-Student Approach to Creating Verified Synthetic Clarification and Correction Dialogues for TableQA Tasks",
+   "venue": "International Conference on Language Resources and Evaluation",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "6cfb2cd3762c9f1c21d2761187e2d3b9c73c8280",
+   "externalIds": {
+    "ArXiv": "2503.13733",
+    "DBLP": "conf/acl/OrelAN25",
+    "DOI": "10.48550/arXiv.2503.13733",
+    "CorpusId": 277104274
+   },
+   "title": "CoDet-M4: Detecting Machine-Generated Code in Multi-Lingual, Multi-Generator and Multi-Domain Settings",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 43
+  },
+  {
+   "paperId": "01e9c2cc016f27e8c9893445f25361865c8c808c",
+   "externalIds": {
+    "ArXiv": "2503.12029",
+    "DOI": "10.1145/3846189",
+    "CorpusId": 277065594
+   },
+   "title": "Enhancing LLM Performance Through Debate: An Empirical Study on Multi-Agent Debate for Coding Tasks",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2025,
+   "citationCount": 11
+  },
+  {
+   "paperId": "e1774446423a18d0731642aa49a5875f6aa425a3",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-10615",
+    "ArXiv": "2503.10615",
+    "DOI": "10.1109/ICCV51701.2025.00229",
+    "CorpusId": 276961560
+   },
+   "title": "R1-Onevision: Advancing Generalized Multimodal Reasoning Through Cross-Modal Formalization",
+   "venue": "IEEE International Conference on Computer Vision",
+   "year": 2025,
+   "citationCount": 438
+  },
+  {
+   "paperId": "7318374463349cfb1ab31627e5c04bf963449d11",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-10452",
+    "ArXiv": "2503.10452",
+    "DOI": "10.48550/arXiv.2503.10452",
+    "CorpusId": 276961728
+   },
+   "title": "DynaCode: A Dynamic Complexity-Aware Code Benchmark for Evaluating Large Language Models in Code Generation",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "fdc9bf4247bf749a72c6f29811bdbbe1fc1118f8",
+   "externalIds": {
+    "DBLP": "conf/acl/LiuPXHLDG25",
+    "ArXiv": "2503.07010",
+    "DOI": "10.48550/arXiv.2503.07010",
+    "CorpusId": 276903016
+   },
+   "title": "ProjectEval: A Benchmark for Programming Agents Automated Evaluation on Project-Level Code Generation",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 32
+  },
+  {
+   "paperId": "67bdacdab978bd90aec69dd0641dad42c1cdd951",
+   "externalIds": {
+    "ArXiv": "2503.06643",
+    "DBLP": "journals/corr/abs-2503-06643",
+    "DOI": "10.48550/arXiv.2503.06643",
+    "CorpusId": 276903519
+   },
+   "title": "Is Your Benchmark (Still) Useful? Dynamic Benchmarking for Code Language Models",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "d83ac1cf560cda623f271190866c9d55a06ff015",
+   "externalIds": {
+    "DBLP": "journals/tse/KoohestaniBKI26",
+    "ArXiv": "2503.05860",
+    "DOI": "10.1109/TSE.2025.3644183",
+    "CorpusId": 282401197
+   },
+   "title": "Benchmarking AI Models in Software Engineering: A Review, Search Tool, and Unified Approach for Elevating Benchmark Quality",
+   "venue": "IEEE Transactions on Software Engineering",
+   "year": 2025,
+   "citationCount": 7
+  },
+  {
+   "paperId": "075ed3f43edc114b1942ee8f98a0894a16fee3f5",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-05139",
+    "ArXiv": "2503.05139",
+    "DOI": "10.48550/arXiv.2503.05139",
+    "CorpusId": 276885331
+   },
+   "title": "Every FLOP Counts: Scaling a 300B Mixture-of-Experts LING LLM without Premium GPUs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 26
+  },
+  {
+   "paperId": "200e73203a85b7b16d9ec7ddf5adcec25d35c8b1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-04241",
+    "ArXiv": "2503.04241",
+    "DOI": "10.48550/arXiv.2503.04241",
+    "CorpusId": 276813618
+   },
+   "title": "ThrowBench: Benchmarking LLMs by Predicting Runtime Exceptions",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "16a096e663c5aa661f26bcabe212a53d86ef3eae",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-19411",
+    "ArXiv": "2502.19411",
+    "DOI": "10.48550/arXiv.2502.19411",
+    "CorpusId": 276617996
+   },
+   "title": "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 64
+  },
+  {
+   "paperId": "900cd128482bbab4d2752d01ce80c55498b78dd2",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-18449",
+    "ArXiv": "2502.18449",
+    "DOI": "10.48550/arXiv.2502.18449",
+    "CorpusId": 276580226
+   },
+   "title": "SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 329
+  },
+  {
+   "paperId": "76ff523ef5de22f6025263af47697e61a6109e88",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-18581",
+    "ArXiv": "2502.18581",
+    "DOI": "10.48550/arXiv.2502.18581",
+    "CorpusId": 276618155
+   },
+   "title": "Scalable Best-of-N Selection for Large Language Models via Self-Certainty",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 223
+  },
+  {
+   "paperId": "56c2d8a39ec396c54e0d42c9beab88f45e24886c",
+   "externalIds": {
+    "ArXiv": "2502.14382",
+    "DBLP": "conf/emnlp/LiCCLTKXGS25",
+    "DOI": "10.48550/arXiv.2502.14382",
+    "CorpusId": 276482470
+   },
+   "title": "S*: Test Time Scaling for Code Generation",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 133
+  },
+  {
+   "paperId": "a31f0356eb2ebf2f87320686b05033a6ca7c3172",
+   "externalIds": {
+    "DBLP": "conf/acl/MaWLLCZZDL25",
+    "ArXiv": "2502.12853",
+    "DOI": "10.48550/arXiv.2502.12853",
+    "CorpusId": 276421568
+   },
+   "title": "S2R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 29
+  },
+  {
+   "paperId": "c5d4389c02f2c88dd301c5f80053008cb8dec061",
+   "externalIds": {
+    "DBLP": "conf/emnlp/WeiCLCZWLTYWA25",
+    "ArXiv": "2502.12466",
+    "DOI": "10.18653/v1/2025.emnlp-main.1718",
+    "CorpusId": 281420611
+   },
+   "title": "EquiBench: Benchmarking Large Language Models' Reasoning about Program Semantics via Equivalence Checking",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 26
+  },
+  {
+   "paperId": "e033b6c4cd5198aa6e39b27480cc6da4e4ff9973",
+   "externalIds": {
+    "DBLP": "conf/emnlp/LyuHLSZ25",
+    "ArXiv": "2502.11167",
+    "DOI": "10.48550/arXiv.2502.11167",
+    "CorpusId": 276408263
+   },
+   "title": "SURGE: On the Potential of Large Language Models as General-Purpose Surrogate Code Executors",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "a10b60e331835af7064532fe84df6db7b742789b",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-08806",
+    "ArXiv": "2502.08806",
+    "DOI": "10.48550/arXiv.2502.08806",
+    "CorpusId": 276317524
+   },
+   "title": "CLOVER: A Test Case Generation Benchmark with Coverage, Long-Context, and Verification",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "77904afcad72c97335e9d95a585a2f73c744ce01",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-07316",
+    "ArXiv": "2502.07316",
+    "DOI": "10.48550/arXiv.2502.07316",
+    "CorpusId": 276258787
+   },
+   "title": "CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction",
+   "venue": "International Conference on Machine Learning",
+   "year": 2025,
+   "citationCount": 71
+  },
+  {
+   "paperId": "7cfaa37cc5fcf9a459835389e0663b70eda21b64",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-05703",
+    "ArXiv": "2503.05703",
+    "DOI": "10.48550/arXiv.2503.05703",
+    "CorpusId": 276903314
+   },
+   "title": "What I cannot execute, I do not understand: Training and Evaluating LLMs on Program Execution Traces",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 11
+  },
+  {
+   "paperId": "194c271c217d8754c84e3e578224518f80a75799",
+   "externalIds": {
+    "ArXiv": "2502.06193",
+    "DBLP": "journals/corr/abs-2502-06193",
+    "DOI": "10.1145/3728963",
+    "CorpusId": 276249976
+   },
+   "title": "Can LLMs Replace Human Evaluators? An Empirical Study of LLM-as-a-Judge in Software Engineering",
+   "venue": "Proc. ACM Softw. Eng.",
+   "year": 2025,
+   "citationCount": 173
+  },
+  {
+   "paperId": "8cdb7845b94fada3be213e2abcafa7da6625879f",
+   "externalIds": {
+    "ArXiv": "2502.02508",
+    "DBLP": "journals/corr/abs-2502-02508",
+    "DOI": "10.48550/arXiv.2502.02508",
+    "CorpusId": 276106822
+   },
+   "title": "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+   "venue": "International Conference on Machine Learning",
+   "year": 2025,
+   "citationCount": 60
+  },
+  {
+   "paperId": "bcfc727ad4656f817186c3a95fcc3712db3d02e3",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-01619",
+    "ArXiv": "2502.01619",
+    "DOI": "10.48550/arXiv.2502.01619",
+    "CorpusId": 276107137
+   },
+   "title": "Learning to Generate Unit Tests for Automated Debugging",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 28
+  },
+  {
+   "paperId": "755d79556085d841398de808d3c84e5c4f59eb4a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-00674",
+    "ArXiv": "2502.00674",
+    "DOI": "10.48550/arXiv.2502.00674",
+    "CorpusId": 276094624
+   },
+   "title": "Rethinking Mixture-of-Agents: Is Mixing Different Large Language Models Beneficial?",
+   "venue": "Trans. Mach. Learn. Res.",
+   "year": 2025,
+   "citationCount": 69
+  },
+  {
+   "paperId": "2f7e98c8c0d87fdaccd0a44f9920bbfc0bed2d19",
+   "externalIds": {
+    "DBLP": "conf/sigsoft/LiuJ25",
+    "ArXiv": "2501.18482",
+    "DOI": "10.1145/3696630.3728605",
+    "CorpusId": 275993690
+   },
+   "title": "A Tool for In-depth Analysis of Code Execution Reasoning of Large Language Models",
+   "venue": "SIGSOFT FSE Companion",
+   "year": 2025,
+   "citationCount": 12
+  },
+  {
+   "paperId": "bd29471a76f97501fe2161a0f0dfae523ed96306",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2501-16456",
+    "ArXiv": "2501.16456",
+    "DOI": "10.1109/LLM4Code66737.2025.00021",
+    "CorpusId": 275932251
+   },
+   "title": "CoCoNUT: Structural Code Understanding does not fall out of a tree",
+   "venue": "2025 IEEE/ACM International Workshop on Large Language Models for Code (LLM4Code)",
+   "year": 2025,
+   "citationCount": 16
+  },
+  {
+   "paperId": "827ed5940199dce35a6fb334aae1a100a29917f8",
+   "externalIds": {
+    "ArXiv": "2501.05414",
+    "DBLP": "journals/corr/abs-2501-05414",
+    "DOI": "10.48550/arXiv.2501.05414",
+    "CorpusId": 275405405
+   },
+   "title": "LongProc: Benchmarking Long-Context Language Models on Long Procedural Generation",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 35
+  },
+  {
+   "paperId": "9272b816db199322c837d61ace7874d6a7c5f7a5",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2501-06250",
+    "ArXiv": "2501.06250",
+    "DOI": "10.1109/ICCVW69036.2025.00400",
+    "CorpusId": 275470603
+   },
+   "title": "Generative AI for Cel-Animation: A Survey",
+   "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+   "year": 2025,
+   "citationCount": 30
+  },
+  {
+   "paperId": "44c47a0bf21d0b555e7aedc1cd8a9bbf3295d46d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2412-21199",
+    "ArXiv": "2412.21199",
+    "DOI": "10.48550/arXiv.2412.21199",
+    "CorpusId": 275134345
+   },
+   "title": "HumanEval Pro and MBPP Pro: Evaluating Large Language Models on Self-invoking Code Generation",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 56
+  },
+  {
+   "paperId": "f98e66439962390990eec532b8bf1315979068d8",
+   "externalIds": {
+    "DBLP": "conf/acl/Feng0SXY00LRZ025",
+    "ArXiv": "2412.17395",
+    "DOI": "10.48550/arXiv.2412.17395",
+    "CorpusId": 274981910
+   },
+   "title": "WarriorCoder: Learning from Expert Battles to Augment Code Large Language Models",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 3
+  },
+  {
+   "paperId": "ae2fa2af2da2c3e96e87af00887b4938e48be79c",
+   "externalIds": {
+    "DBLP": "conf/iclr/JiaoGZCJW25",
+    "ArXiv": "2411.16345",
+    "DOI": "10.48550/arXiv.2411.16345",
+    "CorpusId": 274233865
+   },
+   "title": "Preference Optimization for Reasoning with Pseudo Feedback",
+   "venue": "International Conference on Learning Representations",
+   "year": 2024,
+   "citationCount": 46
+  },
+  {
+   "paperId": "28b37751fb70e82be14b7b9672559efe758a0117",
+   "externalIds": {
+    "ArXiv": "2411.04905",
+    "DBLP": "conf/acl/HuangCLXHSXYLZC25",
+    "DOI": "10.48550/arXiv.2411.04905",
+    "CorpusId": 273877989
+   },
+   "title": "OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 154
+  },
+  {
+   "paperId": "5e9e9df949c2df828d1e8a106d31e99998211cd1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2411-03471",
+    "ArXiv": "2411.03471",
+    "DOI": "10.1145/3658617.3697625",
+    "CorpusId": 273850611
+   },
+   "title": "MetRex: A Benchmark for Verilog Code Metric Reasoning Using LLMs",
+   "venue": "Asia and South Pacific Design Automation Conference",
+   "year": 2024,
+   "citationCount": 17
+  },
+  {
+   "paperId": "2f1e2604d04d5e8f63542a8d22a077d408eb81fd",
+   "externalIds": {
+    "ArXiv": "2410.23402",
+    "DBLP": "journals/corr/abs-2410-23402",
+    "DOI": "10.48550/arXiv.2410.23402",
+    "CorpusId": 273707620
+   },
+   "title": "VISUALCODER: Guiding Large Language Models in Code Execution with Fine-grained Multimodal Chain-of-Thought Reasoning",
+   "venue": "North American Chapter of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 7
+  },
+  {
+   "paperId": "9c5ebd26d64188e5f07fa2538e4fca059e5e95ac",
+   "externalIds": {
+    "DBLP": "conf/kbse/Jiang0CS024",
+    "DOI": "10.1145/3691620.3695513",
+    "CorpusId": 273476365
+   },
+   "title": "Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation",
+   "venue": "International Conference on Automated Software Engineering",
+   "year": 2024,
+   "citationCount": 51
+  },
+  {
+   "paperId": "fe785f0e253a005d2dd434ada5f9207dd83c22c1",
+   "externalIds": {
+    "DBLP": "conf/kbse/Ding24",
+    "DOI": "10.1145/3691620.3695605",
+    "CorpusId": 273479691
+   },
+   "title": "Semantic-aware Source Code Modeling",
+   "venue": "International Conference on Automated Software Engineering",
+   "year": 2024,
+   "citationCount": 2
+  },
+  {
+   "paperId": "de21a8377c8a1f2626c7d882f576404a3b667fb4",
+   "externalIds": {
+    "ArXiv": "2410.16392",
+    "CorpusId": 273507468
+   },
+   "title": "Scaffolded Language Models with Language Supervision for Mixed-Autonomy: A Survey",
+   "venue": "",
+   "year": 2024,
+   "citationCount": 1
+  },
+  {
+   "paperId": "996cfd7cf8a57ddf13dde04154211d0f92284af6",
+   "externalIds": {
+    "ArXiv": "2410.15512",
+    "DBLP": "journals/corr/abs-2410-15512",
+    "DOI": "10.48550/arXiv.2410.15512",
+    "CorpusId": 273502372
+   },
+   "title": "Reverse Question Answering: Can an LLM Write a Question so Hard (or Bad) that it Can't Answer?",
+   "venue": "North American Chapter of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 19
+  },
+  {
+   "paperId": "ed89c6a4290aa0ca1952c019c4d63eb93b614556",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2411-00005",
+    "ArXiv": "2411.00005",
+    "DOI": "10.48550/arXiv.2411.00005",
+    "CorpusId": 273798700
+   },
+   "title": "Mastering the Craft of Data Synthesis for CodeLLMs",
+   "venue": "North American Chapter of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 4
+  },
+  {
+   "paperId": "2a785bf07f601375f54c68ed900560e6a08d202a",
+   "externalIds": {
+    "ArXiv": "2410.10998",
+    "DBLP": "journals/corr/abs-2410-10998",
+    "DOI": "10.48550/arXiv.2410.10998",
+    "CorpusId": 273350528
+   },
+   "title": "WILT: A Multi-Turn, Memorization-Robust Inductive Logic Benchmark for LLMs",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 12
+  },
+  {
+   "paperId": "8174b957ce26f53d60fe8566854f155389e05747",
+   "externalIds": {
+    "ArXiv": "2410.11096",
+    "CorpusId": 290957662
+   },
+   "title": "SeCodePLT: A Unified Platform for Evaluating the Security of Code GenAI",
+   "venue": "",
+   "year": 2024,
+   "citationCount": 4
+  },
+  {
+   "paperId": "8b2d5f7b02de43d5b5b8eae230a421b00dc5d9c5",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2410-07002",
+    "ArXiv": "2410.07002",
+    "DOI": "10.48550/arXiv.2410.07002",
+    "CorpusId": 273229133
+   },
+   "title": "CursorCore: Assist Programming through Aligning Anything",
+   "venue": "International Conference on Machine Learning",
+   "year": 2024,
+   "citationCount": 8
+  },
+  {
+   "paperId": "ef063ff2db936fb7c1b13d2fdd24f04343b6fc72",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2410-06577",
+    "ArXiv": "2410.06577",
+    "DOI": "10.48550/arXiv.2410.06577",
+    "CorpusId": 273228968
+   },
+   "title": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+   "venue": "International Conference on Learning Representations",
+   "year": 2024,
+   "citationCount": 6
+  },
+  {
+   "paperId": "854b2c0a2a3f72bd6a6a6224d474b4f0bb826b9d",
+   "externalIds": {
+    "DBLP": "conf/iclr/MaoXLJC0L25",
+    "ArXiv": "2410.04834",
+    "DOI": "10.48550/arXiv.2410.04834",
+    "CorpusId": 273186569
+   },
+   "title": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+   "venue": "International Conference on Learning Representations",
+   "year": 2024,
+   "citationCount": 6
+  },
+  {
+   "paperId": "69d0f037983aa3f3cc4af6d875eb1cd4c34e27c4",
+   "externalIds": {
+    "ArXiv": "2409.19381",
+    "CorpusId": 273501516
+   },
+   "title": "HYBRIDMIND: Meta Selection of Natural Language and Symbolic Language for Enhanced LLM Reasoning",
+   "venue": "",
+   "year": 2024,
+   "citationCount": 13
+  },
+  {
+   "paperId": "0f4095d36908b68299f251c7c1774479b9e0b84f",
+   "externalIds": {
+    "ArXiv": "2409.12866",
+    "DBLP": "journals/corr/abs-2409-12866",
+    "DOI": "10.48550/arXiv.2409.12866",
+    "CorpusId": 272753365
+   },
+   "title": "SpecEval: Evaluating Code Comprehension in Large Language Models via Program Specifications",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 16
+  },
+  {
+   "paperId": "11dd2fc88747d20629f5aafab72ba649d93e969c",
+   "externalIds": {
+    "ArXiv": "2409.12186",
+    "DBLP": "journals/corr/abs-2409-12186",
+    "CorpusId": 272707390
+   },
+   "title": "Qwen2.5-Coder Technical Report",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 1734
+  },
+  {
+   "paperId": "220bff7f521de8d37d95680a4d94343db5aae3e2",
+   "externalIds": {
+    "DBLP": "conf/issta/QiuHZ024",
+    "DOI": "10.1145/3650212.3680399",
+    "CorpusId": 272630137
+   },
+   "title": "Calico: Automated Knowledge Calibration and Diagnosis for Elevating AI Mastery in Code Tasks",
+   "venue": "International Symposium on Software Testing and Analysis",
+   "year": 2024,
+   "citationCount": 4
+  },
+  {
+   "paperId": "e78675452b3e8fb027ca8056444384e673a1756d",
+   "externalIds": {
+    "ArXiv": "2409.16299",
+    "DBLP": "journals/corr/abs-2409-16299",
+    "DOI": "10.48550/arXiv.2409.16299",
+    "CorpusId": 272881336
+   },
+   "title": "HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 72
+  },
+  {
+   "paperId": "230762f388c4b6f0e8af4554e2df5fd4248b522d",
+   "externalIds": {
+    "ArXiv": "2408.15237",
+    "DBLP": "journals/corr/abs-2408-15237",
+    "DOI": "10.48550/arXiv.2408.15237",
+    "CorpusId": 271963049
+   },
+   "title": "The Mamba in the Llama: Distilling and Accelerating Hybrid Models",
+   "venue": "Neural Information Processing Systems",
+   "year": 2024,
+   "citationCount": 155
+  },
+  {
+   "paperId": "88d48041a76ddc4318c360cdda0a4e1379eeefb3",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2408-13001",
+    "ArXiv": "2408.13001",
+    "DOI": "10.48550/arXiv.2408.13001",
+    "CorpusId": 271947074
+   },
+   "title": "CRUXEval-X: A Benchmark for Multilingual Code Reasoning, Understanding and Execution",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 49
+  },
+  {
+   "paperId": "de2e6506ea90b99686e9a311b3304fe135bf9162",
+   "externalIds": {
+    "DBLP": "conf/coling/ZhaoLT0YL025",
+    "ArXiv": "2408.10718",
+    "DOI": "10.48550/arXiv.2408.10718",
+    "CorpusId": 271909222
+   },
+   "title": "CodeJudge-Eval: Can Large Language Models be Good Judges in Code Understanding?",
+   "venue": "International Conference on Computational Linguistics",
+   "year": 2024,
+   "citationCount": 47
+  },
+  {
+   "paperId": "e7e70c5e8456807ae4d453a0bb2642e5f482241a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2408-11081",
+    "ArXiv": "2408.11081",
+    "DOI": "10.48550/arXiv.2408.11081",
+    "CorpusId": 271915766
+   },
+   "title": "What can Large Language Models Capture about Code Functional Equivalence?",
+   "venue": "North American Chapter of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 23
+  },
+  {
+   "paperId": "14ab5bc21f41755b317098c1e1beb1bd40bc110d",
+   "externalIds": {
+    "ArXiv": "2408.04430",
+    "DBLP": "journals/pacmse/MoumoulaKKB25",
+    "DOI": "10.1145/3715764",
+    "CorpusId": 271768940
+   },
+   "title": "The Struggles of LLMs in Cross-Lingual Code Clone Detection",
+   "venue": "Proc. ACM Softw. Eng.",
+   "year": 2024,
+   "citationCount": 13
+  },
+  {
+   "paperId": "1035dfceeebd3dd9ba52a8162eeda670a432c56e",
+   "externalIds": {
+    "ArXiv": "2408.02666",
+    "DBLP": "journals/corr/abs-2408-02666",
+    "DOI": "10.48550/arXiv.2408.02666",
+    "CorpusId": 271709606
+   },
+   "title": "Self-Taught Evaluators",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 76
+  },
+  {
+   "paperId": "cf1f64c42044706ff571159fff8ad92ccb10e6a6",
+   "externalIds": {
+    "ArXiv": "2407.06249",
+    "DBLP": "journals/corr/abs-2407-06249",
+    "DOI": "10.48550/arXiv.2407.06249",
+    "CorpusId": 271064726
+   },
+   "title": "CodeUpdateArena: Benchmarking Knowledge Editing on API Updates",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 27
+  },
+  {
+   "paperId": "713ac3840b70cd7862f35a31e80b906f8af021bd",
+   "externalIds": {
+    "ArXiv": "2406.14712",
+    "DBLP": "journals/corr/abs-2406-14712",
+    "DOI": "10.1109/QCE60285.2024.00137",
+    "CorpusId": 270688657
+   },
+   "title": "Qiskit HumanEval: An Evaluation Benchmark for Quantum Code Generative Models",
+   "venue": "International Conference on Quantum Computing and Engineering",
+   "year": 2024,
+   "citationCount": 52
+  },
+  {
+   "paperId": "b3e23f274f285080d9489de7c99cc39768872a49",
+   "externalIds": {
+    "DBLP": "conf/emnlp/HeWRC25",
+    "ArXiv": "2406.08665",
+    "DOI": "10.18653/v1/2025.findings-emnlp.847",
+    "CorpusId": 270440945
+   },
+   "title": "FuzzAug: Data Augmentation by Coverage-guided Fuzzing for Neural Test Generation",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2024,
+   "citationCount": 9
+  },
+  {
+   "paperId": "686551f622bb4a893c1923cd2600af0e93e4efc0",
+   "externalIds": {
+    "ArXiv": "2406.12902",
+    "DBLP": "conf/kbse/CaoCWC024",
+    "DOI": "10.1145/3691620.3695470",
+    "CorpusId": 270619532
+   },
+   "title": "JavaBench: A Benchmark of Object-Oriented Code Generation for Evaluating Large Language Models",
+   "venue": "International Conference on Automated Software Engineering",
+   "year": 2024,
+   "citationCount": 34
+  },
+  {
+   "paperId": "76be5d59c467f0f897593fe14bc95981a81d7297",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2406-04710",
+    "ArXiv": "2406.04710",
+    "DOI": "10.1145/3709354",
+    "CorpusId": 270357345
+   },
+   "title": "Morescient GAI for Software Engineering",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2024,
+   "citationCount": 8
+  },
+  {
+   "paperId": "da6e5730d5be2f0721adfb6a8ef5048708e034f5",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2406-04531",
+    "ArXiv": "2406.04531",
+    "DOI": "10.48550/arXiv.2406.04531",
+    "CorpusId": 270357873
+   },
+   "title": "TESTEVAL: Benchmarking Large Language Models for Test Case Generation",
+   "venue": "North American Chapter of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 82
+  },
+  {
+   "paperId": "27c073935a6b2727b4c3aaa7a263c70c10d61d2b",
+   "externalIds": {
+    "DBLP": "conf/nips/DingPMKYR24",
+    "ArXiv": "2406.01006",
+    "DOI": "10.48550/arXiv.2406.01006",
+    "CorpusId": 270213102
+   },
+   "title": "SemCoder: Training Code Language Models with Comprehensive Semantics",
+   "venue": "Neural Information Processing Systems",
+   "year": 2024,
+   "citationCount": 59
+  },
+  {
+   "paperId": "2e9db13d2f135ea4c3d85003aafc2e437b96322e",
+   "externalIds": {
+    "ArXiv": "2405.15282",
+    "DBLP": "journals/corr/abs-2405-15282",
+    "DOI": "10.48550/arXiv.2405.15282",
+    "CorpusId": 270045865
+   },
+   "title": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+   "venue": "Neural Information Processing Systems",
+   "year": 2024,
+   "citationCount": 11
+  },
+  {
+   "paperId": "9b73f37d89fa1484609909c335a50203fa094a0a",
+   "externalIds": {
+    "ArXiv": "2405.11966",
+    "DBLP": "journals/corr/abs-2405-11966",
+    "DOI": "10.48550/arXiv.2405.11966",
+    "CorpusId": 269921946
+   },
+   "title": "Multiple-Choice Questions are Efficient and Robust LLM Evaluators",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 46
+  },
+  {
+   "paperId": "323849c020407861bafa48fb8b6f3e208cd25111",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2405-11430",
+    "ArXiv": "2405.11430",
+    "DOI": "10.48550/arXiv.2405.11430",
+    "CorpusId": 269922079
+   },
+   "title": "MHPP: Exploring the Capabilities and Limitations of Language Models Beyond Basic Code Generation",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 35
+  },
+  {
+   "paperId": "d40dc2dc3c3d84a7fec4d4ebad06a04a8b4c5651",
+   "externalIds": {
+    "ArXiv": "2405.04324",
+    "DBLP": "journals/corr/abs-2405-04324",
+    "DOI": "10.48550/arXiv.2405.04324",
+    "CorpusId": 269614262
+   },
+   "title": "Granite Code Models: A Family of Open Foundation Models for Code Intelligence",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 172
+  },
+  {
+   "paperId": "f9fc7b5ebd5fe30257abb03ad87d8138eeeb28d9",
+   "externalIds": {
+    "ArXiv": "2404.07503",
+    "DBLP": "journals/corr/abs-2404-07503",
+    "DOI": "10.48550/arXiv.2404.07503",
+    "CorpusId": 269042851
+   },
+   "title": "Best Practices and Lessons Learned on Synthetic Data for Language Models",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 131
+  },
+  {
+   "paperId": "2bd9b519cb5e6bfe448ba079077f7c14822d5260",
+   "externalIds": {
+    "ArXiv": "2404.01903",
+    "DOI": "10.18653/v1/2025.blackboxnlp-1.22",
+    "CorpusId": 268857149
+   },
+   "title": "Understanding How CodeLLMs (Mis)Predict Types with Activation Steering",
+   "venue": "Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP",
+   "year": 2024,
+   "citationCount": 9
+  },
+  {
+   "paperId": "f11cbd0d24b0e3fb917fe14cfaf572e76402e5df",
+   "externalIds": {
+    "DBLP": "conf/icse/ChenP000025",
+    "ArXiv": "2403.16437",
+    "DOI": "10.1109/ICSE55347.2025.00012",
+    "CorpusId": 268680421
+   },
+   "title": "Reasoning Runtime Behavior of a Program with LLM: How Far are We?",
+   "venue": "International Conference on Software Engineering",
+   "year": 2024,
+   "citationCount": 107
+  },
+  {
+   "paperId": "afe0998d191f3ea8490c7df100a3ffc5dcc62c5e",
+   "externalIds": {
+    "ArXiv": "2403.07974",
+    "DBLP": "journals/corr/abs-2403-07974",
+    "DOI": "10.48550/arXiv.2403.07974",
+    "CorpusId": 268379413
+   },
+   "title": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+   "venue": "International Conference on Learning Representations",
+   "year": 2024,
+   "citationCount": 2584
+  },
+  {
+   "paperId": "90378bafdc503d9aa371c1c85a287567687c08d4",
+   "externalIds": {
+    "DBLP": "conf/acl/GuLJOLSS24",
+    "ArXiv": "2402.19475",
+    "DOI": "10.48550/arXiv.2402.19475",
+    "CorpusId": 268091229
+   },
+   "title": "The Counterfeit Conundrum: Can Code Language Models Grasp the Nuances of Their Incorrect Generations?",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 32
+  },
+  {
+   "paperId": "68f735cb422099416d4392899c74c678612d7727",
+   "externalIds": {
+    "ArXiv": "2402.09664",
+    "CorpusId": 268876822
+   },
+   "title": "CodeMind: Evaluating Large Language Models for Code Reasoning",
+   "venue": "",
+   "year": 2024,
+   "citationCount": 17
+  },
+  {
+   "paperId": "16daf858baef5ff2a698596bf26999a618fa521e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2401-12947",
+    "ArXiv": "2401.12947",
+    "DOI": "10.48550/arXiv.2401.12947",
+    "CorpusId": 267095335
+   },
+   "title": "Transformer-Based Models Are Not Yet Perfect At Learning to Emulate Structural Recursion",
+   "venue": "Trans. Mach. Learn. Res.",
+   "year": 2024,
+   "citationCount": 26
+  },
+  {
+   "paperId": "0652b0dc23650948569f8cfe8562524951ccdf27",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2309-15432",
+    "ArXiv": "2309.15432",
+    "DOI": "10.48550/arXiv.2309.15432",
+    "CorpusId": 263152119
+   },
+   "title": "ComPile: A Large IR Dataset from Production Sources",
+   "venue": "J. Data-centric Mach. Learn. Res.",
+   "year": 2023,
+   "citationCount": 18
+  },
+  {
+   "paperId": "26dd54387ba78f7ee5c5fedf8b3386809225c76a",
+   "externalIds": {
+    "DBLP": "conf/acl/ThakurSKSSKP26",
+    "DOI": "10.18653/v1/2026.acl-industry.53",
+    "CorpusId": 289815614
+   },
+   "title": "Think Like You Execute: Verifiable Chain of Thought from Program Traces",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "6ded8b48728737598723e2a110fae62e70579408",
+   "externalIds": {
+    "DBLP": "conf/acl/ChenCGGWS26",
+    "DOI": "10.18653/v1/2026.findings-acl.434",
+    "CorpusId": 289817621
+   },
+   "title": "CGBridge: Bridging Code Graphs and Large Language Models for Better Structure-Aware Code Understanding",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "72d00946d18a4aea1388dd30dbf0a1e98b14267c",
+   "externalIds": {
+    "DOI": "10.18653/2026.findings-emnlp.1484",
+    "CorpusId": 295199768
+   },
+   "title": "MegaCode: A Repository-Level Dataset for Long-Context Code Reasoning",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c3f82b2becd890739076ca8b26a59475750cc538",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-18987",
+    "DOI": "10.48550/arXiv.2601.18987",
+    "CorpusId": 285070950
+   },
+   "title": "LLMs versus the Halting Problem: Revisiting Program Termination Prediction",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 10
+  },
+  {
+   "paperId": "0a05976cea4b8e4a80e2efb4bbbdd09077fd3797",
+   "externalIds": {
+    "DBLP": "conf/icaart/KaleNN26",
+    "DOI": "10.5220/0014279800004052",
+    "CorpusId": 286540360
+   },
+   "title": "i-Check: An Idempotence-Driven Optimisation Framework for AI Agents in Enterprise Workflows",
+   "venue": "International Conference on Agents and Artificial Intelligence",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "149761426e95795f681cbb3241f4787ef7e98900",
+   "externalIds": {
+    "DBLP": "conf/eacl/JangKKLL26",
+    "DOI": "10.18653/v1/2026.findings-eacl.281",
+    "CorpusId": 286864323
+   },
+   "title": "IRPO: Implicit Policy Regularized Preference Optimization",
+   "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "d362ecccb7e0aa55952e401aa06858e6203c53cb",
+   "externalIds": {
+    "DOI": "10.18653/v1/2026.mme-main.4",
+    "CorpusId": 286855075
+   },
+   "title": "Vinclat: Evaluating Reasoning, Cognition and Culture in One Game",
+   "venue": "Proceedings of the First Workshop on Multilingual Multicultural Evaluation",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "8256c14e445207c9c32d892f2960e99f2c1f4f1b",
+   "externalIds": {
+    "DBLP": "conf/acl/WangZTZLGrLLLSW26",
+    "DOI": "10.18653/v1/2026.findings-acl.1143",
+    "CorpusId": 289784843
+   },
+   "title": "LiveCANNBench: Benchmark SWE AI Coding for Ascend CANN",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "d0644b9538931faf6e81a4f4b30c9cc1f144053e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-12466",
+    "DOI": "10.48550/arXiv.2502.12466",
+    "CorpusId": 276421528
+   },
+   "title": "EquiBench: Benchmarking Code Reasoning Capabilities of Large Language Models via Equivalence Checking",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 14
+  },
+  {
+   "paperId": "310d19ba6c51eb7f123822515ed4abd72a27b3a5",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2501-10711",
+    "DOI": "10.48550/arXiv.2501.10711",
+    "CorpusId": 276569789
+   },
+   "title": "How Should I Build A Benchmark? Revisiting Code-Related Benchmarks For LLMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 8
+  },
+  {
+   "paperId": "55132e171bd51ebb361686ccf2dab9b548fe9b25",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-05860",
+    "DOI": "10.48550/arXiv.2503.05860",
+    "CorpusId": 276903136
+   },
+   "title": "Benchmarking AI Models in Software Engineering: A Review, Search Tool, and Enhancement Protocol",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "a0db1b60a520bdb5af75b85a2d76abbdacc4c3a6",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-14119",
+    "DOI": "10.48550/arXiv.2504.14119",
+    "CorpusId": 277955872
+   },
+   "title": "CODECRASH: Stress Testing LLM Reasoning under Structural and Semantic Perturbations",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 19
+  },
+  {
+   "paperId": "664eaa2696b168a06575b832b7a3ca75012d174c",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2504-21205",
+    "DOI": "10.48550/arXiv.2504.21205",
+    "CorpusId": 278208089
+   },
+   "title": "SecRepoBench: Benchmarking LLMs for Secure Code Generation in Real-World Repositories",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 26
+  },
+  {
+   "paperId": "fff864f0ccd5ef024cb90151a210b84a3e06882c",
+   "externalIds": {
+    "DBLP": "conf/nips/NieWYJTDGLGS25",
+    "DOI": "10.52202/085713-0447",
+    "CorpusId": 273350742
+   },
+   "title": "SECODEPLT: A Unified Benchmark for Evaluating the Security Risks and Capabilities of Code GenAI",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 39
+  },
+  {
+   "paperId": "435fc162f0dbdd0768aefc68781c31cbe4e06f82",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2508-00410",
+    "DOI": "10.48550/arXiv.2508.00410",
+    "CorpusId": 282523847
+   },
+   "title": "Co-Reward: Self-supervised Reinforcement Learning for Large Language Model Reasoning via Contrastive Agreement",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 18
+  },
+  {
+   "paperId": "ba5e7070aae19e6902480200a771775675153029",
+   "externalIds": {
+    "DBLP": "conf/emnlp/ZhangYJLYFHX25",
+    "DOI": "10.18653/v1/2025.findings-emnlp.724",
+    "CorpusId": 282900323
+   },
+   "title": "From Remembering to Metacognition: Do Existing Benchmarks Accurately Evaluate LLMs?",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 5
+  },
+  {
+   "paperId": "61944cbf7be281eb4e5626d07c16bf59a7173b7a",
+   "externalIds": {
+    "DBLP": "conf/emnlp/RuanGXZ25",
+    "DOI": "10.18653/v1/2025.findings-emnlp.592",
+    "CorpusId": 282894295
+   },
+   "title": "Breaking the Attention Trap in Code LLMs: A Rejection Sampling Approach to Enhance Code Execution Prediction",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "f70315aadde9878537570eb9983c08a429af26a2",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-13353",
+    "DOI": "10.48550/arXiv.2505.13353",
+    "CorpusId": 287635818
+   },
+   "title": "Sense and Sensitivity: Examining the Influence of Semantic Recall on Long Context Code Reasoning",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "29b3049d664d5cc5c52e77188239623d731f0b1c",
+   "externalIds": {
+    "DBLP": "conf/nips/QiNAZLDXKZ25",
+    "DOI": "10.52202/085713-2778",
+    "CorpusId": 290092896
+   },
+   "title": "EvoLM: In Search of Lost Training Dynamics for Language Model Reasoning",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "9aa2b5470874ca27f41354ab86c61871ff39a5ba",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2508-20373",
+    "DOI": "10.48550/arXiv.2508.20373",
+    "CorpusId": 291744390
+   },
+   "title": "Graph-R1: Unleashing LLM Reasoning with NP-Hard Graph Problems",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "7573f96ec5b89318873f57728c3d534b5f316538",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2509-00961",
+    "DOI": "10.48550/arXiv.2509.00961",
+    "CorpusId": 292227191
+   },
+   "title": "Ultra Strong Machine Learning: Teaching Humans Active Learning Strategies via Automated AI Explanations",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 0
+  },
+  {
+   "paperId": "f75673eefe0217464a1d30f6d373e696e26ae055",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2402-09664",
+    "DOI": "10.48550/arXiv.2402.09664",
+    "CorpusId": 267682042
+   },
+   "title": "CodeMind: A Framework to Challenge Large Language Models for Code Reasoning",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 77
+  },
+  {
+   "paperId": "c059abbeedebf497cf43d4b7d3c82670def53aef",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2410-01999",
+    "DOI": "10.48550/arXiv.2410.01999",
+    "CorpusId": 273098372
+   },
+   "title": "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding Capabilities of CodeLLMs",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 15
+  },
+  {
+   "paperId": "01c097c002813f87d0720479beea7324e3b623a7",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2410-11096",
+    "DOI": "10.48550/arXiv.2410.11096",
+    "CorpusId": 285142140
+   },
+   "title": "SecCodePLT: A Unified Platform for Evaluating the Security of Code GenAI",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 25
+  },
+  {
+   "paperId": "2860bfaa9fa1d249c24aaf0981ad61bdbcd9c544",
+   "externalIds": {
+    "DBLP": "conf/icml/JainSZHSS24",
+    "CorpusId": 272330410
+   },
+   "title": "R2E: Turning any Github Repository into a Programming Agent Environment",
+   "venue": "International Conference on Machine Learning",
+   "year": 2024,
+   "citationCount": 71
+  },
+  {
+   "paperId": "601dabf9f34a3eb8d0da1c54cfe1bc204fc0cb25",
+   "externalIds": {
+    "CorpusId": 280980198
+   },
+   "title": "Assessing Code Reasoning in Large Language Models: A Literature Review of Benchmarks and Future Directions",
+   "venue": "",
+   "year": null,
+   "citationCount": 2
+  },
+  {
+   "paperId": "573394e8e9d0a4ec1006ed0c1758bcd854b61df1",
+   "externalIds": {
+    "CorpusId": 285610741
+   },
+   "title": "G ROUNDING CODE UNDERSTANDING IN STEP - BY - STEP EXECUTION",
+   "venue": "",
+   "year": null,
+   "citationCount": 3
+  },
+  {
+   "paperId": "e3af189157c0c0fe12a77043c09539caf996cde5",
+   "externalIds": {
+    "CorpusId": 289629507
+   },
+   "title": "Can Large Language Models Reason About Code?",
+   "venue": "",
+   "year": null,
+   "citationCount": 4
+  },
+  {
+   "paperId": "b4f285548c5bd47dda1519af00620bab7a99d738",
+   "externalIds": {
+    "CorpusId": 278390552
+   },
+   "title": "SWE-bench-secret: Automating AI Agent Evaluation for Software Engineering Tasks",
+   "venue": "",
+   "year": null,
+   "citationCount": 1
+  },
+  {
+   "paperId": "365a420bced7db421a973827abff2a20af0e2b4c",
+   "externalIds": {
+    "CorpusId": 278768991
+   },
+   "title": "EquiBench: Benchmarking Large Language Models’ Understanding of Program Semantics via Equivalence Checking",
+   "venue": "",
+   "year": null,
+   "citationCount": 13
+  },
+  {
+   "paperId": "082f6bbb54c2d76dfc66cefbdbf055e5fb25597e",
+   "externalIds": {
+    "CorpusId": 282056690
+   },
+   "title": "SoK: Frontier AI’s Impact on the Cybersecurity Landscape",
+   "venue": "",
+   "year": null,
+   "citationCount": 1
+  },
+  {
+   "paperId": "20c767f061df7eb68b1ce5a7e677328b5a5343e8",
+   "externalIds": {
+    "CorpusId": 282721356
+   },
+   "title": "LLMs for Malware Offense and Defense",
+   "venue": "",
+   "year": null,
+   "citationCount": 6
+  },
+  {
+   "paperId": "eab31477ad47429cb8ad5aeadffdc4029a52bb35",
+   "externalIds": {
+    "CorpusId": 282825307
+   },
+   "title": "Environment Free Coding Benchmarks: Evaluating Language Model Coding Capabilities without a Dedicated Environment",
+   "venue": "",
+   "year": null,
+   "citationCount": 0
+  },
+  {
+   "paperId": "0ceeb784caf95d54dc6b77b4d2f5575a1ef9f46c",
+   "externalIds": {
+    "CorpusId": 283737640
+   },
+   "title": "Confucius Code Agent: An Open-sourced AI Software Engineer at Industrial Scale",
+   "venue": "",
+   "year": null,
+   "citationCount": 1
+  },
+  {
+   "paperId": "80cc7d02d1d28a622c0cd69be82766fa26aff0e9",
+   "externalIds": {
+    "CorpusId": 287986144
+   },
+   "title": ". BenchMarker: An Education-Inspired",
+   "venue": "",
+   "year": null,
+   "citationCount": 0
+  },
+  {
+   "paperId": "b0a19601dc36fb86031095a0215434c387d7a580",
+   "externalIds": {
+    "CorpusId": 289979262
+   },
+   "title": "L pCoder ∞ : Scaling Code Intelligence via Looped Language Models",
+   "venue": "",
+   "year": null,
+   "citationCount": 0
+  },
+  {
+   "paperId": "bbe3c414f5f9b61dc95a350cdc6d50b1a3177277",
+   "externalIds": {
+    "CorpusId": 290183844
+   },
+   "title": "C OUNTING AS A MINIMAL PROBE OF LANGUAGE MODEL RELIABILITY",
+   "venue": "",
+   "year": null,
+   "citationCount": 0
+  },
+  {
+   "paperId": "d2a56f4025b4e789594bd66a7947f09335c9e931",
+   "externalIds": {
+    "CorpusId": 291870692
+   },
+   "title": "CausalVerify: An Execution-Grounded Benchmark for LLM Causal Inference Workflows",
+   "venue": "",
+   "year": null,
+   "citationCount": 1
+  },
+  {
+   "paperId": "ea7c7969f8da32bdc319f696aaf42bd561e72d9a",
+   "externalIds": {
+    "CorpusId": 287021954
+   },
+   "title": "Spec-Harness: Measuring and Improving Behavioral Adequacy of LLM-Synthesized Formal Specifications",
+   "venue": "",
+   "year": null,
+   "citationCount": 3
+  }
+ ],
+ "CodeComprehensor": [],
+ "SE-Sec survey": [],
+ "RepoQA": [
+  {
+   "paperId": "008876c2fdc37b7c912ee5e2eec8c59fcaf482ec",
+   "externalIds": {
+    "ArXiv": "2609.33382",
+    "CorpusId": 292436827
+   },
+   "title": "WideSWE: Can Coding Agents Coordinate Changes Across Repositories?",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "61276306f33732c7cef0a372f4d77f16b0284217",
+   "externalIds": {
+    "ArXiv": "2609.28449",
+    "CorpusId": 292267370
+   },
+   "title": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "5dac6b81f164e2a4e49d6217c928479b89e3c551",
+   "externalIds": {
+    "ArXiv": "2609.09242",
+    "DOI": "10.18653/2026.findings-emnlp.916",
+    "CorpusId": 291872038
+   },
+   "title": "Talking to Itself While Coding: What Makes Comments Help Code Generation?",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 1
+  },
+  {
+   "paperId": "fca4f64d2721d15004f8e9081a7b5dbb5e38620d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-26031",
+    "ArXiv": "2608.26031",
+    "DOI": "10.48550/arXiv.2608.26031",
+    "CorpusId": 291371470
+   },
+   "title": "Vulnerable Code Search: Transferable Attack for Code Language Models",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "2e0e35d19ce4f87a71134dfc144d26dff1deb67e",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-04783",
+    "ArXiv": "2608.04783",
+    "DOI": "10.1145/3832783.3837452",
+    "CorpusId": 290844503
+   },
+   "title": "RepoProbe: Benchmarking Architecture-Aware Repository Comprehension with Checklists",
+   "venue": "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "ec8ceb3e96c39652311e4a2f6a631305c29e1094",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2608-05141",
+    "ArXiv": "2608.05141",
+    "DOI": "10.48550/arXiv.2608.05141",
+    "CorpusId": 290844426
+   },
+   "title": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "fb3a4c81fba17b1515f6e4ee0d951ed8f153f155",
+   "externalIds": {
+    "DOI": "10.1145/3820002.3828584",
+    "CorpusId": 292268491
+   },
+   "title": "Measuring Reproducibility in LLM Research: A Rubric and Cross-Topic Corpus Study",
+   "venue": "Proceedings of the 4th ACM Conference on Reproducibility and Replicability",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "d421c174353a5a58ee2c904f15f5fd7f97f8f215",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-11111",
+    "ArXiv": "2607.11111",
+    "DOI": "10.48550/arXiv.2607.11111",
+    "CorpusId": 290142834
+   },
+   "title": "Know Before Fix: QA-Driven Repository Knowledge Acquisition for Software Issue Resolution",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "13ffef02f528ac68d1f17a83ff571c171c2fc2a9",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-08284",
+    "ArXiv": "2607.08284",
+    "DOI": "10.48550/arXiv.2607.08284",
+    "CorpusId": 290009830
+   },
+   "title": "Understanding Axes of Difficulty For Long Context Tasks Via PredicateLongBench",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "af20dcd31d2c5f076a683e0e9eeef0c6a14e007a",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2607-25996",
+    "ArXiv": "2607.25996",
+    "DOI": "10.1145/3808131",
+    "CorpusId": 289816448
+   },
+   "title": "RepoReasoner: Evaluating Repository-Level Code Reasoning Ability of Long-Context Language Models",
+   "venue": "Proc. ACM Softw. Eng.",
+   "year": 2026,
+   "citationCount": 7
+  },
+  {
+   "paperId": "bc5a82021983fe988261385d054b33d5228a053b",
+   "externalIds": {
+    "DOI": "10.1145/3821433",
+    "CorpusId": 289662364
+   },
+   "title": "Streamlining Repository Tasks with Effective Snippet Retrieval",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "60b1976dae93efa008e2ec16262f825321beb88d",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-11051",
+    "ArXiv": "2605.11051",
+    "DOI": "10.48550/arXiv.2605.11051",
+    "CorpusId": 288257634
+   },
+   "title": "On Problems of Implicit Context Compression for Software Engineering Agents",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "24c1cca006cb7e09bb3d36e6651e201258a4de18",
+   "externalIds": {
+    "ArXiv": "2605.07019",
+    "DBLP": "journals/corr/abs-2605-07019",
+    "DOI": "10.48550/arXiv.2605.07019",
+    "CorpusId": 288110782
+   },
+   "title": "LensVLM: Selective Context Expansion for Compressed Visual Representation of Text",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "e0db747ad65d72559e583ff92f729d68949e9daf",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-15763",
+    "ArXiv": "2602.15763",
+    "DOI": "10.48550/arXiv.2602.15763",
+    "CorpusId": 285659808
+   },
+   "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 672
+  },
+  {
+   "paperId": "90f1cde40cef2fc5b8aa4ccfbc8e7f30a8d08216",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2602-00746",
+    "ArXiv": "2602.00746",
+    "DOI": "10.48550/arXiv.2602.00746",
+    "CorpusId": 285269586
+   },
+   "title": "Can Vision-Language Models Handle Long-Context Code? An Empirical Study on Visual Compression",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 5
+  },
+  {
+   "paperId": "fd529948a7cc15371194c1e9b46c019067108e39",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-20730",
+    "ArXiv": "2601.20730",
+    "DOI": "10.48550/arXiv.2601.20730",
+    "CorpusId": 285102123
+   },
+   "title": "AgentLongBench: A Controllable Long Benchmark For Long-Contexts Agents via Environment Rollouts",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 11
+  },
+  {
+   "paperId": "51f5f9e3e086827f7db0dece74a1e0d92949a298",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2601-12910",
+    "ArXiv": "2601.12910",
+    "DOI": "10.48550/arXiv.2601.12910",
+    "CorpusId": 284910300
+   },
+   "title": "SciCoQA: Quality Assurance for Scientific Paper-Code Alignment",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 13
+  },
+  {
+   "paperId": "2cb7743cababd1963c55fd93817c1401f7418894",
+   "externalIds": {
+    "ArXiv": "2512.16790",
+    "DOI": "10.1145/3744916.3787776",
+    "CorpusId": 294991432
+   },
+   "title": "Inside Out: Uncovering How Comment Internalization Steers LLMs for Better or Worse",
+   "venue": "Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "f75d2fe09107cfa1b476c60f6c5f48ef97941629",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2512-12087",
+    "ArXiv": "2512.12087",
+    "DOI": "10.48550/arXiv.2512.12087",
+    "CorpusId": 283896277
+   },
+   "title": "BLASST: Dynamic BLocked Attention Sparsity via Softmax Thresholding",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 19
+  },
+  {
+   "paperId": "ead7057f5191e582ec2f2d107a27399d9f886785",
+   "externalIds": {
+    "DBLP": "conf/acl/ZhangGWZWLCSMZZ26",
+    "ArXiv": "2512.08867",
+    "DOI": "10.18653/v1/2026.findings-acl.1877",
+    "CorpusId": 289765044
+   },
+   "title": "From Conversation to Evaluation: Benchmarking LLMs on Development Knowledge via SimpleDevQA",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 2
+  },
+  {
+   "paperId": "fc6412d9ec7a6a07ce9ef15273279a0021d09422",
+   "externalIds": {
+    "ArXiv": "2510.26692",
+    "DBLP": "journals/corr/abs-2510-26692",
+    "DOI": "10.48550/arXiv.2510.26692",
+    "CorpusId": 282592221
+   },
+   "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 227
+  },
+  {
+   "paperId": "55e0300470bc99172e763f6fd6d3e7935f7d90e0",
+   "externalIds": {
+    "ArXiv": "2510.05381",
+    "DBLP": "journals/corr/abs-2510-05381",
+    "DOI": "10.48550/arXiv.2510.05381",
+    "CorpusId": 281826429
+   },
+   "title": "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 215
+  },
+  {
+   "paperId": "69cdee1420b64e5a8c8c5ac9c4b1b9a4bbd9e27c",
+   "externalIds": {
+    "DBLP": "conf/kbse/ShiQZSG25",
+    "ArXiv": "2510.00446",
+    "DOI": "10.1109/ASE63991.2025.00020",
+    "CorpusId": 281706620
+   },
+   "title": "LongCodeZip: Compress Long Context for Code Language Models",
+   "venue": "International Conference on Automated Software Engineering",
+   "year": 2025,
+   "citationCount": 54
+  },
+  {
+   "paperId": "e15af4500098cd730d1c8e06c8cc6d8d2208a422",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2509-25257",
+    "ArXiv": "2509.25257",
+    "DOI": "10.48550/arXiv.2509.25257",
+    "CorpusId": 281682610
+   },
+   "title": "RANGER - Repository-Level Agent for Graph-Enhanced Retrieval",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "17b7d4223eec74430bf42bd5e28dfc4ceeb8a1a0",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2509-13535",
+    "ArXiv": "2509.13535",
+    "DOI": "10.48550/arXiv.2509.13535",
+    "CorpusId": 281333148
+   },
+   "title": "Crash Report Enhancement with Large Language Models: An Empirical Study",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "65cfa811695f9df549780d2d853145e9b7e7decb",
+   "externalIds": {
+    "ArXiv": "2509.11252",
+    "DOI": "10.1145/3848514",
+    "CorpusId": 281316541
+   },
+   "title": "Exploring the Potential of Diffusion Large Language Models in Code Generation",
+   "venue": "ACM Transactions on Software Engineering and Methodology",
+   "year": 2025,
+   "citationCount": 17
+  },
+  {
+   "paperId": "e705134eb7e44fe99ef387209266b6738bb5273b",
+   "externalIds": {
+    "ArXiv": "2508.03793",
+    "DBLP": "conf/sp/WangGCJ26",
+    "DOI": "10.1109/SP63933.2026.00198",
+    "CorpusId": 287424954
+   },
+   "title": "AttnTrace: Contextual Attribution of Prompt Injection and Knowledge Corruption",
+   "venue": "IEEE Symposium on Security and Privacy",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "bf2b6e7b3878d8b26ccfd7d837e89fa283625eb1",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2507-02107",
+    "ArXiv": "2507.02107",
+    "DOI": "10.48550/arXiv.2507.02107",
+    "CorpusId": 280133648
+   },
+   "title": "Structural Code Search using Natural Language Queries",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 3
+  },
+  {
+   "paperId": "07e71d9d9971efc372a8f3f6bb5abe3b6d9e2dbe",
+   "externalIds": {
+    "ArXiv": "2505.15094",
+    "DBLP": "journals/corr/abs-2505-15094",
+    "PubMedCentral": "13056992",
+    "DOI": "10.1038/s41597-026-06594-9",
+    "CorpusId": 278782257,
+    "PubMed": "41748623"
+   },
+   "title": "SciCUEval: A Comprehensive Dataset for Evaluating Scientific Context Understanding in Large Language Models",
+   "venue": "Scientific Data",
+   "year": 2025,
+   "citationCount": 6
+  },
+  {
+   "paperId": "e25bebbe3b512c33f8f16659b2bccf10a8e5b15f",
+   "externalIds": {
+    "DBLP": "conf/acl/StorekGHSJ26",
+    "ArXiv": "2505.13353",
+    "DOI": "10.18653/v1/2026.acl-long.19",
+    "CorpusId": 278768966
+   },
+   "title": "Sense and Sensitivity: Examining the Influence of Semantic Recall on Long Context Code Understanding",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 4
+  },
+  {
+   "paperId": "bd13cb6eaadeee4413da720f3a0f13ada0aa35a0",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2505-11254",
+    "ArXiv": "2505.11254",
+    "DOI": "10.48550/arXiv.2505.11254",
+    "CorpusId": 278715606
+   },
+   "title": "Delta Attention: Fast and Accurate Sparse Attention Inference by Delta Correction",
+   "venue": "Neural Information Processing Systems",
+   "year": 2025,
+   "citationCount": 10
+  },
+  {
+   "paperId": "fa0065a84b2087cd1c6f0a63b7eb9fcf14d25bea",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-17502",
+    "ArXiv": "2503.17502",
+    "DOI": "10.48550/arXiv.2503.17502",
+    "CorpusId": 277271946
+   },
+   "title": "Large Language Models (LLMs) for Source Code Analysis: applications, models and datasets",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 30
+  },
+  {
+   "paperId": "9c3e146ca5959d8b21e4037dbbbf084c0edef6ac",
+   "externalIds": {
+    "ArXiv": "2503.14281",
+    "DBLP": "journals/corr/abs-2503-14281",
+    "DOI": "10.48550/arXiv.2503.14281",
+    "CorpusId": 277104531
+   },
+   "title": "XOXO: Stealthy Cross-Origin Context Poisoning Attacks against AI Coding Assistants",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 7
+  },
+  {
+   "paperId": "993f150ebd53e39fef8e17f808aee35b8b06a73e",
+   "externalIds": {
+    "ArXiv": "2503.14443",
+    "DBLP": "journals/corr/abs-2503-14443",
+    "DOI": "10.48550/arXiv.2503.14443",
+    "CorpusId": 277104307
+   },
+   "title": "EnvBench: A Benchmark for Automated Environment Setup",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 53
+  },
+  {
+   "paperId": "38848e351df9510c734822fe575569fffef22393",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-04359",
+    "ArXiv": "2503.04359",
+    "DOI": "10.48550/arXiv.2503.04359",
+    "CorpusId": 276813297
+   },
+   "title": "LONGCODEU: Benchmarking Long-Context Language Models on Long Code Understanding",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 18
+  },
+  {
+   "paperId": "244c0678b20f6050b4691287fe9b2d32d409e616",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2503-01996",
+    "ArXiv": "2503.01996",
+    "DOI": "10.48550/arXiv.2503.01996",
+    "CorpusId": 276775560
+   },
+   "title": "One ruler to measure them all: Benchmarking multilingual long-context language models",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 25
+  },
+  {
+   "paperId": "caa00ef04c154b0886c316cdb2d19d1e43acaad2",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-20127",
+    "ArXiv": "2502.20127",
+    "DOI": "10.48550/arXiv.2502.20127",
+    "CorpusId": 276647599
+   },
+   "title": "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2025,
+   "citationCount": 33
+  },
+  {
+   "paperId": "16a096e663c5aa661f26bcabe212a53d86ef3eae",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2502-19411",
+    "ArXiv": "2502.19411",
+    "DOI": "10.48550/arXiv.2502.19411",
+    "CorpusId": 276617996
+   },
+   "title": "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "citationCount": 64
+  },
+  {
+   "paperId": "6cb37add3ca69c91325054d11395f52baffdc361",
+   "externalIds": {
+    "ArXiv": "2412.19031",
+    "DBLP": "journals/corr/abs-2412-19031",
+    "DOI": "10.48550/arXiv.2412.19031",
+    "CorpusId": 275118859
+   },
+   "title": "Repository Structure-Aware Training Makes SLMs Better Issue Resolver",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 9
+  },
+  {
+   "paperId": "a51d4b39f92412669d0fbfb26b2ae33333e726c3",
+   "externalIds": {
+    "DBLP": "conf/emnlp/JayalathWMTG25",
+    "ArXiv": "2412.18914",
+    "DOI": "10.18653/v1/2025.emnlp-main.517",
+    "CorpusId": 275118652
+   },
+   "title": "PRISM: Efficient Long-Range Reasoning With Short-Context LLMs",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2024,
+   "citationCount": 4
+  },
+  {
+   "paperId": "462e0cf7861727340fd89fe5beab95afdcae24e7",
+   "externalIds": {
+    "DBLP": "conf/acl/SeoBLH25",
+    "ArXiv": "2412.18232",
+    "DOI": "10.48550/arXiv.2412.18232",
+    "CorpusId": 274992052
+   },
+   "title": "Efficient Long Context Language Model Retrieval with Compression",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2024,
+   "citationCount": 4
+  },
+  {
+   "paperId": "0ad0270f7eb610fb9dcc26fb043379b85e11f6cd",
+   "externalIds": {
+    "ArXiv": "2412.10319",
+    "DBLP": "conf/iclr/LiJWLAZAL00Q25",
+    "DOI": "10.48550/arXiv.2412.10319",
+    "CorpusId": 274763141
+   },
+   "title": "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+   "venue": "International Conference on Learning Representations",
+   "year": 2024,
+   "citationCount": 81
+  },
+  {
+   "paperId": "8b055760d492af38b08b836409b9b3e6e291a994",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2409-06338",
+    "ArXiv": "2409.06338",
+    "DOI": "10.48550/arXiv.2409.06338",
+    "CorpusId": 272550672
+   },
+   "title": "Retrieval Or Holistic Understanding? Dolce: Differentiate Our Long Context Evaluation Tasks",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 4
+  },
+  {
+   "paperId": "29d97178ba07bf3ab0d9867a2c36c203daea2dc6",
+   "externalIds": {
+    "ArXiv": "2408.02502",
+    "DBLP": "conf/icse/Imani0M25",
+    "DOI": "10.1109/ICSE55347.2025.00048",
+    "CorpusId": 271709824
+   },
+   "title": "Context Conquers Parameters: Outperforming Proprietary Llm in Commit Message Generation",
+   "venue": "International Conference on Software Engineering",
+   "year": 2024,
+   "citationCount": 19
+  },
+  {
+   "paperId": "d772ff2f1c490a2d13d909df22b98c948d32a3dd",
+   "externalIds": {
+    "ArXiv": "2407.13739",
+    "DBLP": "journals/corr/abs-2407-13739",
+    "DOI": "10.48550/arXiv.2407.13739",
+    "CorpusId": 271270257
+   },
+   "title": "Scaling Granite Code Models to 128K Context",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 12
+  },
+  {
+   "paperId": "3f37462afde6c573d78abfc5da73c93ec0998713",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2407-07565",
+    "ArXiv": "2407.07565",
+    "DOI": "10.48550/arXiv.2407.07565",
+    "CorpusId": 271088757
+   },
+   "title": "On Leakage of Code Generation Evaluation Datasets",
+   "venue": "Conference on Empirical Methods in Natural Language Processing",
+   "year": 2024,
+   "citationCount": 60
+  },
+  {
+   "paperId": "ac5824e9ff924a937d9eef379d0b581de2417678",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2404-06654",
+    "ArXiv": "2404.06654",
+    "DOI": "10.48550/arXiv.2404.06654",
+    "CorpusId": 269032933
+   },
+   "title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
+   "venue": "arXiv.org",
+   "year": 2024,
+   "citationCount": 1603
+  },
+  {
+   "paperId": "60d85c54e61a9dc19c68706118be7377edcaa2a2",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2605-03117",
+    "DOI": "10.48550/arXiv.2605.03117",
+    "CorpusId": 289933465
+   },
+   "title": "ARISE: A Repository-level Graph Representation and Toolset for Agentic Fault Localization and Program Repair",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  },
+  {
+   "paperId": "28ef1611a0d4612708c4c8082fed8c1c96cb0682",
+   "externalIds": {
+    "DBLP": "conf/acl/WangZWGZCLZZ26",
+    "DOI": "10.18653/v1/2026.findings-acl.969",
+    "CorpusId": 289808076
+   },
+   "title": "ArkRepoBench: A Repository-Level Code Completion Benchmark for HarmonyOS Development",
+   "venue": "Annual Meeting of the Association for Computational Linguistics",
+   "year": 2026,
+   "citationCount": 6
+  },
+  {
+   "paperId": "4edb351a4a3bf673c37bb474b49bf751890b2715",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2512-08867",
+    "DOI": "10.48550/arXiv.2512.08867",
+    "CorpusId": 283711639
+   },
+   "title": "SimpleDevQA: Benchmarking Large Language Models on Development Knowledge QA",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 1
+  },
+  {
+   "paperId": "310d19ba6c51eb7f123822515ed4abd72a27b3a5",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2501-10711",
+    "DOI": "10.48550/arXiv.2501.10711",
+    "CorpusId": 276569789
+   },
+   "title": "How Should I Build A Benchmark? Revisiting Code-Related Benchmarks For LLMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 8
+  },
+  {
+   "paperId": "56e96c75d7c6fe9b35a6166b0b841ad672129035",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2508-03793",
+    "DOI": "10.48550/arXiv.2508.03793",
+    "CorpusId": 280536762
+   },
+   "title": "AttnTrace: Attention-based Context Traceback for Long-Context LLMs",
+   "venue": "arXiv.org",
+   "year": 2025,
+   "citationCount": 9
+  },
+  {
+   "paperId": "4dd0221f8b4f8daa0487aaab38fd9c4574ad3bb0",
+   "externalIds": {
+    "CorpusId": 280982772
+   },
+   "title": "SharedContextBench: Evaluating Long-Context Methods in KV Cache Reuse",
+   "venue": "",
+   "year": null,
+   "citationCount": 1
+  }
+ ],
+ "LeanOnPriors": [
+  {
+   "paperId": "f69e757079ca3c79e8dc7540b539044970fe9acd",
+   "externalIds": {
+    "ArXiv": "2610.37175",
+    "CorpusId": 294620982
+   },
+   "title": "MLE-World: Predicting Machine Learning Experiment Outcomes with a Learned World Model",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "feb42ca2fd412da9b7f27cc4dd6c869c45a38141",
+   "externalIds": {
+    "ArXiv": "2610.14350",
+    "CorpusId": 292859360
+   },
+   "title": "Natural Code Transformation Confuses Agents in Vulnerability Analysis",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "c5398f399c2ad1a466162a120004d152b67843a5",
+   "externalIds": {
+    "ArXiv": "2609.39022",
+    "CorpusId": 292486224
+   },
+   "title": "From Verification Failures to Reusable Guidance for Coding Agents",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "55c1db7649eea98a25aab71c43b3f52dfd43dc76",
+   "externalIds": {
+    "ArXiv": "2609.10397",
+    "CorpusId": 291876664
+   },
+   "title": "Retrofitting Code Using LLMs to Support Exceptional Behavior",
+   "venue": "",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "9261a58b9b7854443ae232e0277b11e7c44c9085",
+   "externalIds": {
+    "ArXiv": "2609.00579",
+    "DOI": "10.1145/3843750.3843842",
+    "CorpusId": 291544519
+   },
+   "title": "Predicting Program Exit Code with LLMs and Programming Language Semantics",
+   "venue": "Proceedings of the 2nd ACM SIGPLAN International Workshop on Language Models and Programming Languages",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "03c473a46cb38b5c26fa1c83c408fdd42084379a",
+   "externalIds": {
+    "DOI": "10.1038/s44488-026-00014-y",
+    "CorpusId": 291045259
+   },
+   "title": "How well do LLMs understand code?",
+   "venue": "Communications AI & Computing",
+   "year": 2026,
+   "citationCount": 0
+  },
+  {
+   "paperId": "1b7cfde20de0d198943f06077d65ea4e646ae305",
+   "externalIds": {
+    "DBLP": "journals/corr/abs-2604-03253",
+    "ArXiv": "2604.03253",
+    "DOI": "10.48550/arXiv.2604.03253",
+    "CorpusId": 287200037
+   },
+   "title": "Self-Execution Simulation Improves Coding Models",
+   "venue": "arXiv.org",
+   "year": 2026,
+   "citationCount": 2
+  }
+ ]
+}

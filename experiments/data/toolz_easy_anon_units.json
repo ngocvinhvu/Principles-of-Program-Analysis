@@ -1,0 +1,1052 @@
+{
+ "toolz/_version.py::get_versions": {
+  "uid": "toolz/_version.py::get_versions",
+  "file": "toolz/_version.py",
+  "name": "fn_325",
+  "start": 20,
+  "end": 21,
+  "source": "def fn_325():\n    return json.loads(version_json)\n",
+  "chars": 50,
+  "orig_name": "get_versions"
+ },
+ "toolz/itertoolz.py::remove": {
+  "uid": "toolz/itertoolz.py::remove",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_428",
+  "start": 19,
+  "end": 27,
+  "source": "def fn_428(predicate, seq):\n    return filterfalse(predicate, seq)\n",
+  "chars": 67,
+  "orig_name": "remove"
+ },
+ "toolz/itertoolz.py::accumulate": {
+  "uid": "toolz/itertoolz.py::accumulate",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_555",
+  "start": 30,
+  "end": 68,
+  "source": "def fn_555(binop, seq, initial=no_default):\n    seq = iter(seq)\n    if initial == no_default:\n        try:\n            result = next(seq)\n        except StopIteration:\n            return\n    else:\n        result = initial\n    yield result\n    for elem in seq:\n        result = binop(result, elem)\n        yield result\n",
+  "chars": 318,
+  "orig_name": "accumulate"
+ },
+ "toolz/itertoolz.py::groupby": {
+  "uid": "toolz/itertoolz.py::groupby",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_520",
+  "start": 71,
+  "end": 104,
+  "source": "def fn_520(key, seq):\n    if not callable(key):\n        key = fn_938(key)\n    d = collections.defaultdict(lambda : [].append)\n    for item in seq:\n        d[key(item)](item)\n    rv = {}\n    for (k, v) in d.items():\n        rv[k] = v.__self__\n    return rv\n",
+  "chars": 256,
+  "orig_name": "groupby"
+ },
+ "toolz/itertoolz.py::merge_sorted": {
+  "uid": "toolz/itertoolz.py::merge_sorted",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_448",
+  "start": 107,
+  "end": 132,
+  "source": "def fn_448(*seqs, **kwargs):\n    if len(seqs) == 0:\n        return iter([])\n    elif len(seqs) == 1:\n        return iter(seqs[0])\n    key = kwargs.get('key', None)\n    if key is None:\n        return fn_525(seqs)\n    else:\n        return fn_119(seqs, key)\n",
+  "chars": 255,
+  "orig_name": "merge_sorted"
+ },
+ "toolz/itertoolz.py::_merge_sorted_binary": {
+  "uid": "toolz/itertoolz.py::_merge_sorted_binary",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_525",
+  "start": 135,
+  "end": 175,
+  "source": "def fn_525(seqs):\n    mid = len(seqs) // 2\n    L1 = seqs[:mid]\n    if len(L1) == 1:\n        seq1 = iter(L1[0])\n    else:\n        seq1 = fn_525(L1)\n    L2 = seqs[mid:]\n    if len(L2) == 1:\n        seq2 = iter(L2[0])\n    else:\n        seq2 = fn_525(L2)\n    try:\n        val2 = next(seq2)\n    except StopIteration:\n        for val1 in seq1:\n            yield val1\n        return\n    for val1 in seq1:\n        if val2 < val1:\n            yield val2\n            for val2 in seq2:\n                if val2 < val1:\n                    yield val2\n                else:\n                    yield val1\n                    break\n            else:\n                break\n        else:\n            yield val1\n    else:\n        yield val2\n        for val2 in seq2:\n            yield val2\n        return\n    yield val1\n    for val1 in seq1:\n        yield val1\n",
+  "chars": 843,
+  "orig_name": "_merge_sorted_binary"
+ },
+ "toolz/itertoolz.py::_merge_sorted_binary_key": {
+  "uid": "toolz/itertoolz.py::_merge_sorted_binary_key",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_119",
+  "start": 178,
+  "end": 221,
+  "source": "def fn_119(seqs, key):\n    mid = len(seqs) // 2\n    L1 = seqs[:mid]\n    if len(L1) == 1:\n        seq1 = iter(L1[0])\n    else:\n        seq1 = fn_119(L1, key)\n    L2 = seqs[mid:]\n    if len(L2) == 1:\n        seq2 = iter(L2[0])\n    else:\n        seq2 = fn_119(L2, key)\n    try:\n        val2 = next(seq2)\n    except StopIteration:\n        for val1 in seq1:\n            yield val1\n        return\n    key2 = key(val2)\n    for val1 in seq1:\n        key1 = key(val1)\n        if key2 < key1:\n            yield val2\n            for val2 in seq2:\n                key2 = key(val2)\n                if key2 < key1:\n                    yield val2\n                else:\n                    yield val1\n                    break\n            else:\n                break\n        else:\n            yield val1\n    else:\n        yield val2\n        for val2 in seq2:\n            yield val2\n        return\n    yield val1\n    for val1 in seq1:\n        yield val1\n",
+  "chars": 937,
+  "orig_name": "_merge_sorted_binary_key"
+ },
+ "toolz/itertoolz.py::interleave": {
+  "uid": "toolz/itertoolz.py::interleave",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_870",
+  "start": 224,
+  "end": 245,
+  "source": "def fn_870(seqs):\n    iters = itertools.cycle(map(iter, seqs))\n    while True:\n        try:\n            for itr in iters:\n                yield next(itr)\n            return\n        except StopIteration:\n            predicate = partial(operator.is_not, itr)\n            iters = itertools.cycle(itertools.takewhile(predicate, iters))\n",
+  "chars": 332,
+  "orig_name": "interleave"
+ },
+ "toolz/itertoolz.py::unique": {
+  "uid": "toolz/itertoolz.py::unique",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_873",
+  "start": 248,
+  "end": 273,
+  "source": "def fn_873(seq, key=None):\n    seen = set()\n    seen_add = seen.add\n    if key is None:\n        for item in seq:\n            if item not in seen:\n                seen_add(item)\n                yield item\n    else:\n        for item in seq:\n            val = key(item)\n            if val not in seen:\n                seen_add(val)\n                yield item\n",
+  "chars": 356,
+  "orig_name": "unique"
+ },
+ "toolz/itertoolz.py::isiterable": {
+  "uid": "toolz/itertoolz.py::isiterable",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_760",
+  "start": 276,
+  "end": 290,
+  "source": "def fn_760(x):\n    try:\n        iter(x)\n        return True\n    except TypeError:\n        return False\n",
+  "chars": 103,
+  "orig_name": "isiterable"
+ },
+ "toolz/itertoolz.py::isdistinct": {
+  "uid": "toolz/itertoolz.py::isdistinct",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_824",
+  "start": 293,
+  "end": 315,
+  "source": "def fn_824(seq):\n    if iter(seq) is seq:\n        seen = set()\n        seen_add = seen.add\n        for item in seq:\n            if item in seen:\n                return False\n            seen_add(item)\n        return True\n    else:\n        return len(seq) == len(set(seq))\n",
+  "chars": 272,
+  "orig_name": "isdistinct"
+ },
+ "toolz/itertoolz.py::take": {
+  "uid": "toolz/itertoolz.py::take",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_972",
+  "start": 318,
+  "end": 328,
+  "source": "def fn_972(n, seq):\n    return itertools.islice(seq, n)\n",
+  "chars": 56,
+  "orig_name": "take"
+ },
+ "toolz/itertoolz.py::tail": {
+  "uid": "toolz/itertoolz.py::tail",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_931",
+  "start": 331,
+  "end": 344,
+  "source": "def fn_931(n, seq):\n    try:\n        return seq[-n:]\n    except (TypeError, KeyError):\n        return tuple(collections.deque(seq, n))\n",
+  "chars": 135,
+  "orig_name": "tail"
+ },
+ "toolz/itertoolz.py::drop": {
+  "uid": "toolz/itertoolz.py::drop",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_676",
+  "start": 347,
+  "end": 357,
+  "source": "def fn_676(n, seq):\n    return itertools.islice(seq, n, None)\n",
+  "chars": 62,
+  "orig_name": "drop"
+ },
+ "toolz/itertoolz.py::take_nth": {
+  "uid": "toolz/itertoolz.py::take_nth",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_310",
+  "start": 360,
+  "end": 366,
+  "source": "def fn_310(n, seq):\n    return itertools.islice(seq, 0, None, n)\n",
+  "chars": 65,
+  "orig_name": "take_nth"
+ },
+ "toolz/itertoolz.py::first": {
+  "uid": "toolz/itertoolz.py::first",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_656",
+  "start": 369,
+  "end": 375,
+  "source": "def fn_656(seq):\n    return next(iter(seq))\n",
+  "chars": 44,
+  "orig_name": "first"
+ },
+ "toolz/itertoolz.py::second": {
+  "uid": "toolz/itertoolz.py::second",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_815",
+  "start": 378,
+  "end": 386,
+  "source": "def fn_815(seq):\n    seq = iter(seq)\n    next(seq)\n    return next(seq)\n",
+  "chars": 72,
+  "orig_name": "second"
+ },
+ "toolz/itertoolz.py::nth": {
+  "uid": "toolz/itertoolz.py::nth",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_170",
+  "start": 389,
+  "end": 398,
+  "source": "def fn_170(n, seq):\n    if isinstance(seq, (tuple, list, Sequence)):\n        return seq[n]\n    else:\n        return next(itertools.islice(seq, n, None))\n",
+  "chars": 153,
+  "orig_name": "nth"
+ },
+ "toolz/itertoolz.py::last": {
+  "uid": "toolz/itertoolz.py::last",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_242",
+  "start": 401,
+  "end": 407,
+  "source": "def fn_242(seq):\n    return fn_931(1, seq)[0]\n",
+  "chars": 46,
+  "orig_name": "last"
+ },
+ "toolz/itertoolz.py::_get": {
+  "uid": "toolz/itertoolz.py::_get",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_965",
+  "start": 413,
+  "end": 417,
+  "source": "def fn_965(ind, seq, default):\n    try:\n        return seq[ind]\n    except (KeyError, IndexError):\n        return default\n",
+  "chars": 122,
+  "orig_name": "_get"
+ },
+ "toolz/itertoolz.py::get": {
+  "uid": "toolz/itertoolz.py::get",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_384",
+  "start": 420,
+  "end": 474,
+  "source": "def fn_384(ind, seq, default=no_default):\n    try:\n        return seq[ind]\n    except TypeError:\n        if isinstance(ind, list):\n            if default == no_default:\n                if len(ind) > 1:\n                    return operator.itemgetter(*ind)(seq)\n                elif ind:\n                    return (seq[ind[0]],)\n                else:\n                    return ()\n            else:\n                return tuple((fn_965(i, seq, default) for i in ind))\n        elif default != no_default:\n            return default\n        else:\n            raise\n    except (KeyError, IndexError):\n        if default == no_default:\n            raise\n        else:\n            return default\n",
+  "chars": 690,
+  "orig_name": "get"
+ },
+ "toolz/itertoolz.py::concat": {
+  "uid": "toolz/itertoolz.py::concat",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_304",
+  "start": 477,
+  "end": 492,
+  "source": "def fn_304(seqs):\n    return itertools.chain.from_iterable(seqs)\n",
+  "chars": 65,
+  "orig_name": "concat"
+ },
+ "toolz/itertoolz.py::concatv": {
+  "uid": "toolz/itertoolz.py::concatv",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_557",
+  "start": 495,
+  "end": 504,
+  "source": "def fn_557(*seqs):\n    return fn_304(seqs)\n",
+  "chars": 43,
+  "orig_name": "concatv"
+ },
+ "toolz/itertoolz.py::mapcat": {
+  "uid": "toolz/itertoolz.py::mapcat",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_370",
+  "start": 507,
+  "end": 514,
+  "source": "def fn_370(func, seqs):\n    return fn_304(map(func, seqs))\n",
+  "chars": 59,
+  "orig_name": "mapcat"
+ },
+ "toolz/itertoolz.py::cons": {
+  "uid": "toolz/itertoolz.py::cons",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_274",
+  "start": 517,
+  "end": 523,
+  "source": "def fn_274(el, seq):\n    return itertools.chain([el], seq)\n",
+  "chars": 59,
+  "orig_name": "cons"
+ },
+ "toolz/itertoolz.py::interpose": {
+  "uid": "toolz/itertoolz.py::interpose",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_414",
+  "start": 526,
+  "end": 534,
+  "source": "def fn_414(el, seq):\n    inposed = fn_304(zip(itertools.repeat(el), seq))\n    next(inposed)\n    return inposed\n",
+  "chars": 111,
+  "orig_name": "interpose"
+ },
+ "toolz/itertoolz.py::frequencies": {
+  "uid": "toolz/itertoolz.py::frequencies",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_405",
+  "start": 537,
+  "end": 550,
+  "source": "def fn_405(seq):\n    d = collections.defaultdict(int)\n    for item in seq:\n        d[item] += 1\n    return dict(d)\n",
+  "chars": 115,
+  "orig_name": "frequencies"
+ },
+ "toolz/itertoolz.py::reduceby": {
+  "uid": "toolz/itertoolz.py::reduceby",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_259",
+  "start": 553,
+  "end": 630,
+  "source": "def fn_259(key, binop, seq, init=no_default):\n    is_no_default = init == no_default\n    if not is_no_default and (not callable(init)):\n        _init = init\n        init = lambda : _init\n    if not callable(key):\n        key = fn_938(key)\n    d = {}\n    for item in seq:\n        k = key(item)\n        if k not in d:\n            if is_no_default:\n                d[k] = item\n                continue\n            else:\n                d[k] = init()\n        d[k] = binop(d[k], item)\n    return d\n",
+  "chars": 493,
+  "orig_name": "reduceby"
+ },
+ "toolz/itertoolz.py::iterate": {
+  "uid": "toolz/itertoolz.py::iterate",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_732",
+  "start": 633,
+  "end": 660,
+  "source": "def fn_732(func, x):\n    while True:\n        yield x\n        x = func(x)\n",
+  "chars": 73,
+  "orig_name": "iterate"
+ },
+ "toolz/itertoolz.py::sliding_window": {
+  "uid": "toolz/itertoolz.py::sliding_window",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_851",
+  "start": 663,
+  "end": 677,
+  "source": "def fn_851(n, seq):\n    return zip(*(collections.deque(itertools.islice(it, i), 0) or it for (i, it) in enumerate(itertools.tee(seq, n))))\n",
+  "chars": 139,
+  "orig_name": "sliding_window"
+ },
+ "toolz/itertoolz.py::partition": {
+  "uid": "toolz/itertoolz.py::partition",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_267",
+  "start": 683,
+  "end": 705,
+  "source": "def fn_267(n, seq, pad=no_pad):\n    args = [iter(seq)] * n\n    if pad is no_pad:\n        return zip(*args)\n    else:\n        return zip_longest(*args, fillvalue=pad)\n",
+  "chars": 166,
+  "orig_name": "partition"
+ },
+ "toolz/itertoolz.py::partition_all": {
+  "uid": "toolz/itertoolz.py::partition_all",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_988",
+  "start": 708,
+  "end": 750,
+  "source": "def fn_988(n, seq):\n    args = [iter(seq)] * n\n    it = zip_longest(*args, fillvalue=no_pad)\n    try:\n        prev = next(it)\n    except StopIteration:\n        return\n    for item in it:\n        yield prev\n        prev = item\n    if prev[-1] is no_pad:\n        try:\n            yield prev[:len(seq) % n]\n        except TypeError:\n            (lo, hi) = (0, n)\n            while lo < hi:\n                mid = (lo + hi) // 2\n                if prev[mid] is no_pad:\n                    hi = mid\n                else:\n                    lo = mid + 1\n            yield prev[:lo]\n    else:\n        yield prev\n",
+  "chars": 605,
+  "orig_name": "partition_all"
+ },
+ "toolz/itertoolz.py::count": {
+  "uid": "toolz/itertoolz.py::count",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_324",
+  "start": 753,
+  "end": 765,
+  "source": "def fn_324(seq):\n    if hasattr(seq, '__len__'):\n        return len(seq)\n    return sum((1 for i in seq))\n",
+  "chars": 106,
+  "orig_name": "count"
+ },
+ "toolz/itertoolz.py::pluck": {
+  "uid": "toolz/itertoolz.py::pluck",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_388",
+  "start": 768,
+  "end": 797,
+  "source": "def fn_388(ind, seqs, default=no_default):\n    if default == no_default:\n        fn_384 = fn_938(ind)\n        return map(fn_384, seqs)\n    elif isinstance(ind, list):\n        return (tuple((fn_965(item, seq, default) for item in ind)) for seq in seqs)\n    return (fn_965(ind, seq, default) for seq in seqs)\n",
+  "chars": 307,
+  "orig_name": "pluck"
+ },
+ "toolz/itertoolz.py::getter": {
+  "uid": "toolz/itertoolz.py::getter",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_938",
+  "start": 800,
+  "end": 810,
+  "source": "def fn_938(index):\n    if isinstance(index, list):\n        if len(index) == 1:\n            index = index[0]\n            return lambda x: (x[index],)\n        elif index:\n            return operator.itemgetter(*index)\n        else:\n            return lambda x: ()\n    else:\n        return operator.itemgetter(index)\n",
+  "chars": 314,
+  "orig_name": "getter"
+ },
+ "toolz/itertoolz.py::join": {
+  "uid": "toolz/itertoolz.py::join",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_895",
+  "start": 813,
+  "end": 922,
+  "source": "def fn_895(leftkey, leftseq, rightkey, rightseq, left_default=no_default, right_default=no_default):\n    if not callable(leftkey):\n        leftkey = fn_938(leftkey)\n    if not callable(rightkey):\n        rightkey = fn_938(rightkey)\n    d = fn_520(leftkey, leftseq)\n    if left_default == no_default and right_default == no_default:\n        for item in rightseq:\n            key = rightkey(item)\n            if key in d:\n                for left_match in d[key]:\n                    yield (left_match, item)\n    elif left_default != no_default and right_default == no_default:\n        for item in rightseq:\n            key = rightkey(item)\n            if key in d:\n                for left_match in d[key]:\n                    yield (left_match, item)\n            else:\n                yield (left_default, item)\n    elif right_default != no_default:\n        seen_keys = set()\n        seen = seen_keys.add\n        if left_default == no_default:\n            for item in rightseq:\n                key = rightkey(item)\n                seen(key)\n                if key in d:\n                    for left_match in d[key]:\n                        yield (left_match, item)\n        else:\n            for item in rightseq:\n                key = rightkey(item)\n                seen(key)\n                if key in d:\n                    for left_match in d[key]:\n                        yield (left_match, item)\n                else:\n                    yield (left_default, item)\n        for (key, matches) in d.items():\n            if key not in seen_keys:\n                for match in matches:\n                    yield (match, right_default)\n",
+  "chars": 1634,
+  "orig_name": "join"
+ },
+ "toolz/itertoolz.py::diff": {
+  "uid": "toolz/itertoolz.py::diff",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_790",
+  "start": 925,
+  "end": 962,
+  "source": "def fn_790(*seqs, **kwargs):\n    N = len(seqs)\n    if N == 1 and isinstance(seqs[0], list):\n        seqs = seqs[0]\n        N = len(seqs)\n    if N < 2:\n        raise TypeError('Too few sequences given (min 2 required)')\n    default = kwargs.get('default', no_default)\n    if default == no_default:\n        iters = zip(*seqs)\n    else:\n        iters = zip_longest(*seqs, fillvalue=default)\n    key = kwargs.get('key', None)\n    if key is None:\n        for items in iters:\n            if items.count(items[0]) != N:\n                yield items\n    else:\n        for items in iters:\n            vals = tuple(map(key, items))\n            if vals.count(vals[0]) != N:\n                yield items\n",
+  "chars": 690,
+  "orig_name": "diff"
+ },
+ "toolz/itertoolz.py::topk": {
+  "uid": "toolz/itertoolz.py::topk",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_115",
+  "start": 965,
+  "end": 983,
+  "source": "def fn_115(k, seq, key=None):\n    if key is not None and (not callable(key)):\n        key = fn_938(key)\n    return tuple(heapq.nlargest(k, seq, key=key))\n",
+  "chars": 154,
+  "orig_name": "topk"
+ },
+ "toolz/itertoolz.py::peek": {
+  "uid": "toolz/itertoolz.py::peek",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_771",
+  "start": 986,
+  "end": 1001,
+  "source": "def fn_771(seq):\n    iterator = iter(seq)\n    item = next(iterator)\n    return (item, itertools.chain((item,), iterator))\n",
+  "chars": 122,
+  "orig_name": "peek"
+ },
+ "toolz/itertoolz.py::peekn": {
+  "uid": "toolz/itertoolz.py::peekn",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_536",
+  "start": 1004,
+  "end": 1019,
+  "source": "def fn_536(n, seq):\n    iterator = iter(seq)\n    peeked = tuple(fn_972(n, iterator))\n    return (peeked, itertools.chain(iter(peeked), iterator))\n",
+  "chars": 146,
+  "orig_name": "peekn"
+ },
+ "toolz/itertoolz.py::random_sample": {
+  "uid": "toolz/itertoolz.py::random_sample",
+  "file": "toolz/itertoolz.py",
+  "name": "fn_775",
+  "start": 1022,
+  "end": 1058,
+  "source": "def fn_775(prob, seq, random_state=None):\n    if not hasattr(random_state, 'random'):\n        from random import Random\n        random_state = Random(random_state)\n    return filter(lambda _: random_state.random() < prob, seq)\n",
+  "chars": 227,
+  "orig_name": "random_sample"
+ },
+ "toolz/dicttoolz.py::_get_factory": {
+  "uid": "toolz/dicttoolz.py::_get_factory",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_720",
+  "start": 11,
+  "end": 16,
+  "source": "def fn_720(f, kwargs):\n    factory = kwargs.pop('factory', dict)\n    if kwargs:\n        raise TypeError(\"{}() got an unexpected keyword argument '{}'\".format(f.__name__, kwargs.popitem()[0]))\n    return factory\n",
+  "chars": 211,
+  "orig_name": "_get_factory"
+ },
+ "toolz/dicttoolz.py::merge": {
+  "uid": "toolz/dicttoolz.py::merge",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_805",
+  "start": 19,
+  "end": 40,
+  "source": "def fn_805(*dicts, **kwargs):\n    if len(dicts) == 1 and (not isinstance(dicts[0], Mapping)):\n        dicts = dicts[0]\n    factory = fn_720(fn_805, kwargs)\n    rv = factory()\n    for d in dicts:\n        rv.update(d)\n    return rv\n",
+  "chars": 230,
+  "orig_name": "merge"
+ },
+ "toolz/dicttoolz.py::merge_with": {
+  "uid": "toolz/dicttoolz.py::merge_with",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_921",
+  "start": 43,
+  "end": 70,
+  "source": "def fn_921(func, *dicts, **kwargs):\n    if len(dicts) == 1 and (not isinstance(dicts[0], Mapping)):\n        dicts = dicts[0]\n    factory = fn_720(fn_921, kwargs)\n    values = collections.defaultdict(lambda : [].append)\n    for d in dicts:\n        for (k, v) in d.items():\n            values[k](v)\n    result = factory()\n    for (k, v) in values.items():\n        result[k] = func(v.__self__)\n    return result\n",
+  "chars": 409,
+  "orig_name": "merge_with"
+ },
+ "toolz/dicttoolz.py::valmap": {
+  "uid": "toolz/dicttoolz.py::valmap",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_999",
+  "start": 73,
+  "end": 86,
+  "source": "def fn_999(func, d, factory=dict):\n    rv = factory()\n    rv.update(zip(d.keys(), map(func, d.values())))\n    return rv\n",
+  "chars": 120,
+  "orig_name": "valmap"
+ },
+ "toolz/dicttoolz.py::keymap": {
+  "uid": "toolz/dicttoolz.py::keymap",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_476",
+  "start": 89,
+  "end": 102,
+  "source": "def fn_476(func, d, factory=dict):\n    rv = factory()\n    rv.update(zip(map(func, d.keys()), d.values()))\n    return rv\n",
+  "chars": 120,
+  "orig_name": "keymap"
+ },
+ "toolz/dicttoolz.py::itemmap": {
+  "uid": "toolz/dicttoolz.py::itemmap",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_506",
+  "start": 105,
+  "end": 118,
+  "source": "def fn_506(func, d, factory=dict):\n    rv = factory()\n    rv.update(map(func, d.items()))\n    return rv\n",
+  "chars": 104,
+  "orig_name": "itemmap"
+ },
+ "toolz/dicttoolz.py::valfilter": {
+  "uid": "toolz/dicttoolz.py::valfilter",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_524",
+  "start": 121,
+  "end": 138,
+  "source": "def fn_524(predicate, d, factory=dict):\n    rv = factory()\n    for (k, v) in d.items():\n        if predicate(v):\n            rv[k] = v\n    return rv\n",
+  "chars": 149,
+  "orig_name": "valfilter"
+ },
+ "toolz/dicttoolz.py::keyfilter": {
+  "uid": "toolz/dicttoolz.py::keyfilter",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_848",
+  "start": 141,
+  "end": 158,
+  "source": "def fn_848(predicate, d, factory=dict):\n    rv = factory()\n    for (k, v) in d.items():\n        if predicate(k):\n            rv[k] = v\n    return rv\n",
+  "chars": 149,
+  "orig_name": "keyfilter"
+ },
+ "toolz/dicttoolz.py::itemfilter": {
+  "uid": "toolz/dicttoolz.py::itemfilter",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_582",
+  "start": 161,
+  "end": 182,
+  "source": "def fn_582(predicate, d, factory=dict):\n    rv = factory()\n    for item in d.items():\n        if predicate(item):\n            (k, v) = item\n            rv[k] = v\n    return rv\n",
+  "chars": 176,
+  "orig_name": "itemfilter"
+ },
+ "toolz/dicttoolz.py::assoc": {
+  "uid": "toolz/dicttoolz.py::assoc",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_330",
+  "start": 185,
+  "end": 198,
+  "source": "def fn_330(d, key, value, factory=dict):\n    d2 = factory()\n    d2.update(d)\n    d2[key] = value\n    return d2\n",
+  "chars": 111,
+  "orig_name": "assoc"
+ },
+ "toolz/dicttoolz.py::dissoc": {
+  "uid": "toolz/dicttoolz.py::dissoc",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_911",
+  "start": 201,
+  "end": 227,
+  "source": "def fn_911(d, *keys, **kwargs):\n    factory = fn_720(fn_911, kwargs)\n    d2 = factory()\n    if len(keys) < len(d) * 0.6:\n        d2.update(d)\n        for key in keys:\n            if key in d2:\n                del d2[key]\n    else:\n        remaining = set(d)\n        remaining.difference_update(keys)\n        for k in remaining:\n            d2[k] = d[k]\n    return d2\n",
+  "chars": 367,
+  "orig_name": "dissoc"
+ },
+ "toolz/dicttoolz.py::assoc_in": {
+  "uid": "toolz/dicttoolz.py::assoc_in",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_922",
+  "start": 230,
+  "end": 242,
+  "source": "def fn_922(d, keys, value, factory=dict):\n    return fn_508(d, keys, lambda x: value, value, factory)\n",
+  "chars": 102,
+  "orig_name": "assoc_in"
+ },
+ "toolz/dicttoolz.py::update_in": {
+  "uid": "toolz/dicttoolz.py::update_in",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_508",
+  "start": 245,
+  "end": 300,
+  "source": "def fn_508(d, keys, func, default=None, factory=dict):\n    ks = iter(keys)\n    k = next(ks)\n    rv = inner = factory()\n    rv.update(d)\n    for key in ks:\n        if k in d:\n            d = d[k]\n            dtemp = factory()\n            dtemp.update(d)\n        else:\n            d = dtemp = factory()\n        inner[k] = inner = dtemp\n        k = key\n    if k in d:\n        inner[k] = func(d[k])\n    else:\n        inner[k] = func(default)\n    return rv\n",
+  "chars": 452,
+  "orig_name": "update_in"
+ },
+ "toolz/dicttoolz.py::get_in": {
+  "uid": "toolz/dicttoolz.py::get_in",
+  "file": "toolz/dicttoolz.py",
+  "name": "fn_868",
+  "start": 303,
+  "end": 339,
+  "source": "def fn_868(keys, coll, default=None, no_default=False):\n    try:\n        return reduce(operator.getitem, keys, coll)\n    except (KeyError, IndexError, TypeError):\n        if no_default:\n            raise\n        return default\n",
+  "chars": 227,
+  "orig_name": "get_in"
+ },
+ "toolz/functoolz.py::identity": {
+  "uid": "toolz/functoolz.py::identity",
+  "file": "toolz/functoolz.py",
+  "name": "fn_628",
+  "start": 20,
+  "end": 26,
+  "source": "def fn_628(x):\n    return x\n",
+  "chars": 28,
+  "orig_name": "identity"
+ },
+ "toolz/functoolz.py::apply": {
+  "uid": "toolz/functoolz.py::apply",
+  "file": "toolz/functoolz.py",
+  "name": "fn_767",
+  "start": 29,
+  "end": 43,
+  "source": "def fn_767(*func_and_args, **kwargs):\n    if not func_and_args:\n        raise TypeError('func argument is required')\n    (func, args) = (func_and_args[0], func_and_args[1:])\n    return func(*args, **kwargs)\n",
+  "chars": 207,
+  "orig_name": "apply"
+ },
+ "toolz/functoolz.py::thread_first": {
+  "uid": "toolz/functoolz.py::thread_first",
+  "file": "toolz/functoolz.py",
+  "name": "fn_787",
+  "start": 46,
+  "end": 77,
+  "source": "def fn_787(val, *forms):\n\n    def evalform_front(val, form):\n        if callable(form):\n            return form(val)\n        if isinstance(form, tuple):\n            (func, args) = (form[0], form[1:])\n            args = (val,) + args\n            return func(*args)\n    return reduce(evalform_front, forms, val)\n",
+  "chars": 310,
+  "orig_name": "thread_first"
+ },
+ "toolz/functoolz.py::thread_last": {
+  "uid": "toolz/functoolz.py::thread_last",
+  "file": "toolz/functoolz.py",
+  "name": "fn_385",
+  "start": 80,
+  "end": 116,
+  "source": "def fn_385(val, *forms):\n\n    def evalform_back(val, form):\n        if callable(form):\n            return form(val)\n        if isinstance(form, tuple):\n            (func, args) = (form[0], form[1:])\n            args = args + (val,)\n            return func(*args)\n    return reduce(evalform_back, forms, val)\n",
+  "chars": 308,
+  "orig_name": "thread_last"
+ },
+ "toolz/functoolz.py::instanceproperty": {
+  "uid": "toolz/functoolz.py::instanceproperty",
+  "file": "toolz/functoolz.py",
+  "name": "fn_247",
+  "start": 119,
+  "end": 145,
+  "source": "def fn_247(fget=None, fset=None, fdel=None, doc=None, classval=None):\n    if fget is None:\n        return partial(fn_247, fset=fset, fdel=fdel, doc=doc, classval=classval)\n    return Cls_454(fget=fget, fset=fset, fdel=fdel, doc=doc, classval=classval)\n",
+  "chars": 252,
+  "orig_name": "instanceproperty"
+ },
+ "toolz/functoolz.py::InstanceProperty": {
+  "uid": "toolz/functoolz.py::InstanceProperty",
+  "file": "toolz/functoolz.py",
+  "name": "Cls_454",
+  "start": 148,
+  "end": 165,
+  "source": "class Cls_454(property):\n\n    def __init__(self, fget=None, fset=None, fdel=None, doc=None, classval=None):\n        self.classval = classval\n        property.__init__(self, fget=fget, fset=fset, fdel=fdel, doc=doc)\n\n    def __get__(self, obj, type=None):\n        if obj is None:\n            return self.classval\n        return property.__get__(self, obj, type)\n\n    def __reduce__(self):\n        state = (self.fget, self.fset, self.fdel, self.__doc__, self.classval)\n        return (Cls_454, state)\n",
+  "chars": 499,
+  "orig_name": "InstanceProperty"
+ },
+ "toolz/functoolz.py::curry": {
+  "uid": "toolz/functoolz.py::curry",
+  "file": "toolz/functoolz.py",
+  "name": "Cls_517",
+  "start": 168,
+  "end": 375,
+  "source": "class Cls_517(object):\n\n    def __init__(self, *args, **kwargs):\n        if not args:\n            raise TypeError('__init__() takes at least 2 arguments (1 given)')\n        (func, args) = (args[0], args[1:])\n        if not callable(func):\n            raise TypeError('Input must be callable')\n        if hasattr(func, 'func') and hasattr(func, 'args') and hasattr(func, 'keywords') and isinstance(func.args, tuple):\n            _kwargs = {}\n            if func.keywords:\n                _kwargs.update(func.keywords)\n            _kwargs.update(kwargs)\n            kwargs = _kwargs\n            args = func.args + args\n            func = func.func\n        if kwargs:\n            self._partial = partial(func, *args, **kwargs)\n        else:\n            self._partial = partial(func, *args)\n        self.__doc__ = getattr(func, '__doc__', None)\n        self.__name__ = getattr(func, '__name__', '<curry>')\n        self.__module__ = getattr(func, '__module__', None)\n        self.__qualname__ = getattr(func, '__qualname__', None)\n        self._sigspec = None\n        self._has_unknown_args = None\n\n    @fn_247\n    def func(self):\n        return self._partial.func\n\n    @fn_247\n    def __signature__(self):\n        sig = inspect.signature(self.func)\n        args = self.args or ()\n        keywords = self.keywords or {}\n        if fn_406(self.func, args, keywords, sig) is False:\n            raise TypeError('curry object has incorrect arguments')\n        params = list(sig.parameters.values())\n        skip = 0\n        for param in params[:len(args)]:\n            if param.kind == param.VAR_POSITIONAL:\n                break\n            skip += 1\n        kwonly = False\n        newparams = []\n        for param in params[skip:]:\n            kind = param.kind\n            default = param.default\n            if kind == param.VAR_KEYWORD:\n                pass\n            elif kind == param.VAR_POSITIONAL:\n                if kwonly:\n                    continue\n            elif param.name in keywords:\n                default = keywords[param.name]\n                kind = param.KEYWORD_ONLY\n                kwonly = True\n            else:\n                if kwonly:\n                    kind = param.KEYWORD_ONLY\n                if default is param.empty:\n                    default = no_default\n            newparams.append(param.replace(default=default, kind=kind))\n        return sig.replace(parameters=newparams)\n\n    @fn_247\n    def args(self):\n        return self._partial.args\n\n    @fn_247\n    def keywords(self):\n        return self._partial.keywords\n\n    @fn_247\n    def func_name(self):\n        return self.__name__\n\n    def __str__(self):\n        return str(self.func)\n\n    def __repr__(self):\n        return repr(self.func)\n\n    def __hash__(self):\n        return hash((self.func, self.args, frozenset(self.keywords.items()) if self.keywords else None))\n\n    def __eq__(self, other):\n        return isinstance(other, Cls_517) and self.func == other.func and (self.args == other.args) and (self.keywords == other.keywords)\n\n    def __ne__(self, other):\n        return not self.__eq__(other)\n\n    def __call__(self, *args, **kwargs):\n        try:\n            return self._partial(*args, **kwargs)\n        except TypeError as exc:\n            if self._should_curry(args, kwargs, exc):\n                return self.bind(*args, **kwargs)\n            raise\n\n    def _should_curry(self, args, kwargs, exc=None):\n        func = self.func\n        args = self.args + args\n        if self.keywords:\n            kwargs = dict(self.keywords, **kwargs)\n        if self._sigspec is None:\n            sigspec = self._sigspec = _sigs.signature_or_spec(func)\n            self._has_unknown_args = fn_583(func, sigspec) is not False\n        else:\n            sigspec = self._sigspec\n        if fn_406(func, args, kwargs, sigspec) is False:\n            return False\n        elif self._has_unknown_args:\n            return True\n        elif not fn_701(func, args, kwargs, sigspec):\n            return True\n        else:\n            return False\n\n    def bind(self, *args, **kwargs):\n        return type(self)(self, *args, **kwargs)\n\n    def call(self, *args, **kwargs):\n        return self._partial(*args, **kwargs)\n\n    def __get__(self, instance, owner):\n        if instance is None:\n            return self\n        return Cls_517(self, instance)\n\n    def __reduce__(self):\n        func = self.func\n        modname = getattr(func, '__module__', None)\n        qualname = getattr(func, '__qualname__', None)\n        if qualname is None:\n            qualname = getattr(func, '__name__', None)\n        is_decorated = None\n        if modname and qualname:\n            attrs = []\n            obj = import_module(modname)\n            for attr in qualname.split('.'):\n                if isinstance(obj, Cls_517):\n                    attrs.append('func')\n                    obj = obj.func\n                obj = getattr(obj, attr, None)\n                if obj is None:\n                    break\n                attrs.append(attr)\n            if isinstance(obj, Cls_517) and obj.func is func:\n                is_decorated = obj is self\n                qualname = '.'.join(attrs)\n                func = '%s:%s' % (modname, qualname)\n        userdict = tuple(((k, v) for (k, v) in self.__dict__.items() if k not in ('_partial', '_sigspec')))\n        state = (type(self), func, self.args, self.keywords, userdict, is_decorated)\n        return (fn_967, state)\n",
+  "chars": 5433,
+  "orig_name": "curry"
+ },
+ "toolz/functoolz.py::_restore_curry": {
+  "uid": "toolz/functoolz.py::_restore_curry",
+  "file": "toolz/functoolz.py",
+  "name": "fn_967",
+  "start": 378,
+  "end": 389,
+  "source": "def fn_967(cls, func, args, kwargs, userdict, is_decorated):\n    if isinstance(func, str):\n        (modname, qualname) = func.rsplit(':', 1)\n        obj = import_module(modname)\n        for attr in qualname.split('.'):\n            obj = getattr(obj, attr)\n        if is_decorated:\n            return obj\n        func = obj.func\n    obj = cls(func, *args, **kwargs or {})\n    obj.__dict__.update(userdict)\n    return obj\n",
+  "chars": 420,
+  "orig_name": "_restore_curry"
+ },
+ "toolz/functoolz.py::memoize": {
+  "uid": "toolz/functoolz.py::memoize",
+  "file": "toolz/functoolz.py",
+  "name": "fn_253",
+  "start": 392,
+  "end": 470,
+  "source": "@Cls_517\ndef fn_253(func, cache=None, key=None):\n    if cache is None:\n        cache = {}\n    try:\n        may_have_kwargs = fn_904(func) is not False\n        is_unary = fn_874(1, func)\n    except TypeError:\n        may_have_kwargs = True\n        is_unary = False\n    if key is None:\n        if is_unary:\n\n            def key(args, kwargs):\n                return args[0]\n        elif may_have_kwargs:\n\n            def key(args, kwargs):\n                return (args or None, frozenset(kwargs.items()) if kwargs else None)\n        else:\n\n            def key(args, kwargs):\n                return args\n\n    def memof(*args, **kwargs):\n        k = key(args, kwargs)\n        try:\n            return cache[k]\n        except TypeError:\n            raise TypeError('Arguments to memoized function must be hashable')\n        except KeyError:\n            cache[k] = result = func(*args, **kwargs)\n            return result\n    try:\n        memof.__name__ = func.__name__\n    except AttributeError:\n        pass\n    memof.__doc__ = func.__doc__\n    memof.__wrapped__ = func\n    return memof\n",
+  "chars": 1082,
+  "orig_name": "memoize"
+ },
+ "toolz/functoolz.py::Compose": {
+  "uid": "toolz/functoolz.py::Compose",
+  "file": "toolz/functoolz.py",
+  "name": "Cls_661",
+  "start": 473,
+  "end": 557,
+  "source": "class Cls_661(object):\n    __slots__ = ('first', 'funcs')\n\n    def __init__(self, funcs):\n        funcs = tuple(reversed(funcs))\n        self.first = funcs[0]\n        self.funcs = funcs[1:]\n\n    def __call__(self, *args, **kwargs):\n        ret = self.first(*args, **kwargs)\n        for f in self.funcs:\n            ret = f(ret)\n        return ret\n\n    def __getstate__(self):\n        return (self.first, self.funcs)\n\n    def __setstate__(self, state):\n        (self.first, self.funcs) = state\n\n    @fn_247(classval=__doc__)\n    def __doc__(self):\n\n        def composed_doc(*fs):\n            if not fs:\n                return '*args, **kwargs'\n            return '{f}({g})'.format(f=fs[0].__name__, g=composed_doc(*fs[1:]))\n        try:\n            return 'lambda *args, **kwargs: ' + composed_doc(*reversed((self.first,) + self.funcs))\n        except AttributeError:\n            return 'A composition of functions'\n\n    @property\n    def __name__(self):\n        try:\n            return '_of_'.join((f.__name__ for f in reversed((self.first,) + self.funcs)))\n        except AttributeError:\n            return type(self).__name__\n\n    def __repr__(self):\n        return '{.__class__.__name__}{!r}'.format(self, tuple(reversed((self.first,) + self.funcs)))\n\n    def __eq__(self, other):\n        if isinstance(other, Cls_661):\n            return other.first == self.first and other.funcs == self.funcs\n        return NotImplemented\n\n    def __ne__(self, other):\n        equality = self.__eq__(other)\n        return NotImplemented if equality is NotImplemented else not equality\n\n    def __hash__(self):\n        return hash(self.first) ^ hash(self.funcs)\n\n    def __get__(self, obj, objtype=None):\n        return self if obj is None else MethodType(self, obj)\n\n    @fn_247\n    def __signature__(self):\n        base = inspect.signature(self.first)\n        fn_242 = inspect.signature(self.funcs[-1])\n        return base.replace(return_annotation=fn_242.return_annotation)\n    __wrapped__ = fn_247(attrgetter('first'))\n",
+  "chars": 2011,
+  "orig_name": "Compose"
+ },
+ "toolz/functoolz.py::compose": {
+  "uid": "toolz/functoolz.py::compose",
+  "file": "toolz/functoolz.py",
+  "name": "fn_956",
+  "start": 560,
+  "end": 583,
+  "source": "def fn_956(*funcs):\n    if not funcs:\n        return fn_628\n    if len(funcs) == 1:\n        return funcs[0]\n    else:\n        return Cls_661(funcs)\n",
+  "chars": 148,
+  "orig_name": "compose"
+ },
+ "toolz/functoolz.py::compose_left": {
+  "uid": "toolz/functoolz.py::compose_left",
+  "file": "toolz/functoolz.py",
+  "name": "fn_847",
+  "start": 586,
+  "end": 604,
+  "source": "def fn_847(*funcs):\n    return fn_956(*reversed(funcs))\n",
+  "chars": 56,
+  "orig_name": "compose_left"
+ },
+ "toolz/functoolz.py::pipe": {
+  "uid": "toolz/functoolz.py::pipe",
+  "file": "toolz/functoolz.py",
+  "name": "fn_577",
+  "start": 607,
+  "end": 629,
+  "source": "def fn_577(data, *funcs):\n    for func in funcs:\n        data = func(data)\n    return data\n",
+  "chars": 91,
+  "orig_name": "pipe"
+ },
+ "toolz/functoolz.py::complement": {
+  "uid": "toolz/functoolz.py::complement",
+  "file": "toolz/functoolz.py",
+  "name": "fn_529",
+  "start": 632,
+  "end": 645,
+  "source": "def fn_529(func):\n    return fn_956(not_, func)\n",
+  "chars": 48,
+  "orig_name": "complement"
+ },
+ "toolz/functoolz.py::juxt": {
+  "uid": "toolz/functoolz.py::juxt",
+  "file": "toolz/functoolz.py",
+  "name": "Cls_201",
+  "start": 648,
+  "end": 678,
+  "source": "class Cls_201(object):\n    __slots__ = ['funcs']\n\n    def __init__(self, *funcs):\n        if len(funcs) == 1 and (not callable(funcs[0])):\n            funcs = funcs[0]\n        self.funcs = tuple(funcs)\n\n    def __call__(self, *args, **kwargs):\n        return tuple((func(*args, **kwargs) for func in self.funcs))\n\n    def __getstate__(self):\n        return self.funcs\n\n    def __setstate__(self, state):\n        self.funcs = state\n",
+  "chars": 431,
+  "orig_name": "juxt"
+ },
+ "toolz/functoolz.py::do": {
+  "uid": "toolz/functoolz.py::do",
+  "file": "toolz/functoolz.py",
+  "name": "fn_800",
+  "start": 681,
+  "end": 704,
+  "source": "def fn_800(func, x):\n    func(x)\n    return x\n",
+  "chars": 46,
+  "orig_name": "do"
+ },
+ "toolz/functoolz.py::flip": {
+  "uid": "toolz/functoolz.py::flip",
+  "file": "toolz/functoolz.py",
+  "name": "fn_963",
+  "start": 707,
+  "end": 731,
+  "source": "@Cls_517\ndef fn_963(func, a, b):\n    return func(b, a)\n",
+  "chars": 55,
+  "orig_name": "flip"
+ },
+ "toolz/functoolz.py::return_none": {
+  "uid": "toolz/functoolz.py::return_none",
+  "file": "toolz/functoolz.py",
+  "name": "fn_863",
+  "start": 734,
+  "end": 737,
+  "source": "def fn_863(exc):\n    return None\n",
+  "chars": 33,
+  "orig_name": "return_none"
+ },
+ "toolz/functoolz.py::excepts": {
+  "uid": "toolz/functoolz.py::excepts",
+  "file": "toolz/functoolz.py",
+  "name": "Cls_636",
+  "start": 740,
+  "end": 822,
+  "source": "class Cls_636(object):\n\n    def __init__(self, exc, func, handler=fn_863):\n        self.exc = exc\n        self.func = func\n        self.handler = handler\n\n    def __call__(self, *args, **kwargs):\n        try:\n            return self.func(*args, **kwargs)\n        except self.exc as e:\n            return self.handler(e)\n\n    @fn_247(classval=__doc__)\n    def __doc__(self):\n        from textwrap import dedent\n        exc = self.exc\n        try:\n            if isinstance(exc, tuple):\n                exc_name = '(%s)' % ', '.join(map(attrgetter('__name__'), exc))\n            else:\n                exc_name = exc.__name__\n            return dedent('                A wrapper around {inst.func.__name__!r} that will except:\\n                {exc}\\n                and handle any exceptions with {inst.handler.__name__!r}.\\n\\n                Docs for {inst.func.__name__!r}:\\n                {inst.func.__doc__}\\n\\n                Docs for {inst.handler.__name__!r}:\\n                {inst.handler.__doc__}\\n                ').format(inst=self, exc=exc_name)\n        except AttributeError:\n            return type(self).__doc__\n\n    @property\n    def __name__(self):\n        exc = self.exc\n        try:\n            if isinstance(exc, tuple):\n                exc_name = '_or_'.join(map(attrgetter('__name__'), exc))\n            else:\n                exc_name = exc.__name__\n            return '%s_excepting_%s' % (self.func.__name__, exc_name)\n        except AttributeError:\n            return 'excepting'\n",
+  "chars": 1504,
+  "orig_name": "excepts"
+ },
+ "toolz/functoolz.py::_check_sigspec": {
+  "uid": "toolz/functoolz.py::_check_sigspec",
+  "file": "toolz/functoolz.py",
+  "name": "fn_712",
+  "start": 825,
+  "end": 844,
+  "source": "def fn_712(sigspec, func, builtin_func, *builtin_args):\n    if sigspec is None:\n        try:\n            sigspec = inspect.signature(func)\n        except (ValueError, TypeError) as e:\n            sigspec = e\n    if isinstance(sigspec, ValueError):\n        return (None, builtin_func(*builtin_args))\n    elif not isinstance(sigspec, inspect.Signature):\n        if func in _sigs.signatures and (hasattr(func, '__signature__') and hasattr(func.__signature__, '__get__')):\n            val = builtin_func(*builtin_args)\n            return (None, val)\n        return (None, False)\n    return (sigspec, None)\n",
+  "chars": 602,
+  "orig_name": "_check_sigspec"
+ },
+ "toolz/functoolz.py::num_required_args": {
+  "uid": "toolz/functoolz.py::num_required_args",
+  "file": "toolz/functoolz.py",
+  "name": "fn_507",
+  "start": 866,
+  "end": 873,
+  "source": "def fn_507(func, sigspec=None):\n    (sigspec, rv) = fn_712(sigspec, func, _sigs._num_required_args, func)\n    if sigspec is None:\n        return rv\n    return sum((1 for p in sigspec.parameters.values() if p.default is p.empty and p.kind in (p.POSITIONAL_OR_KEYWORD, p.POSITIONAL_ONLY)))\n",
+  "chars": 288,
+  "orig_name": "num_required_args"
+ },
+ "toolz/functoolz.py::has_varargs": {
+  "uid": "toolz/functoolz.py::has_varargs",
+  "file": "toolz/functoolz.py",
+  "name": "fn_583",
+  "start": 876,
+  "end": 881,
+  "source": "def fn_583(func, sigspec=None):\n    (sigspec, rv) = fn_712(sigspec, func, _sigs._has_varargs, func)\n    if sigspec is None:\n        return rv\n    return any((p.kind == p.VAR_POSITIONAL for p in sigspec.parameters.values()))\n",
+  "chars": 224,
+  "orig_name": "has_varargs"
+ },
+ "toolz/functoolz.py::has_keywords": {
+  "uid": "toolz/functoolz.py::has_keywords",
+  "file": "toolz/functoolz.py",
+  "name": "fn_904",
+  "start": 884,
+  "end": 890,
+  "source": "def fn_904(func, sigspec=None):\n    (sigspec, rv) = fn_712(sigspec, func, _sigs._has_keywords, func)\n    if sigspec is None:\n        return rv\n    return any((p.default is not p.empty or p.kind in (p.KEYWORD_ONLY, p.VAR_KEYWORD) for p in sigspec.parameters.values()))\n",
+  "chars": 268,
+  "orig_name": "has_keywords"
+ },
+ "toolz/functoolz.py::is_valid_args": {
+  "uid": "toolz/functoolz.py::is_valid_args",
+  "file": "toolz/functoolz.py",
+  "name": "fn_701",
+  "start": 893,
+  "end": 902,
+  "source": "def fn_701(func, args, kwargs, sigspec=None):\n    (sigspec, rv) = fn_712(sigspec, func, _sigs._is_valid_args, func, args, kwargs)\n    if sigspec is None:\n        return rv\n    try:\n        sigspec.bind(*args, **kwargs)\n    except TypeError:\n        return False\n    return True\n",
+  "chars": 278,
+  "orig_name": "is_valid_args"
+ },
+ "toolz/functoolz.py::is_partial_args": {
+  "uid": "toolz/functoolz.py::is_partial_args",
+  "file": "toolz/functoolz.py",
+  "name": "fn_406",
+  "start": 905,
+  "end": 914,
+  "source": "def fn_406(func, args, kwargs, sigspec=None):\n    (sigspec, rv) = fn_712(sigspec, func, _sigs._is_partial_args, func, args, kwargs)\n    if sigspec is None:\n        return rv\n    try:\n        sigspec.bind_partial(*args, **kwargs)\n    except TypeError:\n        return False\n    return True\n",
+  "chars": 288,
+  "orig_name": "is_partial_args"
+ },
+ "toolz/functoolz.py::is_arity": {
+  "uid": "toolz/functoolz.py::is_arity",
+  "file": "toolz/functoolz.py",
+  "name": "fn_874",
+  "start": 917,
+  "end": 948,
+  "source": "def fn_874(n, func, sigspec=None):\n    (sigspec, rv) = fn_712(sigspec, func, _sigs._is_arity, n, func)\n    if sigspec is None:\n        return rv\n    num = fn_507(func, sigspec)\n    if num is not None:\n        num = num == n\n        if not num:\n            return False\n    varargs = fn_583(func, sigspec)\n    if varargs:\n        return False\n    keywords = fn_904(func, sigspec)\n    if keywords:\n        return False\n    if num is None or varargs is None or keywords is None:\n        return None\n    return True\n",
+  "chars": 512,
+  "orig_name": "is_arity"
+ },
+ "toolz/utils.py::raises": {
+  "uid": "toolz/utils.py::raises",
+  "file": "toolz/utils.py",
+  "name": "fn_934",
+  "start": 1,
+  "end": 6,
+  "source": "def fn_934(err, lamda):\n    try:\n        lamda()\n        return False\n    except err:\n        return True\n",
+  "chars": 106,
+  "orig_name": "raises"
+ },
+ "toolz/recipes.py::countby": {
+  "uid": "toolz/recipes.py::countby",
+  "file": "toolz/recipes.py",
+  "name": "fn_544",
+  "start": 8,
+  "end": 23,
+  "source": "def fn_544(key, seq):\n    if not callable(key):\n        key = fn_938(key)\n    return fn_405(map(key, seq))\n",
+  "chars": 107,
+  "orig_name": "countby"
+ },
+ "toolz/recipes.py::partitionby": {
+  "uid": "toolz/recipes.py::partitionby",
+  "file": "toolz/recipes.py",
+  "name": "fn_740",
+  "start": 26,
+  "end": 46,
+  "source": "def fn_740(func, seq):\n    return map(tuple, fn_388(1, itertools.groupby(seq, key=func)))\n",
+  "chars": 90,
+  "orig_name": "partitionby"
+ },
+ "toolz/_signatures.py::num_pos_args": {
+  "uid": "toolz/_signatures.py::num_pos_args",
+  "file": "toolz/_signatures.py",
+  "name": "fn_665",
+  "start": 598,
+  "end": 602,
+  "source": "def fn_665(sigspec):\n    return sum((1 for x in sigspec.parameters.values() if x.kind == x.POSITIONAL_OR_KEYWORD and x.default is x.empty))\n",
+  "chars": 140,
+  "orig_name": "num_pos_args"
+ },
+ "toolz/_signatures.py::get_exclude_keywords": {
+  "uid": "toolz/_signatures.py::get_exclude_keywords",
+  "file": "toolz/_signatures.py",
+  "name": "fn_624",
+  "start": 605,
+  "end": 614,
+  "source": "def fn_624(num_pos_only, sigspec):\n    if num_pos_only == 0:\n        return ()\n    has_kwargs = any((x.kind == x.VAR_KEYWORD for x in sigspec.parameters.values()))\n    if not has_kwargs:\n        return ()\n    pos_args = list(sigspec.parameters.values())[:num_pos_only]\n    return tuple((x.name for x in pos_args))\n",
+  "chars": 314,
+  "orig_name": "get_exclude_keywords"
+ },
+ "toolz/_signatures.py::signature_or_spec": {
+  "uid": "toolz/_signatures.py::signature_or_spec",
+  "file": "toolz/_signatures.py",
+  "name": "fn_750",
+  "start": 617,
+  "end": 621,
+  "source": "def fn_750(func):\n    try:\n        return inspect.signature(func)\n    except (ValueError, TypeError):\n        return None\n",
+  "chars": 122,
+  "orig_name": "signature_or_spec"
+ },
+ "toolz/_signatures.py::expand_sig": {
+  "uid": "toolz/_signatures.py::expand_sig",
+  "file": "toolz/_signatures.py",
+  "name": "fn_301",
+  "start": 624,
+  "end": 655,
+  "source": "def fn_301(sig):\n    if isinstance(sig, tuple):\n        if len(sig) == 3:\n            (num_pos_only, func, keyword_only) = sig\n            assert isinstance(sig[-1], tuple)\n        else:\n            (num_pos_only, func) = sig\n            keyword_only = ()\n        sigspec = fn_750(func)\n    else:\n        func = sig\n        sigspec = fn_750(func)\n        num_pos_only = fn_665(sigspec)\n        keyword_only = ()\n    keyword_exclude = fn_624(num_pos_only, sigspec)\n    return (num_pos_only, func, keyword_only + keyword_exclude, sigspec)\n",
+  "chars": 537,
+  "orig_name": "expand_sig"
+ },
+ "toolz/_signatures.py::create_signature_registry": {
+  "uid": "toolz/_signatures.py::create_signature_registry",
+  "file": "toolz/_signatures.py",
+  "name": "fn_902",
+  "start": 661,
+  "end": 668,
+  "source": "def fn_902(module_info=module_info, signatures=signatures):\n    for (module, info) in module_info.items():\n        if isinstance(module, str):\n            module = import_module(module)\n        for (name, sigs) in info.items():\n            if hasattr(module, name):\n                new_sigs = tuple((fn_301(sig) for sig in sigs))\n                signatures[getattr(module, name)] = new_sigs\n",
+  "chars": 391,
+  "orig_name": "create_signature_registry"
+ },
+ "toolz/_signatures.py::check_valid": {
+  "uid": "toolz/_signatures.py::check_valid",
+  "file": "toolz/_signatures.py",
+  "name": "fn_722",
+  "start": 671,
+  "end": 684,
+  "source": "def fn_722(sig, args, kwargs):\n    (num_pos_only, func, keyword_exclude, sigspec) = sig\n    if len(args) < num_pos_only:\n        return False\n    if keyword_exclude:\n        kwargs = dict(kwargs)\n        for item in keyword_exclude:\n            kwargs.pop(item, None)\n    try:\n        func(*args, **kwargs)\n        return True\n    except TypeError:\n        return False\n",
+  "chars": 370,
+  "orig_name": "check_valid"
+ },
+ "toolz/_signatures.py::_is_valid_args": {
+  "uid": "toolz/_signatures.py::_is_valid_args",
+  "file": "toolz/_signatures.py",
+  "name": "fn_502",
+  "start": 687,
+  "end": 692,
+  "source": "def fn_502(func, args, kwargs):\n    if func not in signatures:\n        return None\n    sigs = signatures[func]\n    return any((fn_722(sig, args, kwargs) for sig in sigs))\n",
+  "chars": 171,
+  "orig_name": "_is_valid_args"
+ },
+ "toolz/_signatures.py::check_partial": {
+  "uid": "toolz/_signatures.py::check_partial",
+  "file": "toolz/_signatures.py",
+  "name": "fn_609",
+  "start": 695,
+  "end": 705,
+  "source": "def fn_609(sig, args, kwargs):\n    (num_pos_only, func, keyword_exclude, sigspec) = sig\n    if len(args) < num_pos_only:\n        pad = (None,) * (num_pos_only - len(args))\n        args = args + pad\n    if keyword_exclude:\n        kwargs = dict(kwargs)\n        for item in keyword_exclude:\n            kwargs.pop(item, None)\n    return fn_406(func, args, kwargs, sigspec)\n",
+  "chars": 371,
+  "orig_name": "check_partial"
+ },
+ "toolz/_signatures.py::_is_partial_args": {
+  "uid": "toolz/_signatures.py::_is_partial_args",
+  "file": "toolz/_signatures.py",
+  "name": "fn_452",
+  "start": 708,
+  "end": 713,
+  "source": "def fn_452(func, args, kwargs):\n    if func not in signatures:\n        return None\n    sigs = signatures[func]\n    return any((fn_609(sig, args, kwargs) for sig in sigs))\n",
+  "chars": 171,
+  "orig_name": "_is_partial_args"
+ },
+ "toolz/_signatures.py::check_arity": {
+  "uid": "toolz/_signatures.py::check_arity",
+  "file": "toolz/_signatures.py",
+  "name": "fn_457",
+  "start": 716,
+  "end": 720,
+  "source": "def fn_457(n, sig):\n    (num_pos_only, func, keyword_exclude, sigspec) = sig\n    if keyword_exclude or num_pos_only > n:\n        return False\n    return fn_874(n, func, sigspec)\n",
+  "chars": 178,
+  "orig_name": "check_arity"
+ },
+ "toolz/_signatures.py::_is_arity": {
+  "uid": "toolz/_signatures.py::_is_arity",
+  "file": "toolz/_signatures.py",
+  "name": "fn_622",
+  "start": 723,
+  "end": 732,
+  "source": "def fn_622(n, func):\n    if func not in signatures:\n        return None\n    sigs = signatures[func]\n    checks = [fn_457(n, sig) for sig in sigs]\n    if all(checks):\n        return True\n    elif any(checks):\n        return None\n    return False\n",
+  "chars": 245,
+  "orig_name": "_is_arity"
+ },
+ "toolz/_signatures.py::check_varargs": {
+  "uid": "toolz/_signatures.py::check_varargs",
+  "file": "toolz/_signatures.py",
+  "name": "fn_655",
+  "start": 735,
+  "end": 737,
+  "source": "def fn_655(sig):\n    (num_pos_only, func, keyword_exclude, sigspec) = sig\n    return fn_583(func, sigspec)\n",
+  "chars": 107,
+  "orig_name": "check_varargs"
+ },
+ "toolz/_signatures.py::_has_varargs": {
+  "uid": "toolz/_signatures.py::_has_varargs",
+  "file": "toolz/_signatures.py",
+  "name": "fn_188",
+  "start": 740,
+  "end": 749,
+  "source": "def fn_188(func):\n    if func not in signatures:\n        return None\n    sigs = signatures[func]\n    checks = [fn_655(sig) for sig in sigs]\n    if all(checks):\n        return True\n    elif any(checks):\n        return None\n    return False\n",
+  "chars": 239,
+  "orig_name": "_has_varargs"
+ },
+ "toolz/_signatures.py::check_keywords": {
+  "uid": "toolz/_signatures.py::check_keywords",
+  "file": "toolz/_signatures.py",
+  "name": "fn_187",
+  "start": 752,
+  "end": 756,
+  "source": "def fn_187(sig):\n    (num_pos_only, func, keyword_exclude, sigspec) = sig\n    if keyword_exclude:\n        return True\n    return fn_904(func, sigspec)\n",
+  "chars": 151,
+  "orig_name": "check_keywords"
+ },
+ "toolz/_signatures.py::_has_keywords": {
+  "uid": "toolz/_signatures.py::_has_keywords",
+  "file": "toolz/_signatures.py",
+  "name": "fn_395",
+  "start": 759,
+  "end": 768,
+  "source": "def fn_395(func):\n    if func not in signatures:\n        return None\n    sigs = signatures[func]\n    checks = [fn_187(sig) for sig in sigs]\n    if all(checks):\n        return True\n    elif any(checks):\n        return None\n    return False\n",
+  "chars": 239,
+  "orig_name": "_has_keywords"
+ },
+ "toolz/_signatures.py::check_required_args": {
+  "uid": "toolz/_signatures.py::check_required_args",
+  "file": "toolz/_signatures.py",
+  "name": "fn_437",
+  "start": 771,
+  "end": 773,
+  "source": "def fn_437(sig):\n    (num_pos_only, func, keyword_exclude, sigspec) = sig\n    return fn_507(func, sigspec)\n",
+  "chars": 107,
+  "orig_name": "check_required_args"
+ },
+ "toolz/_signatures.py::_num_required_args": {
+  "uid": "toolz/_signatures.py::_num_required_args",
+  "file": "toolz/_signatures.py",
+  "name": "fn_133",
+  "start": 776,
+  "end": 784,
+  "source": "def fn_133(func):\n    if func not in signatures:\n        return None\n    sigs = signatures[func]\n    vals = [fn_437(sig) for sig in sigs]\n    val = vals[0]\n    if all((x == val for x in vals)):\n        return val\n    return None\n",
+  "chars": 229,
+  "orig_name": "_num_required_args"
+ },
+ "toolz/sandbox/core.py::EqualityHashKey": {
+  "uid": "toolz/sandbox/core.py::EqualityHashKey",
+  "file": "toolz/sandbox/core.py",
+  "name": "Cls_177",
+  "start": 7,
+  "end": 94,
+  "source": "class Cls_177(object):\n    __slots__ = ['item', 'key']\n    _default_hashkey = '__default__hashkey__'\n\n    def __init__(self, key, item):\n        if key is None:\n            self.key = self._default_hashkey\n        elif not callable(key):\n            self.key = fn_938(key)\n        else:\n            self.key = key\n        self.item = item\n\n    def __hash__(self):\n        if self.key == self._default_hashkey:\n            val = self.key\n        else:\n            val = self.key(self.item)\n        return hash(val)\n\n    def __eq__(self, other):\n        try:\n            return self._default_hashkey == other._default_hashkey and self.item == other.item\n        except AttributeError:\n            return False\n\n    def __ne__(self, other):\n        return not self.__eq__(other)\n\n    def __str__(self):\n        return '=%s=' % str(self.item)\n\n    def __repr__(self):\n        return '=%s=' % repr(self.item)\n",
+  "chars": 904,
+  "orig_name": "EqualityHashKey"
+ },
+ "toolz/sandbox/core.py::unzip": {
+  "uid": "toolz/sandbox/core.py::unzip",
+  "file": "toolz/sandbox/core.py",
+  "name": "fn_122",
+  "start": 98,
+  "end": 133,
+  "source": "def fn_122(seq):\n    seq = iter(seq)\n    try:\n        fn_656 = tuple(next(seq))\n    except StopIteration:\n        return tuple()\n    niters = len(fn_656)\n    seqs = tee(fn_274(fn_656, seq), niters)\n    return tuple(starmap(fn_388, enumerate(seqs)))\n",
+  "chars": 249,
+  "orig_name": "unzip"
+ },
+ "toolz/sandbox/parallel.py::_reduce": {
+  "uid": "toolz/sandbox/parallel.py::_reduce",
+  "file": "toolz/sandbox/parallel.py",
+  "name": "fn_206",
+  "start": 6,
+  "end": 10,
+  "source": "def fn_206(func, seq, initial=None):\n    if initial is None:\n        return functools.reduce(func, seq)\n    else:\n        return functools.reduce(func, seq, initial)\n",
+  "chars": 166,
+  "orig_name": "_reduce"
+ },
+ "toolz/sandbox/parallel.py::fold": {
+  "uid": "toolz/sandbox/parallel.py::fold",
+  "file": "toolz/sandbox/parallel.py",
+  "name": "fn_532",
+  "start": 13,
+  "end": 83,
+  "source": "def fn_532(binop, seq, default=no_default, map=map, chunksize=128, combine=None):\n    assert chunksize > 1\n    if combine is None:\n        combine = binop\n    chunks = fn_988(chunksize, seq)\n    if default == no_default:\n        results = map(functools.partial(fn_206, binop), chunks)\n    else:\n        results = map(functools.partial(fn_206, binop, initial=default), chunks)\n    results = list(results)\n    if len(results) == 1:\n        return results[0]\n    else:\n        return fn_532(combine, results, map=map, chunksize=chunksize)\n",
+  "chars": 536,
+  "orig_name": "fold"
+ }
+}

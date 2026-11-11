@@ -1,0 +1,492 @@
+{
+  "schema_version": "1.0",
+  "source_type": "pdf",
+  "source_path": "/Users/Nhym/vinh-work/Ky-thuat-phan-tich-chuong-trinh/Detai5.Chapter13/papers/2505.13353v5.pdf",
+  "source_sha256": "dc9b2ab6a4fe7e61a48094a9d9b97204051b4e311ec2fc3df484938461f33bcf",
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "Sense and Sensitivity: Examining the Influence of Semantic Recall on Long Context Code Understanding",
+    "author": "Adam Štorek; Mukur Gupta; Samira Hajizadeh; Prashast Srivastava; Suman Jana",
+    "creator": "arXiv GenPDF (tex2pdf:8def8d8)",
+    "producer": "pikepdf 8.15.1"
+  },
+  "page_count": 19,
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "text": "Sense and Sensitivity: Examining the Influence of Semantic Recall on Long\nContext Code Understanding\nAdam Štorek Mukur Gupta Samira Hajizadeh Prashast Srivastava Suman Jana\nColumbia University\n{astorek, suman}@cs.columbia.edu\n{mukur.gupta, sh4635, ps3400}@columbia.edu\nAbstract\nLarge language models (LLMs) are increas-\ningly deployed for understanding large code-\nbases, but whether they understand operational\nsemantics of long code context or rely on pat-\ntern matching shortcuts remains unclear. We\ndistinguish between lexical recall (retrieving\ncode verbatim) and semantic recall (under-\nstanding operational semantics). Evaluating\n10 state-of-the-art LLMs, we find that while\nfrontier models achieve near-perfect, position-\nindependent lexical recall, semantic recall de-\ngrades severely when code is centrally posi-\ntioned in long contexts. We introduce seman-\ntic recall sensitivity to measure whether tasks\nrequire understanding of code’s operational se-\nmantics vs. permit pattern matching shortcuts.\nThrough a novel counterfactual measurement\nmethod, we show that models rely heavily on\npattern matching shortcuts to solve existing\ncode understanding benchmarks. We propose\na new task SemTrace, which achieves high se-\nmantic recall sensitivity through unpredictable\noperations; LLMs’ accuracy exhibits severe po-\nsitional effects, with median accuracy drops of\n92.73% versus CRUXEval’s 53.36% as the rel-\nevant code snippet approaches the middle of\nthe input code context. Our findings suggest\ncurrent evaluations substantially underestimate\nsemantic recall failures in long context code\nunderstanding.1\n1\nIntroduction\nLarge Language Models (LLMs) are increas-\ningly applied to industry coding tasks (Edwards,\n2024) that demand understanding of large code-\nbases (Jimenez et al., 2024). Recent advances (Dao\net al., 2022; Peng et al., 2024; Su et al., 2024) en-\nable these models to process extremely long inputs,\nup to millions of tokens (OpenAI, 2025). How-\never, a fundamental question remains unanswered:\n1Our\ncode\nis\navailable\nat\nhttps://github.com/\nadamstorek/long-context-code-understanding.\nwhen models solve code understanding tasks, are\nthey processing the specific code provided in con-\ntext, or applying memorized patterns from pretrain-\ning? This distinction becomes critical as LLMs\nare deployed in production environments where\nthey must handle novel, project-specific code that\ncannot be solved through pattern matching alone.\nPattern matching shortcuts may also result in LLMs\nmissing subtle vulnerabilities (Ding et al., 2025).\nWe introduce a key distinction between two ca-\npabilities for code understanding in long contexts:\nlexical recall, meaning the ability to locate and re-\nproduce code verbatim, and semantic recall, mean-\ning the ability to remember what code does when\nit is run, i.e., its operational semantics (Winskel,\n1993). These capabilities are distinct; models can\nhave perfect lexical recall yet fail at semantic re-\ncall, demonstrating they can access relevant code\nbut not understand its effects. While needle-in-the-\nhaystack (NIAH) benchmarks (Liu et al., 2024a,c)\nmeasure lexical recall, the relationship between\nlexical and semantic recall is not well understood.\nMoreover, code understanding tasks like output\nprediction are designed to measure semantic recall,\nbut can often be solved through pattern-matching\nshortcuts (recognizing familiar algorithms, apply-\ning memorized correlations) without requiring se-\nmantic recall of the specific implementation. This\nconflation poses a fundamental evaluation chal-\nlenge: existing benchmarks may allow shortcuts\nthat mask semantic recall failures. We introduce se-\nmantic recall sensitivity as a property of tasks: the\ndegree to which solving the task requires seman-\ntically recalling specific code details rather than\npattern matching.\nTo investigate whether lexical and semantic re-\ncall rely on different mechanisms, we leverage posi-\ntional variation in long contexts as a diagnostic lens\nfor how models integrate information, rather than\nas an end in itself. Positional variation naturally\narises as code length scales, and understanding of\n1\narXiv:2505.13353v5  [cs.CL]  10 Jul 2026",
+      "character_count": 4191
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": null,
+      "text": "code should remain stable regardless of where rele-\nvant details occur. Prior work has shown that LLM\nperformance varies based on where information\nappears in the input (Liu et al., 2024b; Lu et al.,\n2022), but here we treat position as a controlled\nperturbation to probe representational differences\nbetween lexical and semantic recall. Our evalua-\ntion across 10 state-of-the-art LLMs reveals a clear\ndissociation: frontier models achieve near-perfect,\nposition-independent lexical recall of relevant code,\nyet semantic recall on the same code degrades when\ncentrally positioned within the code context.\nOn CRUXEval (Gu et al., 2024), a popular\ninput-output prediction benchmark, semantic recall\nshows moderate position-dependent degradation\n(median accuracy drop of 53.36%) compared to\nnegligible lexical recall degradation (2.39%). How-\never, we hypothesize this substantially underesti-\nmates semantic recall fragility due to low seman-\ntic recall sensitivity, as CRUXEval permits pattern\nmatching that compensates for semantic recall fail-\nures. To test this, we propose a novel counterfac-\ntual measurement method: systematically remov-\ning lines from code and measuring the LLMs’ per-\nformance degradation. Code that requires seman-\ntic recall should cause the LLMs’ performance to\nfall sharply (like the Python interpreter), since the\ncode’s operational semantics eventually changes;\nLLMs using pattern matching degrade gradually.\nCRUXEval shows gradual degradation (only 44.15-\n59.74% accuracy loss at 50% line removal), con-\nfirming low sensitivity.\nTo isolate semantic recall,\nwe introduce\nSemTrace, an output prediction task that achieves\nhigh semantic recall sensitivity through unpre-\ndictable operations. SemTrace reveals dramatically\nmore severe degradation: median accuracy drops\nof 92.73% versus CRUXEval’s 53.36%, with some\nfrontier models reaching zero accuracy when code\nis centrally positioned. Even GPT-4.1 shows clear\nposition-dependence when scaled to higher-digit\narithmetic that cannot be memorized, confirming\nthat moderate degradation on existing benchmarks\nmasks severe semantic recall fragility.\nContributions. (1) We introduce the distinction\nbetween lexical recall (accessing code verbatim)\nand semantic recall (understanding operational se-\nmantics), demonstrating they dissociate in long\ncontexts: models maintain near-perfect, position-\nindependent lexical recall while semantic recall\nexhibits severe position-dependent failures. We val-\nidate this across multiple programming languages\n(Python, JavaScript, PHP). (2) We propose seman-\ntic recall sensitivity as a task property with a coun-\nterfactual measurement method, revealing existing\nbenchmarks like CRUXEval have low sensitivity, al-\nlowing pattern matching to mask failures. (3) We\nintroduce SemTrace, an output prediction task iso-\nlating semantic recall via unpredictable operations,\nrevealing 92.73% median accuracy degradation vs.\n53.36% on CRUXEval, demonstrating current eval-\nuations substantially underestimate semantic recall\nchallenges.\n2\nRelated Work\nOur work intersects a number of research areas,\nnamely long context evaluation, positional effects\nin long contexts, and memorization.\n2.1\nLong Context Evaluation\nSignificant effort has been devoted to long-context\nevaluation, expanding from needle-in-haystack re-\ntrieval (Mohtashami and Jaggi, 2023; Shaham et al.,\n2023; Kamradt, 2023) to comprehensive bench-\nmarks (Bai et al., 2024, 2025), extended context\nlengths (Zhang et al., 2024a), and complex reason-\ning tasks (Kuratov et al., 2024; Hsieh et al., 2024;\nLevy et al., 2024; Modarressi et al., 2025). For code\nspecifically, prior work has focused on repository-\nlevel retrieval and code completion (Guo et al.,\n2023; Liu et al., 2024c), semantic search (Liu et al.,\n2024a), and code repository QA (Bai et al., 2025).\nHowever, these tasks primarily evaluate code re-\ntrieval (locating relevant code given queries) rather\nthan understanding operational semantics (predict-\ning execution behavior or input-output mappings).\nWhile prior work evaluates retrieval and under-\nstanding as separate tasks, we test both capabilities\non identical code in long contexts to understand\ntheir relationship. We also introduce semantic re-\ncall sensitivity as a property for characterizing code\nunderstanding benchmarks.\n2.2\nPosition Effects in Long Context\nPrior work has identified positional biases in LLMs,\nranging from long context scenarios (Zhang et al.,\n2024b) to in-context learning (Fang et al., 2025;\nMin et al., 2022; Lu et al., 2022), with empirical\nand theoretical evidence suggesting the important\nrole of positional encoding, loss functions, and\ndata distribution (Wu et al., 2025; Gu et al., 2025).\nParticularly relevant to our work is the ’lost-in-\nthe-middle’ effect (Liu et al., 2024b; Gao et al.,\n2024), where performance significantly degrades\n2",
+      "character_count": 4868
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": null,
+      "text": "when relevant information is centrally positioned\nwithin the natural language input. However, prior\nwork has not examined position effects on LLMs’\nunderstanding of operational semantics. We are\nthe first to investigate how position affects code\nunderstanding, and, critically, to distinguish how it\ndifferentially impacts lexical vs. semantic recall.\n2.3\nMemorization\nLLMs have been shown to have memorized nu-\nmerous algorithms, facts, and patterns from pre-\ntraining (Hartmann et al., 2023; Chang et al., 2023;\nNanda et al., 2023), which can mask their true rea-\nsoning ability and hinder evaluation (Huang and\nChang, 2023). To counter memorization, prior\nwork perturbs problems such that their solutions\nchange: 1-indexed Python (Wu et al., 2024), mu-\ntated LeetCode problems (Yang et al., 2025b), or\naltered math problems (Huang et al., 2025). We\npropose a complementary counterfactual approach:\nrather than perturbing code to alter results, we sys-\ntematically remove information (one line at a time)\nfrom code snippets to ultimately render them un-\nsolvable. If accuracy remains stable despite miss-\ning critical information, the model is relying on\nmemorized patterns rather than the provided code.\n3\nLexical and Semantic Recall\nWe distinguish between two types of recall capa-\nbilities that become critical when evaluating code\nunderstanding in long contexts. The first is Lexical\nCode Recall (RL), defined as the ability to repro-\nduce code snippets from the input context verbatim,\nwithout necessarily understanding their meaning or\nbehavior. This capability can be directly assessed\nthrough retrieval or cloze-style tasks, and modern\nLLMs achieve near-perfect performance on such\nbenchmarks (Yang et al., 2025a; OpenAI, 2025).\nThe second is Semantic Code Recall (RS), de-\nfined as the ability to understand what a code snip-\npet from the input context does when it is run: its\noperational semantics (Winskel, 1993). RS mea-\nsures the usability of the model’s representation\nfor performing downstream reasoning tasks that\ndepend on the provided code. For instance, given\nan in-context implementation of quicksort and an\nunsorted array, RL(quicksort) corresponds to re-\ngenerating the quicksort code verbatim, whereas\nRS(quicksort) corresponds to leveraging under-\nstanding of that code to correctly predict a sorted\noutput array by tracing quicksort’s execution steps.\nThese capabilities are distinct: models can have\nperfect lexical recall yet fail at semantic recall,\ndemonstrating they can access relevant code but\nnot process it. While needle-in-the-haystack bench-\nmarks (Liu et al., 2024a,c) measure lexical recall,\nno prior work has systematically investigated se-\nmantic recall (understanding operational semantics\nthrough tasks like input-output prediction) in long\ncontexts. Moreover, the relationship between these\ncapabilities remains poorly understood.\n3.1\nSemantic Recall Sensitivity\nWe introduce semantic recall sensitivity as a prop-\nerty of a code understanding task quantifying the\ndegree to which a task requires understanding op-\nerational semantics of a given code snippet rather\nthan permitting pattern matching shortcuts. Pattern\nmatching shortcuts refer to solving tasks by ap-\nplying memorized algorithmic patterns or spurious\ninput-output correlations from pretraining, thereby\nbypassing semantic recall of the specific provided\ncode. The semantic recall sensitivity of a bench-\nmark is the average sensitivity across its examples.\nConsider an output prediction task where a\nmodel must predict what a function returns given\nsome input. If the function implements a standard\nalgorithm like quicksort, a model might predict\nthe sorted output by recognizing the algorithm’s\nstructure and applying memorized sorting behavior,\nwithout semantically recalling the specific imple-\nmentation details. Such a task exhibits low seman-\ntic recall sensitivity. Conversely, if the function\nimplements a novel or arbitrary computation (e.g.,\na specific non-standard permutation of the input\narray defined only within the context), memorized\npatterns provide no shortcuts; instead, the model\nmust semantically recall the specific code lines.\nThis task would have high semantic recall sensitiv-\nity, as pre-trained knowledge alone is insufficient.\nThis distinction has critical implications for eval-\nuation. Low semantic recall sensitivity is inherently\nproblematic for two reasons. First, in production\nenvironments, models encounter novel, project-\nspecific code where pattern matching shortcuts are\nunavailable. Benchmarks permitting shortcuts fail\nto assess this critical capability. Second, the dif-\nference between correct and vulnerable code often\nlies in a single line: Ding et al. (2025) show mod-\nels struggle to distinguish correct from vulnerable\nimplementations when differences are subtle, sug-\ngesting pattern matching may be dangerous when\nsmall implementation details matter.\n3",
+      "character_count": 4915
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": null,
+      "text": "0\n20\n40\n60\n80\n100\nRemoved Lines (%)\n0\n20\n40\n60\n80\n100\nAccuracy (%)\nFigure 1: Python interpreter performance on incom-\nplete CRUXEval functions. Accuracy drops sharply and\napproaches zero beyond 20% removal, establishing the\nexpected pattern when output prediction genuinely re-\nquires understanding all provided code. This provides a\nreference for evaluating LLM semantic recall sensitivity.\nExponential trend fitted with bootstrapped 95% CI.\nMoreover, low sensitivity masks semantic recall\nfailures in long contexts. If pattern matching com-\npensates for position-dependent semantic recall\ndegradation, benchmarks will systematically under-\nestimate the severity of understanding failures. We\ninvestigate this empirically in §5.1, demonstrating\nthat low-sensitivity benchmarks exhibit smoother\ndegradation curves that obscure severe underlying\nsemantic recall fragility.\n3.2\nMeasuring Semantic Recall Sensitivity\nWhile semantic recall sensitivity characterizes a\nfundamental property of code understanding tasks,\nmeasuring it presents a challenge: how do we de-\ntermine whether a model’s success depends on un-\nderstanding specific code versus applying pattern\nmatching shortcuts?\nWe propose estimating semantic recall sensitiv-\nity by measuring the impact of withholding infor-\nmation from the code snippet. The key intuition is\nthat for code reasoning tasks like output prediction,\nremoving lines fundamentally changes the code\nsuch that it can no longer produce the correct out-\nput. Therefore, if a model continues to provide cor-\nrect answers despite missing critical information,\nit cannot be reasoning about the specific provided\ncode; instead, it must be relying on memorized pat-\nterns. Conversely, if performance degrades sharply\nas information is removed, the task requires gen-\nuine semantic recall of the specific code details.\nFormally, let Inc(C) denote a set of incomplete\nversions Cinc from the original snippet C (e.g., by\ndef f(x):\narr = [0, 0, 0, 0]\narr [0] = x - 43\narr [2] = x - 65\narr [1] = x + 88\narr [3] = x - 74\nreturn arr\nListing 1: Example from SemTrace. Given input x =\n81, the model must predict the output [38, 169, 16, 7] by\ncorrectly recalling and applying each assignment line.\nremoving specific lines). We define the sensitivity\nof task T with respect to C, denoted SensT (C), as\nthe average normalized performance degradation\nacross these incomplete versions (Equation 1):\n1\n|Inc(C)|\nX\nCinc∈Inc(C)\nRT (C) −RT (Cinc)\nRT (C) + ϵ\n(1)\nHere, RT (C) is the model’s reasoning perfor-\nmance on the original snippet, and RT (Cinc) is\nits performance on an incomplete version. The\nterm inside summation captures the relative per-\nformance caused by the incomplete information\nin Cinc ∈Inc(C) (with ϵ > 0 added for numeri-\ncal stability). Geometrically, SensT (C) measures\nthe area under the performance degradation curve\nas information is progressively removed from C.\nA higher SensT (C) indicates a steeper degrada-\ntion, meaning that successfully performing task\nT on snippet C heavily depends on semantically\nrecalling the specific details within C, thus signify-\ning high semantic recall sensitivity. Operationally,\nour estimator is model-dependent; we aggregate\nit across models to characterize benchmark-level\nsensitivity.\nTo validate this approach and establish a refer-\nence point, we measure the Python interpreter’s\nperformance on incomplete CRUXEval functions.\nAs expected, accuracy drops sharply–76 percentage\npoints after removing just one line–and approaches\nzero beyond 20% removal (Figure 1). This expo-\nnential decay confirms that output prediction fun-\ndamentally requires semantic understanding of all\ncode lines. Models showing gradual rather than\nsharp degradation therefore demonstrate low se-\nmantic recall sensitivity, indicating reliance on pat-\ntern matching rather than true code understanding.\n3.3\nMeasuring Semantic Recall: SemTrace\nHaving established how to measure semantic re-\ncall sensitivity, we now introduce a task designed to\nachieve high sensitivity by construction. To prevent\npattern matching shortcuts, the task must require\n4",
+      "character_count": 4094
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": null,
+      "text": "understanding implementation-specific details that\ncannot be inferred from algorithmic patterns or\nmemorized correlations. We propose SemTrace,\nan output prediction task where errors can be di-\nrectly attributed to semantic recall failures rather\nthan general reasoning deficiencies. In SemTrace,\nthe model receives a Python function that takes an\ninteger x as input, initializes a list, and populates it\nthrough assignment statements before returning the\nlist. Crucially, each assignment modifies a distinct\nlist element by adding a value y (drawn uniformly\nfrom [−100, 99]) to the input x, and the order of\nassignment lines is randomized. An example is\nshown in Listing 1.\nWe use simple 2-digit addition and subtraction\noperations (x+y) to minimize reasoning confounds\nwhile preventing pattern matching. These opera-\ntions are simple enough that frontier LLMs can\nperform them reliably in isolation, ensuring that\nreasoning difficulty does not obscure semantic re-\ncall effects (we verify this empirically in Table 1).\nHowever, because operations follow no predictable\npattern, models cannot rely on pretrained heuristics\nwithout memorizing solutions for all possible com-\nbinations. The probability of guessing a single op-\neration correctly is\n1\n200; for functions with k assign-\nments (k drawn uniformly from [4, 10]), the proba-\nbility of guessing the entire output array by chance,\neven assuming knowledge of the generation pro-\ncess, is negligible (at most ( 1\n200)4 = 6.25×10−10).\nCorrectly predicting the output therefore necessi-\ntates accurate RS of all assignment lines, rendering\nSemTrace highly sensitive to RS.\nSince SemTrace’s lines are mutually indepen-\ndent and comparable in difficulty, we can measure\nthe degree of RS through partial matches: count-\ning how many list positions the model predicted\ncorrectly. This metric allows us to distinguish se-\nmantic recall failures (some positions correct, indi-\ncating partial understanding) from complete break-\ndowns (near-random performance), confirming that\nerrors reflect failures to recall specific lines rather\nthan inability to perform the underlying operations.\n4\nExperimental Setup\nModels. We evaluate 10 state-of-the-art LLMs\nincluding GPT-4.1 (2025/04/14) and five open-\nweight frontier models (DeepSeek Coder V2 In-\nstruct, Gemma 3 27B It, Llama 3.3 70B Instruct,\nQwen 2.5 Coder 32B Instruct, and Codestral 22B\nv0.1), and their smaller counterparts (Gemma 3\n12B It, Llama 3.1 8B Instruct, Qwen 2.5 Coder\n7B Instruct, DeepSeek Coder V2 Lite Instruct) to\nexamine scaling effects. Main results focus on the\nsix frontier models for clarity; we include smaller\nmodel results in §A. Open-weight models were\nserved on a p5e.48xlarge AWS EC2 instance us-\ning vLLM (Kwon et al., 2023). Following Liu et al.\n(2024b), we use greedy decoding for reproducibil-\nity. To manage costs, GPT-4.1 experiments use\none-eighth of each dataset, randomly sampled.\nExperimental Design. To isolate positional effects,\nwe embed target code within contexts of irrele-\nvant distractor code. Distractor functions are sam-\npled from CodeSearchNet-Python (Husain et al.,\n2019), filtered by character count (25th–75th per-\ncentile, ∼200 tokens each) to exclude outliers. We\nuse 20, 40, 60, or 80 distractors (∼4k to ∼16k total\ntokens), systematically varying the target code’s\nposition across 11 equally spaced locations within\neach context. Crucially, distractors are unrelated\nto the target code, minimizing potential confounds\nfrom semantic interference while allowing us to\ncleanly measure position and context length effects.\nTasks. We evaluate three capabilities: (1) semantic\nrecall via CRUXEval (Gu et al., 2024) input and out-\nput prediction (800 Python functions each); (2) lex-\nical recall via function-level retrieval on the same\nCRUXEval functions, where models must reproduce\nentire function bodies verbatim; (3) high-sensitivity\nsemantic recall via SemTrace output prediction\n(800 generated functions).\nFor lexical recall, we prepend each line with\na unique 6-digit hexadecimal key following key-\nvalue retrieval approaches (Li et al., 2023; Liu\net al., 2024b). This provides unambiguous refer-\nence markers and prevents models from identifying\ntargets through naming patterns, which could con-\nfound position effects. For semantic recall sensitiv-\nity measurement, we generate incomplete versions\nof CRUXEval functions by systematically removing\nlines. We report zero-shot, exact match accuracy\nfor all tasks. In Figure 2, we report relative accu-\nracy change, computed as percent change relative\nto each model’s maximum performance at that con-\ntext length, to facilitate comparison across models\nwith different baseline capabilities.\nWe additionally verify our findings general-\nize across languages using four representative\nmodels. We draw from CRUXEval-X (Xu et al.,\n2025), an 18-language extension of CRUXEval,\nselecting JavaScript and PHP because Xu et al.\n(2025) identify them as among the least corre-\n5",
+      "character_count": 4971
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": null,
+      "text": "lated with Python, providing a conservative test\nof generalization. We apply the same experimental\nprotocol with CRUXEval-JS/CodeSearchNet-JS\nand CRUXEval-PHP/CodeSearchNet-PHP. We also\ntranslate SemTrace to JavaScript and PHP fol-\nlowing\nthe\nsame\ngeneration\nprocedure,\nre-\nplacing Python-specific syntax with language-\nappropriate equivalents, yielding SemTrace-JS\nand SemTrace-PHP.\nPrompting. Following Liu et al. (2024b), we use\nquery-aware contextualization–placing the query\nboth before and after the code–to enable decoder-\nonly models to attend to the query when processing\ncode. Prompt templates appear in §F.\n5\nResults\nTable 1 shows models’ performance on CRUXEval\nand SemTrace without long-context distractors.\nNotably, frontier models achieve substantially\nhigher median accuracy on SemTrace (86.19%)\nthan on CRUXEval input (45.06%) or output pre-\ndiction (55.38%). Even Codestral 22B and Gemma\n3 27B, which perform comparatively worse on\nSemTrace, do not fail completely.\nModel\nCRUXEval-I/O\nSemTrace\nCodestral 22B\n44.62 / 50.38\n23.25\nGPT-4.1\n79.00 / 77.00\n100.00\nDeepSeek Coder V2\n36.50 / 54.00\n96.00\nGemma 3 27B\n50.62 / 25.87\n12.25\nLlama 3.3 70B\n18.25 / 56.75\n87.12\nQwen 2.5 Coder 32B\n45.50 / 61.75\n85.25\nTable 1: Baseline performance (% accuracy) without\ndistractors. CRUXEval-I/O shows input/output predic-\ntion accuracy. Median accuracy is higher for SemTrace\n(86.19%) than CRUXEval (45.06% - 55.38%), indicating\nits severe position-dependent degradation (Figure 2 (c))\nreflects high semantic recall sensitivity rather than in-\nherent task difficulty.\n5.1\nLexical Recall Remains Stable While\nSemantic Recall Degrades with Position\nFigure 2 presents our central finding: a stark disso-\nciation between lexical and semantic recall as code\nposition varies in long contexts.\nLexical recall is position-independent. Fig-\nure 2a shows frontier models maintain over 95%\naccuracy on function retrieval regardless of where\ntarget code appears, demonstrating they can re-\nliably access code from any position within the\ntested context windows.\nSemantic recall degrades with position, mod-\nerately on CRUXEval.\nFigure 2b reveals accu-\nracy dropping as target code moves toward the\ncenter, with relative accuracy decreasing 16.25-\n84.29% from maximum. Performance declines\nmost severely when code appears at the 60-80% po-\nsition, while remaining relatively stable near con-\ntext boundaries. This pattern is already present\nwith only 20 distractor contexts (∼4k tokens), be-\ncoming more pronounced as the code context size\nincreases. CRUXEval input prediction exhibits a\nsimilar pattern (see §B for details).\nSemantic\nrecall\ndegrades\nseverely\non\nSemTrace.\nFigure 2c shows dramatically in-\ntensified degradation compared to CRUXEval:\nSemTrace accuracy plummets when target code is\ncentrally positioned. For example, Qwen 2.5 Coder\n32B, the second-best performer on CRUXEval-O\nwith only 23.31% relative degradation in accuracy\nfor an 80-distractor code context (∼16k tokens),\nsuffers 91.38% relative accuracy loss on SemTrace,\ndropping 53 percentage points; Codestral 22B and\nGemma 3 27B reach zero accuracy. This severe\ndegradation appears even at shorter contexts and\ndeepens substantially as context grows. Partial\nmatch analysis (§ C) confirms this represents\ngradual semantic recall degradation rather than\ncomplete failure.\nLexical-semantic recall dissociation general-\nizes across programming languages. We consis-\ntently observe the same fundamental dissociation\non JavaScript and PHP versions of CRUXEval and\nSemTrace: lexical recall remains generally stable\nacross positions while semantic recall degrades as\ntarget code moves toward the center of the con-\ntext, with median relative accuracy drops of 34.72%\nand 14.35% on CRUXEval-JS and CRUXEval-PHP,\nand 80.39% and 76.12% on SemTrace-JS and\nSemTrace-PHP, respectively, across four repre-\nsentative models (§ D). On SemTrace-PHP, sev-\neral models achieve zero baseline accuracy de-\nspite performing better on CRUXEval-PHP than\nCRUXEval-JS, suggesting the degree of pattern-\nmatching reliance may vary across programming\nlanguages.\nThese results signal that the phe-\nnomenon is not an artifact of Python-specific syn-\ntax or training.\nOut-of-distribution inputs cannot explain\nthe difference in severity of positional degra-\ndation between CRUXEval and SemTrace.\nIf\nSemTrace introduced out-of-distribution inputs,\nmodels would struggle on SemTrace regardless of\n6",
+      "character_count": 4426
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": null,
+      "text": "−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n20 Distractors\n40 Distractors\n60 Distractors\n80 Distractors\n(a) Lexical Recall: Function Retrieval\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n(b) Semantic Recall: CRUXEval Output Prediction\n0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n(c) Semantic Recall: SemTrace Output Prediction\nModels\nCodestral 22B v0.1\nGPT-4.1\nDeepSeek Coder V2\nGemma 3 27B\nLlama 3.3 70B\nQwen 2.5 Coder 32B\nModels\nCodestral 22B v0.1\nGPT-4.1\nDeepSeek Coder V2\nGemma 3 27B\nLlama 3.3 70B\nQwen 2.5 Coder 32B\nModels\nCodestral 22B v0.1\nGPT-4.1\nDeepSeek Coder V2\nGemma 3 27B\nLlama 3.3 70B\nQwen 2.5 Coder 32B\nFigure 2: Dissociation between lexical and semantic recall across code positions in long contexts. Values show\npercent change relative to each model’s maximum accuracy at the same context length. (a) Lexical recall (function\nretrieval) remains near-perfect and position-independent across all context lengths for frontier models. (b) Semantic\nrecall on CRUXEval output prediction (CRUXEval-O) exhibits moderate lost-in-the-middle effects, with median\naccuracy decreases of 53.36% as context length increases and target code moves toward the middle. (c) High-\nsensitivity semantic recall (SemTrace) shows severe position dependence, with median accuracy plummeting up to\n92.73% when target code is centrally positioned.\n0\n20\n40\n60\n80\nAccuracy (%)\nCodestral 22B v0.1\nDeepSeek Coder V2 Lite\nGemma 3 12B\nLlama 3.1 8B\nQwen 2.5 Coder 7B\n0\n25\n50\n75\n100\nRemoved Lines (%)\n0\n20\n40\n60\n80\nAccuracy (%)\nGPT-4.1\n0\n25\n50\n75\n100\nRemoved Lines (%)\nDeepSeek Coder V2\n0\n25\n50\n75\n100\nRemoved Lines (%)\nGemma 3 27B\n0\n25\n50\n75\n100\nRemoved Lines (%)\nLlama 3.3 70B\n0\n25\n50\n75\n100\nRemoved Lines (%)\nQwen 2.5 Coder 32B\nInput Prediction\nOutput Prediction\nFigure 3: CRUXEval semantic recall sensitivity measurement across all models. Performance on input (blue)\nand output (orange) prediction tasks as lines are progressively removed from functions. We fit exponential trend\nlines using non-linear least squares and leverage bootstrapping to compute 95% confidence intervals. Even with\n50% of lines removed, models’ relative accuracy drops only 44.15% and 59.74% for input and output prediction,\nrespectively, showing gradual degradation that contrasts sharply with the Python interpreter’s exponential decay\n(Figure 1). This gradual degradation indicates low semantic recall sensitivity, meaning models compensate for\nmissing code through pattern matching from pretraining rather than relying on semantic understanding of the\nspecific provided code.\n7",
+      "character_count": 2664
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": null,
+      "text": "context length, and models that perform worse on\nSemTrace than on CRUXEval in short-context set-\ntings should diverge in positional behavior from\nthose that perform better.\nWe observe neither:\nmost frontier models perform substantially better\non SemTrace than on CRUXEval in short-context\nsettings (Table 1), and, with the exception of GPT-\n4.1, models with widely varying short-context\nSemTrace performance exhibit the same qualita-\ntive positional degradation pattern. We analyze\nGPT-4.1 separately in §5.3.\nRetrieval failures cannot explain semantic\ndegradation. Models demonstrably access code\nnear-perfectly (Figure 2a) yet fail to understand its\noperational semantics (Figure 2b-c). We next ex-\nplain why CRUXEval understates this degradation.\n5.2\nCRUXEval’s Low Semantic Recall\nSensitivity Masks Position Effects\nWhy does semantic recall show such different po-\nsitional sensitivity between CRUXEval (moderate\ndegradation) and SemTrace (severe degradation)?\nWe hypothesize that CRUXEval has low semantic re-\ncall sensitivity, meaning models can partially solve\noutput prediction tasks by applying pattern match-\ning shortcuts from pretraining rather than semanti-\ncally recalling the specific provided code.\nTo test this, we generate incomplete versions of\neach CRUXEval function by removing all possible\ncombinations of lines while preserving function\nsignatures, creating 71,994 incomplete functions.\nWe measure accuracy aggregated by percentage\nof lines removed. If models truly require seman-\ntic recall of all provided code, we should observe\nsharp exponential decay similar to the Python inter-\npreter (Figure 1). Conversely, gradual degradation\nindicates models are compensating through pattern\nmatching shortcuts instead.\nCounterfactual measurement reveals gradual degra-\ndation instead of sharp decline. Figure 3 shows the\nresults across all 10 evaluated models. Removing\n50% of lines–making the code fundamentally in-\ncomplete and unexecutable–causes only 44.15%\naccuracy drop for input prediction and 59.74%\nfor output prediction, contrasting sharply with the\nPython interpreter’s exponential decay.\nLarger models show slightly higher sensitiv-\nity but remain resilient. Larger models (GPT-4.1,\nDeepSeek Coder V2, Llama 3.3 70B, Qwen 2.5\nCoder 32B) exhibit sharper performance declines\nthan smaller models, suggesting their greater re-\nliance on semantic recall. However, even these\n0\n20\n40\n60\n80\n100\nPosition (%)\n−40\n−30\n−20\n−10\n0\nRelative Accuracy Δ (%)\n# Digits\n2\n3\n4\n5\n6\nFigure 4: GPT-4.1’s higher-digit SemTrace perfor-\nmance reveals arithmetic memorization. Testing with\n2–6 digit operations and 80 distractors shows position-\nindependent performance for 2–3 digits, but clear\nposition-dependent degradation for 4+ digits (a 31\npercentage-point drop at 4 digits, 43% relative loss at\n6 digits). This demonstrates GPT-4.1’s perfect 2-digit\nperformance (Figure 2c) reflects memorized arithmetic\nrather than superior semantic recall.\nmodels degrade far more gradually than the Python\ninterpreter, maintaining substantial accuracy de-\nspite fundamentally incomplete code.\nThe low sensitivity to missing information\nreflects low semantic recall sensitivity.\nMod-\nels leverage knowledge of common algorith-\nmic patterns–sorting, string manipulation, basic\narithmetic–to predict plausible outputs without\nfully understanding the specific implementation,\nmasking semantic recall failures. This explains\nwhy CRUXEval shows only moderate position ef-\nfects (Figure 2b) while SemTrace reveals severe\ndegradation (Figure 2c).\n5.3\nGPT-4.1’s Exception Reveals\nMemorization of Simple Arithmetic\nFigure 2 reveals an anomaly: GPT-4.1 achieves\nnear-perfect accuracy on SemTrace regardless of\nposition or context length, while still exhibiting\nclear position-dependent degradation on CRUXEval.\nThis makes GPT-4.1 the only model where the pat-\ntern inverts, performing better on SemTrace than\nCRUXEval. If GPT-4.1 had truly superior semantic\nrecall capabilities, why would it fail on the less\nsensitive task (CRUXEval) while succeeding on the\nmore sensitive one (SemTrace)?\nWe hypothesize that GPT-4.1 has memorized 2-\ndigit arithmetic, effectively converting SemTrace\nfrom a semantic recall task into a lexical recall task\nby simply retrieving memorized addition/subtrac-\ntion results rather than reasoning about code. To\n8",
+      "character_count": 4328
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": null,
+      "text": "test this, we evaluate GPT-4.1 on SemTrace vari-\nants using 3-, 4-, 5-, and 6-digit operations.\nFigure 4 shows the results with 80 distractors\n(∼16k tokens). GPT-4.1 maintains near-perfect\nperformance on 2- and 3-digit SemTrace across\nall positions. However, position-dependent degra-\ndation emerges clearly for 4-digit operations, with\naccuracy dropping up to 31 percentage points when\ncode is centrally positioned. This degradation in-\ntensifies for 5- and 6-digit operations, with 6-digit\nSemTrace showing up to 43% relative accuracy\nloss and pronounced U-shaped curves.\nThis finding reveals that even high-sensitivity\ntasks remain vulnerable to shortcuts if they in-\nvolve operations models can solve without process-\ning code. GPT-4.1’s perfect 2-digit performance\nappeared to demonstrate superior semantic recall\nbut exhibited position-independence characteris-\ntic of retrieval rather than processing: a pattern\nconsistent with memorized arithmetic. The emer-\ngence of position-dependence at higher digits sug-\ngests that when such shortcuts become unavailable,\neven GPT-4.1 must rely on genuine semantic recall,\nwhich exhibits the same fragility as other frontier\nmodels.\n6\nBroader Implications\nAlthough we study semantic recall in the context of\ncode, the underlying capability of applying multi-\nstep algorithms embedded in long contexts is not\nspecific to programming. Many high-stakes NLP\ndomains contain natural-language procedures with\nthe same structural properties: a set of sequential,\ninterdependent steps embedded in a large document\nthat must be located, understood, and correctly ap-\nplied to a specific case.\nA concrete example is legal and policy analysis,\nwhere one must extract multi-step decision rules\nfrom large documents, such as “if A, then check\nB and C; entitlement holds only if ...”, and apply\nthem to specific cases. Indeed, Jurayj et al. (2026)\nfind that models struggle to apply relevant entries\nfrom a large corpus of U.S. federal tax statutory\nrules provided in-context, but perform substantially\nbetter when allowed to extract and encode the rele-\nvant rules into a symbolic solver that handles the\nprocedural reasoning. This suggests that locating\nrules from long context and applying them are dis-\nsociable capabilities, consistent with the lexical-\nsemantic distinction we document here.\nMore broadly, we view semantic recall sensitiv-\nity as a property relevant to any task where correct\nbehavior requires understanding and applying spe-\ncific procedural details from long contexts, rather\nthan recognizing familiar patterns. We hope that\nthe concepts, metrics, and benchmarks introduced\nhere provide useful tools for investigating this phe-\nnomenon beyond code.\n7\nConclusion\nWe introduced the distinction between lexical code\nrecall (verbatim retrieval) and semantic code re-\ncall (understanding what code does), demonstrat-\ning that while frontier LLMs achieve near-perfect\nposition-independent lexical recall, semantic re-\ncall exhibits severe lost-in-the-middle effects with\nmedian accuracy drops of 92.73%. We proposed\nsemantic recall sensitivity as a property of bench-\nmarks and showed that existing code reasoning\nbenchmarks like CRUXEval have low sensitivity\ncompared to SemTrace, allowing pattern match-\ning to mask the true severity of position-dependent\nfailures.\nOur findings reveal that current long-\ncontext evaluations may substantially underesti-\nmate the challenges models face when reasoning\nabout novel, unfamiliar code. Future work should\ndevelop benchmarks with high semantic recall sen-\nsitivity to more accurately assess models’ true code\nunderstanding capabilities in long contexts.\nLimitations\nDistractor Code Design. We use randomly sam-\npled, semantically unrelated functions as distrac-\ntors to isolate positional effects. While this design\nenables clean measurement of position-dependent\ndegradation, real-world codebases contain semanti-\ncally related functions that may introduce interfer-\nence effects not captured in our study. While we\nanticipate this would lead to further deterioration,\nthe relationship between semantic similarity of sur-\nrounding code and semantic recall failures remains\nan open question.\nTask Scope.\nOur evaluation focuses on input-\noutput prediction and code retrieval tasks. While\nthese tasks directly measure semantic and lexical\nrecall, production code understanding involves ad-\nditional capabilities such as code generation, de-\nbugging, and complex multi-hop reasoning. The\nextent to which our findings apply to these broader\ntasks requires further investigation.\nSemTrace Design Constraints. SemTrace uses\nsimple arithmetic operations to isolate semantic\n9",
+      "character_count": 4666
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": null,
+      "text": "recall from reasoning difficulty. While this de-\nsign choice enables clear attribution of errors to\nsemantic recall failures, it may not capture seman-\ntic understanding challenges in more complex algo-\nrithmic contexts. Additionally, our discovery that\nGPT-4.1 has memorized arithmetic operations high-\nlights an inherent limitation: as models grow more\ncapable, designing tasks that prevent all possible\nshortcuts becomes increasingly difficult.\nContext Length Range. Our experiments evaluate\ncontexts up to approximately 16k tokens. While\nthis range covers common code understanding sce-\nnarios, recent models support significantly longer\ncontexts (up to millions of tokens). While our re-\nsults suggest increasing context length leads to in-\ncreased semantic recall degradation, whether the\npattern continues at extreme context lengths is left\nfor future work.\nBenchmark Scale. Our evaluations use 800 exam-\nples per task. While sufficient to observe consis-\ntent patterns across models, larger-scale evaluation\ncould reveal more subtle effects and enable more\nfine-grained analysis of failure modes.\nAcknowledgments\nWe thank the anonymous reviewers as well as An-\ndreas D. Kellas, Nihal Jain, and Abhishek Shah for\ntheir valuable feedback. This work was partially\nsupported by an award from the Google Cyber\nNYC Institutional program. Any opinions, find-\nings, conclusions, or recommendations expressed\nherein are those of the authors and do not reflect\nthose of Google.\nReferences\nYushi Bai, Xin Lv, Jiajie Zhang, Hongchang Lyu,\nJiankai Tang, Zhidian Huang, Zhengxiao Du, Xiao\nLiu, Aohan Zeng, Lei Hou, Yuxiao Dong, Jie Tang,\nand Juanzi Li. 2024. LongBench: A bilingual, multi-\ntask benchmark for long context understanding. In\nProceedings of the 62nd Annual Meeting of the As-\nsociation for Computational Linguistics (Volume 1:\nLong Papers), pages 3119–3137, Bangkok, Thailand.\nAssociation for Computational Linguistics.\nYushi Bai, Shangqing Tu, Jiajie Zhang, Hao Peng,\nXiaozhi Wang, Xin Lv, Shulin Cao, Jiazheng Xu,\nLei Hou, Yuxiao Dong, Jie Tang, and Juanzi Li.\n2025. LongBench v2: Towards deeper understand-\ning and reasoning on realistic long-context multitasks.\nPreprint, arXiv:2412.15204.\nKent Chang, Mackenzie Cramer, Sandeep Soni, and\nDavid Bamman. 2023. Speak, memory: An archaeol-\nogy of books known to ChatGPT/GPT-4. In Proceed-\nings of the 2023 Conference on Empirical Methods\nin Natural Language Processing, pages 7312–7327,\nSingapore. Association for Computational Linguis-\ntics.\nTri Dao, Daniel Y Fu, Stefano Ermon, Atri Rudra, and\nChristopher Re. 2022.\nFlashAttention: Fast and\nmemory-efficient exact attention with IO-awareness.\nIn Advances in Neural Information Processing Sys-\ntems.\nYangruibo Ding, Yanjun Fu, Omniyyah Ibrahim,\nChawin Sitawarin, Xinyun Chen, Basel Alomair,\nDavid Wagner, Baishakhi Ray, and Yizheng Chen.\n2025. Vulnerability detection with code language\nmodels: How far are we? In 2025 IEEE/ACM 47th\nInternational Conference on Software Engineering\n(ICSE), pages 1729–1741.\nBenj Edwards. 2024. Google CEO says over 25% of\nnew Google code is generated by AI.\nLizhe Fang, Yifei Wang, Khashayar Gatmiry, Lei Fang,\nand Yisen Wang. 2025. Rethinking invariance in\nin-context learning. In The Thirteenth International\nConference on Learning Representations.\nMuhan Gao, TaiMing Lu, Kuai Yu, Adam Byerly, and\nDaniel Khashabi. 2024. Insights into LLM long-\ncontext failures: When transformers know but don’t\ntell. In Findings of the Association for Computa-\ntional Linguistics: EMNLP 2024, pages 7611–7625,\nMiami, Florida, USA. Association for Computational\nLinguistics.\nAlex Gu, Baptiste Roziere, Hugh James Leather, Ar-\nmando Solar-Lezama, Gabriel Synnaeve, and Sida\nWang. 2024. CRUXEval: A benchmark for code rea-\nsoning, understanding and execution. In Forty-first\nInternational Conference on Machine Learning.\nXiangming Gu, Tianyu Pang, Chao Du, Qian Liu,\nFengzhuo Zhang, Cunxiao Du, Ye Wang, and Min\nLin. 2025. When attention sink emerges in language\nmodels: An empirical view. In The Thirteenth Inter-\nnational Conference on Learning Representations.\nDaya Guo, Canwen Xu, Nan Duan, Jian Yin, and Ju-\nlian McAuley. 2023. LongCoder: a long-range pre-\ntrained language model for code completion. In Pro-\nceedings of the 40th International Conference on\nMachine Learning, ICML’23. JMLR.org.\nValentin Hartmann, Anshuman Suri, Vincent Bind-\nschaedler, David Evans, Shruti Tople, and Robert\nWest. 2023. SoK: Memorization in general-purpose\nlarge language models. Preprint, arXiv:2310.18362.\nCheng-Ping Hsieh, Simeng Sun, Samuel Kriman, Shan-\ntanu Acharya, Dima Rekesh, Fei Jia, and Boris Gins-\nburg. 2024. RULER: What’s the real context size of\nyour long-context language models? In First Confer-\nence on Language Modeling.\n10",
+      "character_count": 4758
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": null,
+      "text": "Jie Huang and Kevin Chen-Chuan Chang. 2023. To-\nwards reasoning in large language models: A survey.\nIn Findings of the Association for Computational\nLinguistics: ACL 2023, pages 1049–1065, Toronto,\nCanada. Association for Computational Linguistics.\nKaixuan Huang, Jiacheng Guo, Zihao Li, Xiang Ji, Ji-\nawei Ge, Wenzhe Li, Yingqing Guo, Tianle Cai, Hui\nYuan, Runzhe Wang, Yue Wu, Ming Yin, Shange\nTang, Yangsibo Huang, Chi Jin, Xinyun Chen,\nChiyuan Zhang, and Mengdi Wang. 2025. MATH-\nperturb: Benchmarking LLMs’ math reasoning abil-\nities against hard perturbations. In Forty-second In-\nternational Conference on Machine Learning.\nHamel Husain, Ho-Hsiang Wu, Tiferet Gazit, Miltiadis\nAllamanis, and Marc Brockschmidt. 2019. Code-\nSearchNet challenge: Evaluating the state of seman-\ntic code search. arXiv preprint arXiv:1909.09436.\nCarlos E Jimenez, John Yang, Alexander Wettig,\nShunyu Yao, Kexin Pei, Ofir Press, and Karthik R\nNarasimhan. 2024. SWE-bench: Can language mod-\nels resolve real-world github issues? In The Twelfth\nInternational Conference on Learning Representa-\ntions.\nWilliam Jurayj, Nils Holzenberger, and Benjamin\nVan Durme. 2026. Language models and logic pro-\ngrams for trustworthy tax reasoning. Proceedings\nof the AAAI Conference on Artificial Intelligence,\n40(45):38688–38698.\nGreg Kamradt. 2023. Needle In A Haystack - Pressure\nTesting LLMs.\nYuri Kuratov, Aydar Bulatov, Petr Anokhin, Ivan Rod-\nkin, Dmitry Igorevich Sorokin, Artyom Sorokin, and\nMikhail Burtsev. 2024.\nBABILong: Testing the\nlimits of LLMs with long context reasoning-in-a-\nhaystack. In The Thirty-eight Conference on Neural\nInformation Processing Systems Datasets and Bench-\nmarks Track.\nWoosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying\nSheng, Lianmin Zheng, Cody Hao Yu, Joseph E.\nGonzalez, Hao Zhang, and Ion Stoica. 2023. Effi-\ncient memory management for large language model\nserving with PagedAttention. In Proceedings of the\nACM SIGOPS 29th Symposium on Operating Systems\nPrinciples.\nMosh Levy, Alon Jacoby, and Yoav Goldberg. 2024.\nSame task, more tokens: the impact of input length\non the reasoning performance of large language mod-\nels. In Proceedings of the 62nd Annual Meeting of\nthe Association for Computational Linguistics (Vol-\nume 1: Long Papers), pages 15339–15353, Bangkok,\nThailand. Association for Computational Linguistics.\nDacheng Li, Rulin Shao, Anze Xie, Ying Sheng, Lian-\nmin Zheng, Joseph E. Gonzalez, Ion Stoica, Xuezhe\nMa, and Hao Zhang. 2023. How long can open-\nsource LLMs truly promise on context length?\nJiawei Liu, Jia Le Tian, Vijay Daita, Yuxiang Wei,\nYifeng Ding, Yuhan Katherine Wang, Jun Yang, and\nLingming Zhang. 2024a. RepoQA: Evaluating long\ncontext code understanding. In First Workshop on\nLong-Context Foundation Models @ ICML 2024.\nNelson F. Liu, Kevin Lin, John Hewitt, Ashwin Paran-\njape, Michele Bevilacqua, Fabio Petroni, and Percy\nLiang. 2024b. Lost in the middle: How language\nmodels use long contexts. Transactions of the Asso-\nciation for Computational Linguistics, 12:157–173.\nTianyang Liu, Canwen Xu, and Julian McAuley. 2024c.\nRepoBench: Benchmarking repository-level code\nauto-completion systems. In The Twelfth Interna-\ntional Conference on Learning Representations.\nYao Lu, Max Bartolo, Alastair Moore, Sebastian Riedel,\nand Pontus Stenetorp. 2022. Fantastically ordered\nprompts and where to find them: Overcoming few-\nshot prompt order sensitivity. In Proceedings of the\n60th Annual Meeting of the Association for Compu-\ntational Linguistics (Volume 1: Long Papers), pages\n8086–8098, Dublin, Ireland. Association for Compu-\ntational Linguistics.\nSewon Min, Xinxi Lyu, Ari Holtzman, Mikel Artetxe,\nMike Lewis, Hannaneh Hajishirzi, and Luke Zettle-\nmoyer. 2022. Rethinking the role of demonstrations:\nWhat makes in-context learning work? In Proceed-\nings of the 2022 Conference on Empirical Methods in\nNatural Language Processing, pages 11048–11064,\nAbu Dhabi, United Arab Emirates. Association for\nComputational Linguistics.\nAli Modarressi, Hanieh Deilamsalehy, Franck Der-\nnoncourt, Trung Bui, Ryan A. Rossi, Seunghyun\nYoon, and Hinrich Schütze. 2025. NoLiMa: Long-\ncontext evaluation beyond literal matching. Preprint,\narXiv:2502.05167.\nAmirkeivan Mohtashami and Martin Jaggi. 2023.\nRandom-access infinite context length for transform-\ners. In Thirty-seventh Conference on Neural Infor-\nmation Processing Systems.\nNeel Nanda, Lawrence Chan, Tom Lieberum, Jess\nSmith, and Jacob Steinhardt. 2023. Progress mea-\nsures for grokking via mechanistic interpretability. In\nThe Eleventh International Conference on Learning\nRepresentations.\nOpenAI. 2025. Introducing GPT-4.1 in the API.\nBowen Peng, Jeffrey Quesnelle, Honglu Fan, and Enrico\nShippole. 2024. YaRN: Efficient context window ex-\ntension of large language models. In The Twelfth\nInternational Conference on Learning Representa-\ntions.\nUri Shaham, Maor Ivgi, Avia Efrat, Jonathan Berant,\nand Omer Levy. 2023. ZeroSCROLLS: A zero-shot\nbenchmark for long text understanding.\nIn Find-\nings of the Association for Computational Linguis-\ntics: EMNLP 2023, pages 7977–7989, Singapore.\nAssociation for Computational Linguistics.\n11",
+      "character_count": 5124
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": null,
+      "text": "Jianlin Su, Murtadha Ahmed, Yu Lu, Shengfeng Pan,\nWen Bo, and Yunfeng Liu. 2024. RoFormer: En-\nhanced transformer with rotary position embedding.\nNeurocomput., 568(C).\nGlynn Winskel. 1993. The formal semantics of pro-\ngramming languages: an introduction. MIT Press,\nCambridge, MA, USA.\nXinyi Wu, Yifei Wang, Stefanie Jegelka, and Ali Jad-\nbabaie. 2025. On the emergence of position bias in\ntransformers. In Forty-second International Confer-\nence on Machine Learning.\nZhaofeng Wu, Linlu Qiu, Alexis Ross, Ekin Akyürek,\nBoyuan Chen, Bailin Wang, Najoung Kim, Jacob An-\ndreas, and Yoon Kim. 2024. Reasoning or reciting?\nexploring the capabilities and limitations of language\nmodels through counterfactual tasks. In Proceed-\nings of the 2024 Conference of the North American\nChapter of the Association for Computational Lin-\nguistics: Human Language Technologies (Volume\n1: Long Papers), pages 1819–1862, Mexico City,\nMexico. Association for Computational Linguistics.\nRuiyang Xu, Jialun Cao, Yaojie Lu, Ming Wen, Hongyu\nLin, Xianpei Han, Ben He, Shing-Chi Cheung, and\nLe Sun. 2025. CRUXEVAL-X: A benchmark for\nmultilingual code reasoning, understanding and exe-\ncution. In Proceedings of the 63rd Annual Meeting of\nthe Association for Computational Linguistics (Vol-\nume 1: Long Papers), pages 23762–23779, Vienna,\nAustria. Association for Computational Linguistics.\nAn Yang, Baosong Yang, Beichen Zhang, Binyuan Hui,\nBo Zheng, Bowen Yu, Chengyuan Li, Dayiheng Liu,\nFei Huang, Haoran Wei, Huan Lin, Jian Yang, Jian-\nhong Tu, Jianwei Zhang, Jianxin Yang, Jiaxi Yang,\nJingren Zhou, Junyang Lin, Kai Dang, and 23 oth-\ners. 2025a.\nQwen2.5 technical report.\nPreprint,\narXiv:2412.15115.\nRem Yang, Julian Dai, Nikos Vasilakis, and Martin\nRinard. 2025b. Evaluating the generalization capa-\nbilities of large language models on code reasoning.\nPreprint, arXiv:2504.05518.\nXinrong Zhang, Yingfa Chen, Shengding Hu, Zihang\nXu, Junhao Chen, Moo Hao, Xu Han, Zhen Thai,\nShuo Wang, Zhiyuan Liu, and Maosong Sun. 2024a.\n∞Bench: Extending long context evaluation beyond\n100K tokens. In Proceedings of the 62nd Annual\nMeeting of the Association for Computational Lin-\nguistics (Volume 1: Long Papers), pages 15262–\n15277, Bangkok, Thailand. Association for Compu-\ntational Linguistics.\nZhenyu Zhang, Runjin Chen, Shiwei Liu, Zhewei Yao,\nOlatunji Ruwase, Beidi Chen, Xiaoxia Wu, and\nZhangyang Wang. 2024b. Found in the middle: How\nlanguage models use long contexts better via plug-\nand-play positional encoding. In The Thirty-eighth\nAnnual Conference on Neural Information Process-\ning Systems.\nModel\nCRUXEval-I/O\nSemTrace\nDeepSeek Coder V2 Lite\n20.00/21.00\n4.12\nGemma 3 12B\n39.50/19.25\n15.88\nLlama 3.1 8B\n19.50/32.62\n16.00\nQwen 2.5 Coder 7B\n31.62/46.62\n22.25\nTable 2: Baseline performance (% accuracy) without\ndistractors. CRUXEval-I/O shows input/output predic-\ntion accuracy. Smaller models generally struggle more\non SemTrace relative to CRUXEval than their frontier\ncounterparts, but similarly no model fails completely.\nA\nResults on Smaller Models\nWe evaluate four smaller models (DeepSeek Coder\nV2 Lite, Gemma 3 12B, Llama 3.1 8B, and Qwen\n2.5 Coder 7B) across all tasks. While these mod-\nels exhibit lower absolute performance than their\nfrontier counterparts (Table 2), they demonstrate\nqualitatively similar patterns. Figure 5 shows that\nsmaller models maintain the key dissociation be-\ntween lexical and semantic recall: they achieve rel-\natively stable lexical recall across positions while\nshowing moderate and severe position-dependent\nsemantic recall degradation on both CRUXEval and\nSemTrace, respectively.\nHowever, smaller models exhibit notable differ-\nences in lexical recall stability compared to frontier\nmodels. Figure 5a reveals greater positional vari-\nance and some anomalous accuracy drops, partic-\nularly DeepSeek Coder V2 Lite showing degrada-\ntion in the middle of the input context, and both\nDeepSeek Coder V2 Lite and Llama 3.1 8B exhibit-\ning drops at the beginning of the context. Despite\nthese irregularities, the lexical recall patterns re-\nmain qualitatively distinct from the systematic lost-\nin-the-middle degradation observed in semantic re-\ncall tasks Figure 5b-c). Notably, the smaller models\nexhibit more pronounced performance variability\nand sharper degradation on SemTrace, suggesting\ntheir semantic recall capabilities are more frag-\nile. However, the fundamental pattern (position-\nindependent lexical recall vs. position-dependent\nsemantic recall) remains consistent across model\nscales, confirming that our findings generalize be-\nyond frontier models.\nB\nCRUXEval Input Prediction\n(CRUXEval-I) Results\nWe present complete results for CRUXEval in-\nput prediction (CRUXEval-I) to complement the\noutput prediction (CRUXEval-O) results shown\nin § 5.1. Figure 6 and Figure 7 demonstrate that\n12",
+      "character_count": 4818
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": null,
+      "text": "−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n20 Distractors\n40 Distractors\n60 Distractors\n80 Distractors\n(a) Lexical Recall: Function Retrieval\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n(b) Semantic Recall: CRUXEval Output Prediction\n0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n(c) Semantic Recall: SemTrace Output Prediction\nModels\nDeepSeek Coder V2 Lite\nGemma 3 12B\nLlama 3.1 8B\nQwen 2.5 Coder 7B\nModels\nDeepSeek Coder V2 Lite\nGemma 3 12B\nLlama 3.1 8B\nQwen 2.5 Coder 7B\nModels\nDeepSeek Coder V2 Lite\nGemma 3 12B\nLlama 3.1 8B\nQwen 2.5 Coder 7B\nFigure 5: Dissociation between lexical and semantic recall across code positions in long contexts for smaller\nmodels. Positional effects across lexical recall (a), semantic recall on CRUXEval output prediction (CRUXEval-O) (b),\nand high-sensitivity semantic recall on SemTrace (c). Despite lower absolute performance, smaller models exhibit\nthe same fundamental dissociation as frontier models: position-independent lexical recall and position-dependent\nsemantic recall, with more severe degradation on SemTrace.\n0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−80\n−60\n−40\n−20\n0\nRelative Accuracy Δ (%)\n20 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n40 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n60 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n80 Distractors\nSemantic Recall: CRUXEval Input Prediction\nModels\nCodestral 22B v0.1\nGPT-4.1\nDeepSeek Coder V2\nGemma 3 27B\nLlama 3.3 70B\nQwen 2.5 Coder 32B\nFigure 6: CRUXEval input prediction (CRUXEval-I) positional effects for frontier models. Similar to output\nprediction (Figure 2b), all models show moderate position-dependent degradation with the steepest declines\noccurring when target code appears at 60-80% positions.\n13",
+      "character_count": 1823
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": null,
+      "text": "0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−80\n−60\n−40\n−20\n0\nRelative Accuracy Δ (%)\n20 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n40 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n60 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n80 Distractors\nSemantic Recall: CRUXEval Input Prediction\nModels\nDeepSeek Coder V2 Lite\nGemma 3 12B\nLlama 3.1 8B\nQwen 2.5 Coder 7B\nFigure 7: CRUXEval input prediction (CRUXEval-I) positional effects for smaller models. Performance patterns\nmirror those observed in CRUXEval output prediction (Figure 5b), with moderate lost-in-the-middle effects becoming\nmore pronounced as context length increases.\nmodels exhibit nearly identical positional sensitiv-\nity patterns on input prediction as they do on output\nprediction (Figure 2b and Figure 5b, respectively).\nBoth tasks show moderate lost-in-the-middle ef-\nfects, with performance degrading as target code\nmoves toward central positions, particularly at the\n60-80% position range. This similarity is expected\ngiven that both tasks measure semantic recall on the\nsame CRUXEval functions and are equally suscepti-\nble to pattern matching shortcuts, as confirmed by\nour counterfactual measurement (Figure 3).\nC\nSemTrace Detailed Analysis\nPartial Match Accuracy To further investigate\nwhether the severe accuracy drops on SemTrace re-\nflect complete task breakdown or gradual semantic\nrecall failures, we measure partial match accuracy:\ncounting how many individual list positions mod-\nels predict correctly rather than requiring the entire\noutput to be exact. Figure 8 reveals that partial\nmatch accuracy follows qualitatively similar posi-\ntional patterns to exact match accuracy (Figure 2c),\nwith performance degrading as target code moves\ntoward central positions. However, the degradation\ncurves are notably smoother, indicating that many\nerrors in exact match accuracy stem from partial\nfailures where models correctly recall some assign-\nment lines but not others. This pattern confirms\nthat position-dependent degradation reflects grad-\nual semantic recall failures rather than complete\ncomprehension breakdown, as models maintain the\nability to semantically recall and apply some–but\nnot all–assignment operations even under challeng-\ning positional conditions.\nResolution Errors Despite explicitly prohibiting\npartial results in the prompt, we find that several\nmodels still at times generate answers such as\n81 −43 instead of 38. Since these expressions\nare interpreted by Python as equivalent, we don’t\npenalize such responses. However, our supple-\nmentary analysis (Figure 9) reveals that especially\nGemma and Llama family models provide these\n\"unresolved\" outputs much more frequently when\nthe target function appears near the middle of the in-\nput context. We hypothesize that this represents an\nattempt to circumvent semantic recall limitations\nthrough lexical recall.\nD\nExtending to JavaScript and PHP\nFigure 10 and Figure 11 present the results of our\nexperiments on CRUXEval-JS/SemTrace-JS and\nCRUXEval-PHP/SemTrace-PHP, respectively, using\nfour representative models and the same experi-\nmental protocol as CRUXEval/SemTrace (detailed\nin §4). Both languages exhibit the same fundamen-\ntal dissociation as Python: lexical recall remains\nnear-perfect and position-independent, while se-\nmantic recall degrades as target code moves to-\nward the center of the context, with more severe\ndegradation on SemTrace than on CRUXEval. The\none notable exception is SemTrace-PHP, where sev-\neral models achieve near-zero accuracy regardless\nof position, which is surprising given their me-\ndian performance on CRUXEval-PHP is better than\nCRUXEval-JS. This might suggest that the degree\nof reliance of models on pattern-matching instead\nof semantic recall can also be impacted by the pro-\ngramming language in question. Despite this, the\ncore finding that semantic recall is substantially\nmore position-sensitive than lexical recall holds\nconsistently across all three languages.\n14",
+      "character_count": 3950
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": null,
+      "text": "0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−80\n−60\n−40\n−20\n0\nRelative Accuracy Δ (%)\n20 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n40 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n60 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n80 Distractors\nSemantic Recall: SemTrace Output Prediction\nModels\nCodestral 22B v0.1\nGPT-4.1\nDeepSeek Coder V2\nGemma 3 27B\nLlama 3.3 70B\nQwen 2.5 Coder 32B\nFigure 8: Partial match accuracy on SemTrace across code positions, measuring the percentage of list elements\npredicted correctly rather than requiring exact full-output matches. Despite following similar positional trends\nto exact match accuracy (Figure 2c), degradation curves are smoother, indicating that accuracy drops result from\ngradual semantic recall failures where models correctly process some assignment lines but not others, rather than\ncomplete task comprehension breakdown.\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n25\n50\n75\n100\n125\n# Unresolved Outputs\n20 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n40 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n60 Distractors\n0\n20\n40\n60\n80\n100\nPosition (%)\n80 Distractors\nModels\nCodestral 22B v0.1\nGPT-4.1\nDeepSeek Coder V2 Lite\nDeepSeek Coder V2\nGemma 3 12B\nGemma 3 27B\nLlama 3.1 8B\nLlama 3.3 70B\nQwen 2.5 Coder 7B\nQwen 2.5 Coder 32B\nFigure 9: Number of unresolved outputs on SemTrace. Unresolved outputs are expressions like 81 −43 instead\nof the computed result 38. Models from the Gemma and Llama families produce substantially more unresolved\noutputs when target functions appear near the middle of the context, suggesting an attempt to circumvent semantic\nrecall limitations through lexical recall of the operations without performing the computation.\n15",
+      "character_count": 1673
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": null,
+      "text": "−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n20 Distractors\n40 Distractors\n60 Distractors\n80 Distractors\n(a) Lexical Recall: Function Retrieval\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n(b) Semantic Recall: CRUXEval-JS Output Prediction\n0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n(c) Semantic Recall: SemTrace-JS Output Prediction\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nFigure 10: Dissociation between lexical and semantic recall across code positions in long contexts for JavaScript.\nPanel (a) shows lexical recall (function retrieval) remaining largely stable across positions, with the exception of\nLlama 3.1 8B which exhibits similar positional variance to its CRUXEval retrieval performance. Panels (b) and\n(c) show moderate and severe position-dependent semantic recall degradation on CRUXEval-JS and SemTrace-JS,\nrespectively, mirroring the pattern observed for Python in Figure 2.\n16",
+      "character_count": 1185
+    },
+    {
+      "pdf_page": 17,
+      "printed_page": null,
+      "text": "−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n20 Distractors\n40 Distractors\n60 Distractors\n80 Distractors\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n20 Distractors\n40 Distractors\n60 Distractors\n80 Distractors\n(a) Lexical Recall: Function Retrieval\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n(b) Semantic Recall: CRUXEval-PHP Output Prediction\n0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n−100\n−75\n−50\n−25\n0\nRelative Accuracy Δ (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n0\n20\n40\n60\n80\n100\nPosition (%)\n(c) Semantic Recall: SemTrace-PHP Output Prediction\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nModels\nQwen 2.5 Coder 32B\nLlama 3.1 8B\nGemma 3 27B\nCodestral 22B v0.1\nFigure 11: Dissociation between lexical and semantic recall across code positions in long contexts for PHP.\nThe same fundamental pattern holds as for Python and JavaScript. Notably, on SemTrace-PHP (Panel c), several\nmodels achieve near-zero baseline accuracy across all positions, despite performing better on CRUXEval-PHP than\nCRUXEval-JS. We plot these cases at −100% as a visualization convention; the relative drop is otherwise undefined\nbecause baseline accuracy is zero.\n17",
+      "character_count": 1669
+    },
+    {
+      "pdf_page": 18,
+      "printed_page": null,
+      "text": "Model Name\nLicense\nCodestral 22B\nMNLP-0.1\nGPT-4.1\nProprietary\nDeepSeek Coder V2\nDeepSeek license\nDeepSeek Coder V2 Lite\nDeepSeek license\nLlama 3.1 8B\nLlama 3.1 license\nLlama 3.3 70B\nLlama 3.3 license\nQwen 2.5 Coder 32B\nApache 2.0\nQwen 2.5 Coder 7B\nApache 2.0\nGemma 3 12B\nGemma ToS\nGemma 3 27B\nGemma ToS\nTable 3: Model licensing information.\nDataset Name\nLicense\nCRUXEval\nMIT License\nCodeSearchNet\nMIT License\nTable 4: Dataset licensing information.\nE\nModel and Dataset Licenses\nWe include the licenses for models and datasets\nin Table 3 and Table 4, respectively.\nF\nPrompt Templates\nIn this section we include templates for input pre-\ndiction (Figure 12), output prediction (Figure 13),\nand function-level retrieval (Figure 14) tasks. We\nleverage assistant prefill such that each model pro-\nvides a predictable and easy-to-parse response.\nG\nDetailed Setup Information\nMachine Details.\nWe performed all experi-\nments using an AWS EC2 p5e.48xlarge instance\nequipped with 192 cores, 2048GB RAM, and eight\nNVIDIA H200 GPUs on Ubuntu 22.04 with CUDA\n12.4. To serve open-weight LLMs, we use vLLM\n0.7.1 (Kwon et al., 2023). We access GPT-4.1\nthrough the OpenAI API.\nExecution Time. For the final evaluation runs,\nwe spent a total of 47 GPU-days on open-weight\nmodel inference. We spent about 2 days running\nexperiments on GPT-4.1 through the OpenAI API.\nWe estimate that total usage, including reruns and\ndevelopment, might be 1.5–2 times higher than our\nevaluation runs.\nUser:\nYou are given a number of Python functions\nand an assertion containing an output of\none of the functions. Find any input such\nthat executing that function on the input\nleads to the given output.\nThere may be\nmultiple\nanswers,\nbut\nyou\nshould\nonly\noutput one.\n[ASSERTION]\nassert {output} == f(??)\n[/ASSERTION]\n[FUNCTIONS]\n{code_block}\n[/FUNCTIONS]\n[ASSERTION]\nassert {output} == f(??)\n[/ASSERTION]\nYou are given a number of Python functions\nand an assertion containing an output of\none of the functions. Find any input such\nthat executing that function on the input\nleads to the given output.\nThere may be\nmultiple\nanswers,\nbut\nyou\nshould\nonly\noutput one.\nAssistant:\nSure! Here is the corresponding input:\n```python\nassert {output} == f(\nFigure 12: Input Prediction Chat Completion Prompt\nTemplate.\n18",
+      "character_count": 2270
+    },
+    {
+      "pdf_page": 19,
+      "printed_page": null,
+      "text": "User:\nYou are given a number of Python functions\nand\nan\nassertion\ncontaining\nan\ninput\nto\none\nof\nthe\nfunctions.\nComplete\nthe\nassertion with a literal (no unsimplified\nexpressions, no function calls) containing\nthe output when executing the provided code\non the given input, even if the function\nis incorrect or incomplete. Do NOT output\nany extra information.\n[ASSERTION]\nassert f({input}) == ??\n[/ASSERTION]\n[FUNCTIONS]\n{code_block}\n[/FUNCTIONS]\n[ASSERTION]\nassert f({input}) == ??\n[/ASSERTION]\nYou\nare\ngiven\na\nnumber\nof\nPython\nfunctions and an assertion containing an\ninput to one of the functions. Complete the\nassertion with a literal (no unsimplified\nexpressions, no function calls) containing\nthe output when executing the provided code\non the given input, even if the function\nis incorrect or incomplete. Do NOT output\nany extra information.\nAssistant:\nSure! Here is the corresponding output:\n```python\nassert f({input}) ==\nFigure 13: Output Prediction Chat Completion Prompt\nTemplate.\nUser:\nEach line in the code block below starts\nwith\na\nrandom\nkey.\nI’m\nlooking\nfor\na\nfunction\nstarting\nat\nkey\n‘{start}‘\nand\nending at key ‘{end}‘ in the code snippet\nbelow. Can you help me find it?\n```python\n{code_block}\n```\nEach\nline\nin\nthe\ncode\nblock\nabove\nstarts with a random key. I’m looking for\na function starting at key ‘{start}‘ and\nending at key ‘{end}‘ in the code snippet\nabove. Can you help me find it?\nAssistant:\nSure!\nHere is the full function starting\nat key ‘{start}‘ and ending at key ‘{end}‘:\n```python\nFigure 14: Function-level Retrieval Chat Completion\nPrompt Template.\n19",
+      "character_count": 1584
+    }
+  ],
+  "sections": [
+    {
+      "title": "Abstract",
+      "pdf_page": 1,
+      "printed_page": null
+    },
+    {
+      "title": "Introduction",
+      "pdf_page": 1,
+      "printed_page": null
+    },
+    {
+      "title": "Related Work",
+      "pdf_page": 2,
+      "printed_page": null
+    },
+    {
+      "title": "Experimental Setup",
+      "pdf_page": 5,
+      "printed_page": null
+    },
+    {
+      "title": "Results",
+      "pdf_page": 6,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 7,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 7,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 7,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 7,
+      "printed_page": null
+    },
+    {
+      "title": "Conclusion",
+      "pdf_page": 9,
+      "printed_page": null
+    },
+    {
+      "title": "Limitations",
+      "pdf_page": 9,
+      "printed_page": null
+    },
+    {
+      "title": "Acknowledgments",
+      "pdf_page": 10,
+      "printed_page": null
+    },
+    {
+      "title": "References",
+      "pdf_page": 10,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 13,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 14,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 14,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 14,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 14,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 15,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 16,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 16,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 16,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 16,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "20 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "40 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "60 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    },
+    {
+      "title": "80 Distractors",
+      "pdf_page": 17,
+      "printed_page": null
+    }
+  ],
+  "evidence_inventory": {
+    "figures": [
+      {
+        "id": "Figure 1",
+        "caption": "Python interpreter performance on incom- plete CRUXEval functions. Accuracy drops sharply and approaches zero beyond 20% removal, establishing the expected pattern when output prediction genuinely re-",
+        "pdf_page": 4,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 2",
+        "caption": "Dissociation between lexical and semantic recall across code positions in long contexts. Values show percent change relative to each model’s maximum accuracy at the same context length. (a) Lexical recall (function retrieval) remains near-perfect and position-independent across all context lengths for frontier models. (b) Semantic recall on CRUXEval output prediction (CRUXEval-O) exhibits moderate lost-in-the-middle effects, with median",
+        "pdf_page": 7,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 3",
+        "caption": "CRUXEval semantic recall sensitivity measurement across all models. Performance on input (blue) and output (orange) prediction tasks as lines are progressively removed from functions. We fit exponential trend lines using non-linear least squares and leverage bootstrapping to compute 95% confidence intervals. Even with 50% of lines removed, models’ relative accuracy drops only 44.15% and 59.74% for input and output prediction,",
+        "pdf_page": 7,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 4",
+        "caption": "GPT-4.1’s higher-digit SemTrace perfor- mance reveals arithmetic memorization. Testing with 2–6 digit operations and 80 distractors shows position- independent performance for 2–3 digits, but clear",
+        "pdf_page": 8,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 5",
+        "caption": "Dissociation between lexical and semantic recall across code positions in long contexts for smaller models. Positional effects across lexical recall (a), semantic recall on CRUXEval output prediction (CRUXEval-O) (b), and high-sensitivity semantic recall on SemTrace (c). Despite lower absolute performance, smaller models exhibit the same fundamental dissociation as frontier models: position-independent lexical recall and position-dependent",
+        "pdf_page": 13,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 6",
+        "caption": "CRUXEval input prediction (CRUXEval-I) positional effects for frontier models. Similar to output prediction (Figure 2b), all models show moderate position-dependent degradation with the steepest declines occurring when target code appears at 60-80% positions. 13",
+        "pdf_page": 13,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 7",
+        "caption": "CRUXEval input prediction (CRUXEval-I) positional effects for smaller models. Performance patterns mirror those observed in CRUXEval output prediction (Figure 5b), with moderate lost-in-the-middle effects becoming more pronounced as context length increases. models exhibit nearly identical positional sensitiv-",
+        "pdf_page": 14,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 8",
+        "caption": "Partial match accuracy on SemTrace across code positions, measuring the percentage of list elements predicted correctly rather than requiring exact full-output matches. Despite following similar positional trends to exact match accuracy (Figure 2c), degradation curves are smoother, indicating that accuracy drops result from gradual semantic recall failures where models correctly process some assignment lines but not others, rather than",
+        "pdf_page": 15,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 9",
+        "caption": "Number of unresolved outputs on SemTrace. Unresolved outputs are expressions like 81 −43 instead of the computed result 38. Models from the Gemma and Llama families produce substantially more unresolved outputs when target functions appear near the middle of the context, suggesting an attempt to circumvent semantic recall limitations through lexical recall of the operations without performing the computation.",
+        "pdf_page": 15,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 10",
+        "caption": "Dissociation between lexical and semantic recall across code positions in long contexts for JavaScript. Panel (a) shows lexical recall (function retrieval) remaining largely stable across positions, with the exception of Llama 3.1 8B which exhibits similar positional variance to its CRUXEval retrieval performance. Panels (b) and (c) show moderate and severe position-dependent semantic recall degradation on CRUXEval-JS and SemTrace-JS,",
+        "pdf_page": 16,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 11",
+        "caption": "Dissociation between lexical and semantic recall across code positions in long contexts for PHP. The same fundamental pattern holds as for Python and JavaScript. Notably, on SemTrace-PHP (Panel c), several models achieve near-zero baseline accuracy across all positions, despite performing better on CRUXEval-PHP than CRUXEval-JS. We plot these cases at −100% as a visualization convention; the relative drop is otherwise undefined",
+        "pdf_page": 17,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 12",
+        "caption": "Input Prediction Chat Completion Prompt Template. 18",
+        "pdf_page": 18,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 13",
+        "caption": "Output Prediction Chat Completion Prompt Template. User:",
+        "pdf_page": 19,
+        "printed_page": null
+      },
+      {
+        "id": "Figure 14",
+        "caption": "Function-level Retrieval Chat Completion Prompt Template. 19",
+        "pdf_page": 19,
+        "printed_page": null
+      }
+    ],
+    "tables": [
+      {
+        "id": "Table 1",
+        "caption": "Baseline performance (% accuracy) without distractors. CRUXEval-I/O shows input/output predic- tion accuracy. Median accuracy is higher for SemTrace (86.19%) than CRUXEval (45.06% - 55.38%), indicating",
+        "pdf_page": 6,
+        "printed_page": null
+      },
+      {
+        "id": "Table 2",
+        "caption": "Baseline performance (% accuracy) without distractors. CRUXEval-I/O shows input/output predic- tion accuracy. Smaller models generally struggle more on SemTrace relative to CRUXEval than their frontier",
+        "pdf_page": 12,
+        "printed_page": null
+      },
+      {
+        "id": "Table 3",
+        "caption": "Model licensing information.",
+        "pdf_page": 18,
+        "printed_page": null
+      },
+      {
+        "id": "Table 4",
+        "caption": "Dataset licensing information. E",
+        "pdf_page": 18,
+        "printed_page": null
+      }
+    ],
+    "equations": [
+      {
+        "id": "Equation 1",
+        "context": "Cinc∈Inc(C) RT (C) −RT (Cinc) RT (C) + ϵ (1)",
+        "pdf_page": 4,
+        "printed_page": null
+      }
+    ]
+  },
+  "rendered_pages_dir": null,
+  "extraction": {
+    "engine": "PyMuPDF",
+    "visual_pages_rendered": false,
+    "confidence": "high"
+  },
+  "validation": {
+    "status": "valid",
+    "errors": [],
+    "warnings": [],
+    "recommended_locator_mode": "page-grounded",
+    "printed_page_labels_required": false
+  }
+}

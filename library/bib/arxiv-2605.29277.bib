@@ -1,0 +1,10 @@
+@article{260529277v1,
+  author  = { Zhang, Jun and Qu, JianYing and Du, Hanwen and Sun, Zhongkai and Yang, Yehua and Zhao, Qiao },
+  title   = {{Code-QA-Bench: Separating Code Reasoning from Documentation Memorization in Repository-Level QA}},
+  journal = {arXiv preprint},
+  year    = {2026},
+  doi     = {2605.29277v1},
+  url     = {https://arxiv.org/abs/2605.29277v1},
+  abstract = {We present Code-QA-Bench, a fully automated framework for synthesizing repository-level code understanding benchmarks that separates genuine code comprehension from documentation recall and pretraining memorization. The framework makes two methodological contributions: (1) an answer-first generation pipeline where a tool-equipped agent explores source code to produce verified gold answers before deriving questions, ensuring every task is grounded in real code structure; and (2) a three-condition experimental design evaluating agents under closed-book (no repository), code-only (documentation removed), and documented (full repository) conditions, with deltas directly quantifying documentation utility and memorization.
+  We generate 528 code-derivable and 100 doc-dependent tasks across 10 Python repositories from SWE-Bench, scored by an LLM judge on accuracy, completeness, and specificity. Experiments on four frontier models reveal that code access is the dominant factor (+0.23 mean gain over closed-book), documentation provides modest additional benefit (+0.071 on doc-dependent tasks), and code-only $\approx$ documented on code-derivable tasks, validating the design. The framework is open-source and applicable to any well-documented Python repository.},
+}

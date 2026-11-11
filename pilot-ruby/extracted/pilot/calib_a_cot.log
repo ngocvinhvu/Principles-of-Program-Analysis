@@ -1,0 +1,18 @@
+item 1/10 done (42s)
+item 2/10 done (85s)
+item 3/10 done (119s)
+item 4/10 done (144s)
+item 5/10 done (182s)
+item 6/10 done (212s)
+item 7/10 done (255s)
+item 8/10 done (283s)
+item 9/10 done (315s)
+item 10/10 done (357s)
+
+C3 closure exact on 10/10 contexts
+
+Model qwen2.5-coder:7b, ~4000 tokens, n=10
+condition        acc     n
+C0            70.00%    10
+
+log: results/qwen2.5-coder_7b_20261110_233851.jsonl

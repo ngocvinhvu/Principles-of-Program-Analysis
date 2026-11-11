@@ -1,0 +1,33 @@
+item 1/20 done (127s)
+item 2/20 done (262s)
+item 3/20 done (385s)
+item 4/20 done (503s)
+item 5/20 done (623s)
+item 6/20 done (746s)
+item 7/20 done (867s)
+item 8/20 done (985s)
+item 9/20 done (1110s)
+item 10/20 done (1232s)
+item 11/20 done (1353s)
+item 12/20 done (1474s)
+item 13/20 done (1595s)
+item 14/20 done (1718s)
+item 15/20 done (1844s)
+item 16/20 done (1972s)
+item 17/20 done (2105s)
+item 18/20 done (2230s)
+item 19/20 done (2359s)
+item 20/20 done (2480s)
+
+C3 closure exact on 60/60 contexts
+
+Model qwen2.5-coder:7b, ~4000 tokens, n=20
+condition        acc     n
+C0             0.00%    20
+C1@p=0.0       0.00%    20
+C1@p=0.5       0.00%    20
+C1@p=1.0       0.00%    20
+C2             0.00%    20
+C3             0.00%    20
+
+log: results/qwen2.5-coder_7b_20261110_224433.jsonl
